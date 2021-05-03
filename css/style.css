@@ -1,0 +1,651 @@
+﻿@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900';
+
+
+.scroll-logo {
+    top: 22px;
+    width: 56%;
+}
+
+a:focus {
+    outline: none;
+}
+
+/* NEW CSS SAME VERSION MVC */
+.container.page {
+    max-width: 890px;
+	padding-top:0;
+}
+figure img {
+    /* width: inherit; */
+    /* height: inherit; */
+}
+.page h1 {
+    font-size: 55px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    color: #002838;
+}
+.page h2 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #002838;
+    line-height: 30px;
+}
+
+.page h2 a{
+    color: #00b1eb;
+    text-decoration: underline ;
+}
+.page h2 a:hover{
+    color:#aed136;
+    text-decoration:none;
+}
+.page h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    color: #00b1eb;
+}
+.page h4 {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 7px;
+    color: #00b1eb;
+}
+.page p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #002838;
+    line-height:21.4px;
+}
+
+.page ul li{
+    margin: 12px 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+.page ul li a{
+    color: #00b1eb;
+    text-decoration:underline;
+}
+.page ul li a:hover{
+    color:#aed136;
+    text-decoration:none;
+}
+.container .page ul li::marker{
+    display:none;
+    content : " ";
+}
+.container .page ul li:before {
+    content: ' ';
+    display: inline-block;
+    background: url(../images/design/sprite.png) no-repeat scroll -222px -142px;
+    height: 21px;
+    width: 20px;
+    margin-right: 8px;
+    margin-top: 0px;
+    float: left;
+}
+.info-pratique ul li{
+    margin:0px;
+    font-weight: 100;
+}
+.info-pratique ul li a{
+    color:#fff;
+    font-family: 'Roboto', sans-serif !important;
+    text-decoration:none;
+}
+/*BREADCRUMB*/
+/*functions.php*/
+ul.ariane span{
+    position: relative;
+    margin: 0;
+    padding: 0 18px;
+    line-height: 19px;
+    font-size: 11px;
+    float: right;
+}
+ul.ariane span a{
+    color:#aec742;
+    padding-right:10px;
+}
+ul.ariane span a:hover{
+    color:#aec742;
+    text-decoration:underline;
+}
+ul.ariane span:nth-child(1){
+    padding:0;
+    padding-left:5px;
+}
+ul.ariane span:nth-child(2){
+    padding-right:0;
+}
+ul.ariane span:nth-child(2):before{
+    content:"";
+    background-image: url(../images/design/simple-arian.gif);
+    background-repeat: no-repeat;
+    position:absolute;
+    width:20px;
+    height:20px;
+    left:0;
+}
+ul.ariane span.breadcrumb_last:before{
+    content:"";
+    background-image: url(../images/design/before-last-ariane.gif);
+    background-repeat: no-repeat;
+    position:absolute;
+    width:20px;
+    height:20px;
+    left:0;
+}
+ul.ariane span.breadcrumb_last{
+    background-color:#aec742;
+    color:#fff;
+    border-right: 10px solid #aec742;
+}
+/*TABLE BLUE*/
+/*BLOC GUTENBERG*/
+figure.wp-block-table.is-style-table-thead-blue {
+    overflow-x: inherit;
+}
+figure.wp-block-table.is-style-table-thead-blue table thead{
+    background-color:#00b1eb;
+    color:#fff;
+    border: solid 1px #00b1eb;
+}
+figure.wp-block-table.is-style-table-thead-blue table th{
+    text-align:center;
+    padding:15px;
+}
+
+figure.wp-block-table.is-style-table-thead-blue table th:first-child{
+    border-left: solid 1px #00b1eb;
+    border-top: solid 1px #00b1eb;
+    border-right: solid 1px #fff;
+}
+figure.wp-block-table.is-style-table-thead-blue table tbody td{
+    text-align:center;
+    border:1px solid #00b1eb;
+    color:#002838;
+}
+figure.wp-block-table.is-style-table-thead-blue table tbody td a{
+    color:#00b1eb;
+    text-decoration:underline;
+}
+figure.wp-block-table.is-style-table-thead-blue table tbody td a:hover{
+    color:#aed136;
+    text-decoration:none;
+}
+figure.wp-block-table.is-style-table-thead-blue table tfoot td{
+    text-align:center;
+    border: none;
+}
+/*TABLEAU BLOC HTML*/
+.table > tbody > tr > td{
+    width:50%;
+}
+/* LISTE PAGES INTERNES */
+/*BLOC GUTENBERG*/
+.container .page ul li:before {
+    content: ' ';
+    display: inline-block;
+    background: url(../images/design/sprite.png) no-repeat scroll -222px -121px !important;
+    height: 20px;
+    width: 15px;
+    margin-right: 8px;
+    margin-top: 0px;
+    float: left;
+}
+/* BLOCKQUOTE AVEC PORTRAIT */
+/*BLOC GUTENBERG AVEC CLASS*/
+.page blockquote.wp-block-quote.portrait{
+    background-image: url(../images/design/apostrophe.png);
+    background-position:10px 50px;
+    background-repeat: no-repeat;
+    background-color:#eeeeee;
+    margin-top: 0;
+}
+.page blockquote.wp-block-quote.portrait img {
+    margin: -37px 10px 40px 10px;
+}
+.page blockquote.wp-block-quote.portrait cite{
+    font-style:normal;
+    font-weight: bold;
+    color:#aed136;
+    margin-left:0px;
+}
+/* BLOCKQUOTE SANS PORTRAIT */
+/*BLOC GUTENBERG*/
+.page blockquote{
+    background-image: url(../images/design/apostrophe.png);
+    background-position: 10px 50px;
+    background-repeat: no-repeat;
+} 
+.page blockquote p {
+    /* css new maquette */
+    /* margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 20px;
+    font-size: 16px;
+    color: #002838;
+    margin-left: 100px; */
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #002838;
+    line-height: 21.4px;
+    margin-left: 100px;
+    font-style: normal;
+}
+.page blockquote cite{ 
+    font-style:normal;
+    font-weight: bold;
+    color:#aed136;
+    margin-left:100px;
+}
+/*PAGE EQUIPE*/
+/*BLOC GUTENBERG à dupliquer*/
+.wp-block-media-text {
+    direction: ltr;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    background-color:#aed136;
+    padding:20px;
+    margin-bottom: 20px;
+}
+.wp-block-media-text__content h4{
+    color: #002838;
+
+}
+.wp-block-media-text__media img, .wp-block-media-text__media video {
+    max-width: unset;
+    width: auto;
+    vertical-align: middle;
+}
+.wp-block-media-text__content p:nth-child(1){
+    font-size:22px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+.wp-block-media-text__content p a:before{
+    display: inline-block;
+    content:"";
+    background: url(../images/design/sprite.png) no-repeat scroll -222px -184px;
+    height: 22px;
+    width: 20px;
+    margin-right: 8px;
+    float: left;
+    margin-top: 2px;
+}
+.wp-block-media-text__content p a{
+    color: #002838;
+    text-decoration: none;
+}
+.wp-block-media-text__content p a:hover{
+    color: #00b1eb;
+    text-decoration: none;
+}
+/* PAGE HUB PROGRAMME */
+/* BLOC GUTENBERG COLONNE + IMAGE ET TEXTE */
+figure.wp-block-image.is-style-default img{
+    width:100% !important;
+    height:auto !important;
+}
+figure.wp-block-image.is-style-default p{
+    width:100%;
+    height:auto;
+}
+.wp-block-column.background-color-blue p{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    color: #fff;
+}
+.wp-block-column.background-color-green p{
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    color: #fff;
+}
+.wp-block-column.background-color-blue{
+    background-color: #00b1eb !important;
+} 
+.wp-block-column.background-color-green{
+    background-color: #aed136 !important;
+} 
+.wp-block-column.background-color-blue h3{
+    padding:10px !important;
+    color:#fff;
+}
+.wp-block-column.background-color-green h3{
+    padding:10px !important;
+    color:#fff;
+}
+.wp-block-column p.background-color-blue {
+    padding: 20px;
+    background-color: #00b1eb !important;
+    position: relative;
+    margin-top: -16px;
+    min-height:70px;
+    font-size: 16px;
+    font-weight: 200;
+}
+.wp-block-column p.background-color-green {
+    padding: 20px;
+    background-color: #aed136 !important;
+    position: relative;
+    margin-top: -16px;
+    min-height:70px;
+    font-size: 16px;
+    font-weight: 200;
+
+}
+.wp-block-column p.background-color-blue a, .wp-block-column p.background-color-green a{
+    color: #fff;
+    text-decoration: none;
+}
+/*BLOC ACF HUB-BLUE*/
+h3.hub-blue-title{
+    color:#00b1eb;
+}
+.hub-blue-block{
+    background-color: #00b1eb;
+    min-height:490px;
+    position:relative;
+}
+
+.hub-blue-block .hub-blue-img img{
+    width:100%;
+}
+.hub-blue-block .hub-blue-content-text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding:20px;
+    color:#fff;
+}
+.hub-blue-block .hub-blue-button-spe{
+    margin:0 auto;
+    width:100px;
+}
+.hub-blue-block .hub-blue-button-spe a{
+    background-color: #fff;
+    padding:10px;
+    border-radius: 0;   
+    border:1px solid #00b1eb;
+    color:#00b1eb;
+    bottom: 30px;
+    position: absolute;
+}
+
+.hub-blue-block .hub-blue-button-spe a:hover{
+    background-color: #00b1eb;    
+    border:1px solid #fff;
+    color:#fff;
+}
+/*BLOC ACF HUB-GREEN*/
+h3.hub-green-title{
+    color:#aed136;
+}
+.hub-green-block{
+    background-color: #aed136;
+    min-height:490px;
+    position:relative;
+}
+
+.hub-green-block .hub-green-img img{
+    width:100%;
+}
+.hub-green-block .hub-green-content-text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding:20px;
+    color:#fff;
+}
+.hub-green-block .hub-green-button-spe{
+    margin:0 auto;
+    width:100px;
+}
+.hub-green-block .hub-green-button-spe a{
+    background-color: #fff;
+    padding:10px;
+    border-radius: 0;   
+    border:1px solid #aed136;
+    color:#aed136;
+    bottom: 30px;
+    position: absolute;
+}
+
+.hub-green-block .hub-green-button-spe a:hover{
+    background-color: #aed136;    
+    border:1px solid #fff;
+    color:#fff;
+}
+/*BLOCK GREEN FEATURED ACF*/
+.color-block .block-green-featured .block-green-featured-content-text p {
+    width: calc(100% - 100px);
+    float: left;
+    background-color: #aed136;
+    min-height: 160px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+/*ACF BLOCK SUITE TABS*/
+.acfb_tabs_block ul li:first-child, .acfb_tabs_block ul li:last-child {
+    width: 49%;
+    border-radius: 5px;
+    border: 1px solid #002838;
+    margin-right: 1px;
+}
+.acfb_tabs_block ul li:before {
+    background:none !important;
+}
+@media screen and (max-width:580px) {
+    .container.page {
+        width: 100%;
+        padding: 60px 20px;
+    }
+}
+.wp-block-embed__wrapper{
+    width:100%;
+}
+.wp-block-embed__wrapper iframe{
+    min-height:500px;
+}
+@media screen and (max-width:580px){
+    .wp-block-embed__wrapper{
+        width:100%;
+    }
+    .wp-block-embed__wrapper iframe{
+        height:auto;
+    }
+}
+.wp-block-button__link:hover {
+    /* color:white !important; */
+    transition: 0.1s ease-in-out;
+}
+.wp-block-button__link {
+    background-color:transparent;
+}
+
+/* BUTTONS COLORS */
+/*BLOC GUTENBERG*/
+.has-green-background-color {
+	background-color: #aed136;
+}
+.has-green-color {
+	color: #aed136;
+}
+.has-dark-blue-background-color {
+	background-color: #002838;
+}
+.has-dark-blue-color {
+	color: #002838;
+}
+.has-light-blue-background-color {
+	background-color: #00b1eb;
+}
+.has-light-blue-color {
+	color: #00b1eb;
+}
+
+.has-green-background-color, .has-green-background-color:hover {
+	background-color: #aed136;
+}
+.has-green-background-color.has-white-color:hover{
+  color:#aed136;
+  background-color:#fff;
+}
+.has-dark-blue-background-color.has-white-color:hover{
+    color:#002838;
+    background-color:#fff;
+  }
+.has-light-blue-background-color.has-white-color:hover{
+    color:#00b1eb;
+    background-color:#fff;
+}
+.has-white-background-color.has-green-color:hover{
+  color: #fff  ;
+  background-color:#aed136;
+}
+.has-white-background-color.has-dark-blue-color:hover{
+    color:#fff;
+    background-color:#002838;
+  }
+.has-white-background-color.has-light-blue-color:hover{
+    color:#fff;
+    background-color:#00b1eb;
+}
+
+
+
+/*FOOTER*/
+footer .propos{
+    background-color:#414344;
+    color: #fff;
+    padding: 0;
+}
+footer .apropos h3, footer .info-pratique h3, footer .infos h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+footer .apropos p{
+    color:#fff;
+    font-weight: 300;
+}
+footer .logo-reseaux a {
+    background-image: url(../images/design/sprite.png);
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 32px;
+    display: inline-block;
+}
+footer .infos {
+    border-bottom: solid 1px #fff;
+    background-color: #414344;
+    padding: 0 0 30px 0;
+}
+
+footer .logo-cti li {
+    padding: 80px 10px 10px 10px;
+}
+footer .logo-cti li.iar {
+    padding: 20px 10px 10px 10px;
+}
+
+footer .rencontre {
+    background-color: #414344;
+    padding-left:0;
+}
+footer .rencontre h4 {
+    color: #fff;
+}
+footer .rencontre .bloc-left, footer .rencontre .bloc-right { 
+    width: 48%;
+}
+footer .rencontre .bloc-right {
+    margin-right:0;
+ }
+ footer .rencontre .bloc-left p, footer .rencontre .bloc-right p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+footer .vousetes a {
+    width: 136px;
+    height: 165px;
+    padding-top: 103px;
+    font-size: 11px;
+    line-height: 12px;
+ }
+ footer .vousetes a.documentation {
+    background-position: 0 -1852px;
+    margin-right: 1px;
+} 
+footer .vousetes a.documentation:hover {
+    background-position: 0px -1665px;
+    margin-right: 1px;
+    color: #aed136;
+}
+footer .vousetes a.candidature {
+    background-position: -144px -1852px;
+    margin-right: 1px;
+}
+footer .vousetes a.candidature:hover {
+    background-position: -144px -1665px;
+    margin-right: 1px;
+    color: #61c4ae;
+}
+footer .vousetes a.agenda {
+    background-position: -288px -1852px;
+    margin-right: 1px;
+}
+footer .vousetes a.agenda:hover {
+    background-position: -288px -1665px;
+    margin-right: 1px;
+    color: #01ade8;
+}
+footer .vousetes a.rdvperso {
+    background-position: -578px -1849px;
+    margin-right: 1px;
+    margin-top: -37px;
+    padding-top: 96px;
+}
+footer .vousetes a.rdvperso:hover {
+    background-position: -578px -1661px;
+    margin-right: 1px;
+    color: #f79653;
+}
+
+@media screen and (max-width:640px) {
+    
+}
+
+
+/*=========================================================
+                HOMEPAGE
+============================================================*/
+.home-title {
+    background: url('https://www.supbiotech.fr/Content/images/design/visuel-top-home.jpg') no-repeat center top;
+    height: 840px;
+    position: relative;
+    margin-bottom: 60px;
+}

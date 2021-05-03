@@ -1,0 +1,307 @@
+﻿/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+section.replay{
+    padding:40px 0;
+    background-color:#002838;
+}
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    height: 75px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+    display: none;
+}
+
+.jcarousel-prev {
+    z-index: 3;
+    display: none;
+}
+
+
+
+
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    padding: 0;
+}
+
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    height: 494px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+    margin-bottom: 15px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+
+/*---------------- Vertical Buttons ------------------------*/
+.jcarousel-skin-tango .jcarousel-next-vertical {
+    position: absolute;
+    bottom: 0px;
+    left:calc( 50% - 48px );
+    width:96px; 
+	height:41px; 
+	background:url(/Content/images/design/sprite.png) no-repeat -48px -654px; 
+    cursor: pointer;  
+}
+
+
+.jcarousel-skin-tango .jcarousel-next-vertical:hover {
+    background-position: -260px -654px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-vertical:active {
+    background-position: -260px -654px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:active {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical {
+    position: absolute;
+    top: 0px;
+    left:calc( 50% - 48px );
+    width:96px; 
+	height:41px; 
+	background:url(/Content/images/design/sprite.png) no-repeat -48px -465px; 
+    cursor: pointer;   
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical:hover {
+    background-position: -260px -465px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical:active {
+    background-position: -260px -465px;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+    opacity: 0.5;
+}
+
+
+/*=======================	 Carousel Slide Show =============================*/
+
+.carouselVideo {
+    margin: 0 auto;
+    padding: 30px 0;
+    width: 1024px;
+}
+.contentReplay img {
+	border:10px solid #ffffff;
+	box-sizing: border-box;
+}
+
+#slideshow-main {
+}
+
+#slideshow-main ul {
+	margin:0; 
+	padding:0; 
+}
+
+#slideshow-main li {
+	/*height:367px;*/ 
+	display:none;
+	position:relative;
+}
+#slideshow-main li iframe {
+    border:none;
+	box-sizing: border-box;
+}
+
+#slideshow-main li.active {
+	display:block !important;
+}
+
+#slideshow-main li span.opacity {
+	position:relative;
+	/*bottom:0; left:0;*/
+	display:block; 
+	width:100%;
+	/*height:100px;
+	background:#000;
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5;*/
+	z-index:500;
+	margin: 20px 0;
+}
+#slideshow-main ul li a {
+    position: relative;
+    display: block;
+}
+
+#slideshow-main li .content {
+	position:relative;/*absolute*/
+	top:/*400px*/ 0; 
+    left:0;
+	display:block; 
+	width:100%;
+	height:140px;
+	z-index:900;
+    margin: 10px 0 0;
+	
+}
+
+#slideshow-main li .content h1, #slideshow-main li .content h4 {
+	font-size:26px;
+    text-transform: uppercase;
+	margin:5px 0;
+	padding:0 10px;;
+	color:#ffffff;
+    font-family: "Roboto", sans-serif;
+}
+
+#slideshow-main li .content p {
+	margin:5px 0;
+	padding:0 10px;
+	color:#ffffff;
+}
+
+#slideshow-carousel {
+	position:relative;
+}
+
+#slideshow-carousel ul {
+	margin:0; 
+	padding:0;
+	list-style:none;
+}
+
+#slideshow-carousel li {
+	height: auto; 
+	position:relative;
+	margin-bottom: 1px;
+    overflow:hidden;
+}
+
+#slideshow-carousel li .arrow {
+	left:3px; 
+	top:28px; 
+	position:absolute; 
+	width:20px; 
+	height:40px; 
+	/*background:url(images/arrow_white.png) no-repeat 0 0;*/ 
+	display:block;
+}
+
+#slideshow-carousel li a {
+	background:#000; 
+	display:block; 
+	float : left;
+}
+#carousel li a:hover img, #carousel li a:active img { 
+	border: 10px solid #7fc9bd;
+}
+
+#slideshow-carousel li h5 {
+	color: #ffffff;
+	width: 100px;
+	display: block;
+	float: left;
+    margin: 0 0 0 10px;
+}
+
+#slideshow-carousel .active {
+	filter:alpha(opacity=100); 
+	-moz-opacity:1.0; 
+	-khtml-opacity: 1.0; 
+	opacity: 1.0;		
+}
+
+#slideshow-carousel .faded {
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5;
+}
+
+.jcarousel-item img{
+    width: 100%;
+    height:auto;
+}
+.replay .col-md-9{
+    padding:0;
+    width: calc(75% - 1px);
+    margin-right: 1px;
+}
+.replay .col-md-3{
+    padding:0;
+}
+
+@media (max-width: 992px) {
+  .replay .col-md-9{
+    padding:0;
+    width: calc(100% - 1px);
+    margin-right: 1px;
+}
+   .jcarousel-skin-tango .jcarousel-clip-vertical {
+        height: 360px;
+    }
+}
+@media (min-width: 992px) {
+  .jcarousel-skin-tango .jcarousel-clip-vertical {
+    height: 390px;
+  }
+}
+@media (min-width: 1200px) {
+  .jcarousel-skin-tango .jcarousel-clip-vertical {
+    height: 467px;
+  }
+}
+@media (min-width: 1270px) {
+  .jcarousel-skin-tango .jcarousel-clip-vertical {
+    height: 494px;
+  }
+}

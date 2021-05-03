@@ -1,0 +1,758 @@
+﻿
+
+#cbp-hrmenu {
+    top: 30px;
+}
+
+/*bannière navy */
+#banner {
+    height: 41px;
+}
+#banner .logo-reseaux a {
+    background-image: url(../images/design/sprite.png);
+}
+
+/* menu */
+.top-logo {
+    top: 18px;
+}
+
+.right-menu .contact-clic a {
+    width: 136px;
+    height: 165px;
+    text-decoration: none;
+}
+.right-menu .contact-clic a.documentation {
+    background-position: 0px -1852px;
+    color: #fff;
+}
+.right-menu .contact-clic a.documentation:hover {
+    background-position: 0px -1665px;
+    color: #aed136
+}
+.right-menu .contact-clic a.candidature {
+    background-position: -144px -1852px; 
+    color: #fff;
+}
+.right-menu .contact-clic a.candidature:hover {
+    background-position: -144px -1665px;
+    color: #61c4ae;
+}
+.right-menu .contact-clic a.entretien {
+    background-position: -288px -1852px;
+    padding-top: 99px;
+    color: #fff;
+}
+.right-menu .contact-clic a.entretien:hover {
+    background-position: -288px -1665px;
+    color: #00b1eb;
+}
+.right-menu .contact-clic a.rdvperso {
+    background-position: -578px -1849px;
+    padding-top: 92px;
+    color: #fff;
+    line-height: 13px;
+}
+.right-menu .contact-clic a.rdvperso:hover {
+    background-position: -578px -1661px;
+    padding-top: 92px;
+    color: #ff974f;
+}
+.right-menu .jpo p {
+    color: #00b1eb;
+    font-size: 30px;
+    font-weight: 400;
+    max-width: 100%;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.jpo p {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.right-menu .jpo .date {
+    padding: 15px 10px;
+    color: #fff;
+    line-height: 28px;
+    background-color: #00b1eb;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.right-menu .jpo .date span span.date {
+    font-size: 25px;
+    padding: 10px;
+    background-color: #fff;
+    color: #00b1eb;
+    display: table-cell;
+}
+.right-menu .jpo .date span.informations {
+    margin-left: 0px;
+    font-weight: 600;
+}
+.right-menu .jpo .date span span.registration {
+    font-size: 15px;
+    font-weight: bold;
+}
+.cbp-hrmenu > ul {
+    padding: 5px 0;
+}
+.cbp-hrmenu ul li.ligo {
+    margin-top: -15px;
+}
+.cbp-hrmenu > ul > li > a:hover, .cbp-hrmenu > ul > li.current a {
+    background-color: #fff;
+    color: #afdb00;
+}
+.cbp-hrmenu > ul > li > a {
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+}
+.cbp-hrmenu > ul > li.flagDesign > a {
+    margin: 0px 0;
+}
+.left-menu {
+    padding-top: 30px;
+}
+.right-menu {
+    height: 542px;
+}
+.col-sm-5.right-menu {
+    margin-left: 0px;
+}
+.cbp-hrsub-inner .left-menu a {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-left: 45px;
+}
+.cbp-hrsub-inner .left-menu li.li-niveau-2 {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 45px;
+    padding: 7px;
+    background-color: #333333;
+    color: #fff;
+}
+.cbp-hrsub-inner .left-menu li.li-niveau-3 a {
+    padding-left: 75px;
+    height: 30px;
+    margin-bottom: 0;
+    line-height: 30px;
+}
+.cbp-hrsub-inner .left-menu li.li-niveau-3 a:hover {
+    color: #afdb00;
+    background: rgba(0, 0, 0, 0) url(../images/design/puce-menu.png) no-repeat scroll 50px 5px !important;
+    height: 30px;
+    transition: none;
+}
+.cbp-hrsub-inner .left-menu a:hover, .cbp-hrsub-inner .left-menu a.active {
+    background: rgba(0, 0, 0, 0) url("../images/design/puce-menu.png") no-repeat scroll 25px 5px !important;
+    padding-left: 50px;
+}
+
+.right-menu .jpo .date {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/* menu wordpress */
+.cbp-hrmenu ul.menu {
+    margin: 0 auto;
+    padding: 14px 0;
+    list-style-type: none;
+    width: 1280px;
+    position: relative;
+}
+.cbp-hrmenu ul.menu > li.first-entry {
+    margin-left: 185px;
+}
+.cbp-hrmenu ul.menu > li {
+    display: inline-block;
+}
+.cbp-hrmenu ul.menu > li > a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #002838;
+    display: inline-block;
+    font-weight: 400;
+    padding: 14px 6px;
+    text-decoration: none;
+}
+.cbp-hrmenu ul.menu > li > a:hover, .cbp-hrmenu ul.menu > li.cbp-hropen > a {
+    color: #afdb00;
+}
+.cbp-hrmenu .cbp-hrsub {
+    top: 102px;
+}
+
+/* recherche menu */
+
+.cbp-hrmenu > ul > li {
+    display: inline-block;
+}
+
+.cbp-hrmenu > ul.main2  {
+    width: 250px;
+    padding: 14px 0;
+    display: block;
+    top: 0;
+    position: absolute;
+    right: 17%;
+}
+
+.flagDesign {
+    display:inline-block;
+}
+
+.flagPos {
+    top: 36px;
+    color:#0094ff !important;
+    position: absolute;
+    right: -140px;
+    border-left: 1px solid #dedede;
+}
+.flagPos:hover {
+    position: absolute;
+    right: -140px;
+    top: 36px;
+    color: #afdb00 !important;
+    font-weight: 600 !important;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    #bloc-contact-mobile .entretien {
+        font-size: 14px;
+    }
+    #bloc-contact-mobile .rdvperso {
+        font-size: 11px;
+    }
+    .cbp-hrmenu > ul > li > a > br {
+        display:none;
+    }
+    .cbp-hrmenu > ul > li > a:hover {
+        background-color: #afdb00 ;
+        color: #fff ;
+    }
+}
+
+
+
+@media screen and (min-width: 780px) {
+    li.search {
+        height: 62px;
+        position: relative;
+        width: 30px;
+    }
+
+        li.search #recherche {
+            height: 40px;
+            padding: 0 10px;
+            width: 125px;
+            float: left;
+            background-color: transparent;
+            border: none;
+        }
+}
+
+@media screen and (min-width: 961px) {
+    /*li.search {
+        height: 32px !important;
+        position: relative;
+        width: 30px;
+    }*/
+    li.search {
+        height: 32px !important;
+        position: absolute;
+        width: 30px;
+        right: 20%;
+        top: 25px;
+    }
+}
+
+
+@media screen and (max-width: 1480px) {
+
+    .cbp-hrmenu {
+        font-size: 15px;
+    }
+    .flagPos {
+        right: -61px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    .cbp-hrmenu {
+        font-size: 15px;
+    }
+    .flagPos {
+        right: -15px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+
+    .cbp-hrmenu {
+        font-size: 14px;
+    }
+	.flagPos {
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        width: 140px;
+        /*header background-color:#afdb00;*/
+    }
+
+        .logo img.top-logo {
+            width: 148px;
+        }
+
+        .logo img.scroll-logo {
+            width: 140px;
+            top: 22px;
+        }
+
+    .cbp-hrmenu > ul > li.first-entry {
+        margin-left: 153px;
+    }
+
+    .top-logo {
+        left: -4px;
+        position: absolute;
+        top: 26px;
+    }
+
+    .scroll-logo {
+        left: 0;
+        position: absolute;
+        top: 45px;
+    }
+
+    .cbp-hrmenu > ul > li > a {
+        padding: 5px;
+    }
+	
+	.cbp-hrmenu {
+        font-size: 11px;
+    }
+    .flagPos {
+        right: 280px;
+    }
+
+    .col-sm-7.left-menu {
+        width: 39%;
+    }
+    .left-menu {
+        padding-top: 100px;
+        height: 542px;
+    }
+    .cbp-hrmenu > ul.main2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .cbp-hrmenu ul.menu {
+        margin: 0 auto;
+        padding: 50px 0 0 0;
+        list-style-type: none;
+        width: 100%;
+        position: relative;
+    }
+
+    .cbp-hrmenu ul.menu > li {
+        display: block;
+        margin: 0;
+    }
+    .cbp-hrmenu ul.menu > li.first-entry {
+        margin-left: 0px;
+    }
+    .cbp-hrmenu  ul.menu > li {
+        display: block !important;
+        border-top: 1px solid #dadada;
+        /* border-bottom: 1px solid #dadada; */
+        position: relative;
+    }
+    .cbp-hrmenu ul.menu > li > a {
+        background-color: transparent;
+        display: block;
+        margin-top: 0;
+        padding: 1em 3em;
+    }
+    .cbp-hrmenu ul.menu > li > a:hover {
+        background-color: #afdb00;
+        color: #fff;
+    }
+
+
+
+    #recherche {
+        display: block;
+        height: 56px;
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .bouton-recherche {
+        position: absolute;
+        right: 15%;
+        top: 9px;
+    }
+
+    .header-home {
+        margin-top: 0 !important;
+    }
+
+    .cbp-hrmenu > ul > li > a.contact {
+        background-color: #fff;
+        display: block;
+        margin-top: 0;
+        padding: 1em 3em;
+        color: #002838;
+        height: 58px;
+    }
+
+    .cbp-hrmenu > ul > li > a:hover {
+        background-image: none;
+    }
+
+    .cosmo {
+        display: none;
+    }
+
+    header form {
+        margin-top: -1px;
+        margin-bottom: 13px;
+        width: 85%;
+        float: none;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    .flagDesign a {
+        position: absolute;
+        right: 0px;
+        top: -55px;
+        display: block;
+        height: 54px;
+        width: 68px !important;
+        padding: 12px 12px 0 15px!important;
+    }
+
+    .flagPos {
+        position: static;
+    }   
+
+}
+
+
+@media screen and (max-width: 780px) {
+	.cbp-hrmenu > ul > li > a {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #002838;
+    display: inline-block;
+    font-weight: 400;
+    padding: 14px 8px;
+    text-decoration: none;
+    }
+	.cbp-hrmenu > ul > li.first-entry {
+    margin-left: 0px;
+    padding: 50px 0 0 0;
+    }
+	#bloc-contact-mobile {
+        display: inline-block;
+        width:100%;
+        height: 136px;
+    }
+    #bloc-contact-mobile .bloc-contact-inside {
+        display: inline-block;
+        width: 50%;
+        float:left;
+        font-weight:bold;
+    }
+        #bloc-contact-mobile .bloc-contact-inside a {
+            color:#fff;
+        }
+        #bloc-contact-mobile .documentation {
+            background-color: #AFDB00;
+            color:#fff;
+            text-transform:uppercase;
+            font-size:14px;
+        }
+        #bloc-contact-mobile .entretien {
+            background-color: #00B1EB;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        #bloc-contact-mobile .candidature {
+            background-color: #46D8B7;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        #bloc-contact-mobile .rdvperso {
+            background-color: #FF974F;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+    header {
+        width: calc((100%) - 1px);
+        z-index: 1000;
+    }
+
+    .left-menu {
+        width: 100%;
+        height: auto;
+    }
+
+        .left-menu .col-md-7 {
+            width: 100%;
+        }
+
+    .col-md-7.right > ul {
+        max-width: 100%;
+    }
+
+    #cbp-hrmenu {
+        position: relative;
+        display: none;
+    }
+
+    .cbp-hrmenu {
+        font-size: 120%;
+        border: none;
+    }
+
+        .cbp-hrmenu > ul,
+        .cbp-hrmenu .cbp-hrsub-inner {
+            padding: 80px 0 0 0;
+            width: 100%;
+        }
+
+        .cbp-hrmenu .cbp-hrsub-inner {
+            padding: 0 2em;
+            font-size: 75%;
+        }
+
+        .cbp-hrmenu > ul > li {
+            display: block;
+            border-bottom: 1px solid #dadada;
+            position: relative;
+        }
+
+            .cbp-hrmenu > ul > li > a {
+                background-color: #fff;
+                display: block;
+                margin-top: 0;
+                padding: 1em 3em;
+            }
+
+    .header-mobile {
+        background-color: #fff;
+        display: block;
+        height: 80px;
+        left: 0;
+        overflow: visible;
+        position: fixed;
+        text-align: left;
+        /*top: 0;*/
+        width: 100%;
+        z-index: 1030;
+        background-image: url("/Content/images/design/bottom-menu.gif");
+        background-position: center bottom;
+        background-repeat: repeat-x;
+    }
+
+    .cbp-hrmenu > ul > li.first-entry {
+        margin-left: 0px;
+    }
+
+    .logo {
+        display: none !important;
+        background: none;
+    }
+
+    .cbp-hrmenu .cbp-hrsub {
+        position: relative;
+    }
+
+    .cbp-hrsub h4 {
+        padding-top: 0.6em;
+    }
+
+    .col-xs-3.right {
+        display: none;
+    }
+
+    .right-menu {
+        display: none;
+    }
+
+    .cbp-hropen .cbp-hrsub {
+        padding: 20px 0 20px 0;
+    }
+
+    .cbp-hrmenu .cbp-hrsub-inner {
+        padding: 0;
+    }
+
+    .cbp-hropen .cbp-hrsub .right {
+        float: left;
+    }
+
+    .left-menu {
+        padding: 0;
+    }
+
+    #recherche {
+        display: block;
+        height: 56px;
+        width: 80%;
+        padding-left: 50px;
+    }
+
+    .bouton-recherche {
+        position: absolute;
+        right: 115px;
+        top: 9px;
+    }
+
+    .header-home {
+        margin-top: 0 !important;
+    }
+
+    .cbp-hrmenu > ul > li > a.contact {
+        background-color: #fff;
+        display: block;
+        margin-top: 0;
+        padding: 1em 3em;
+        color: #002838;
+        height: 58px;
+    }
+
+    .cbp-hrmenu > ul > li > a:hover {
+        background-image: none;
+    }
+
+    .cosmo {
+        display: none;
+    }
+
+    header form {
+        margin-top: -1px;
+        width: 100%;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+/* bloc recherche et EN sur mobile   */
+    .cbp-hrmenu > ul.main2 {
+        width: 100%;
+        padding: 14px 0;
+        display: block;
+        top: 0;
+        position: relative;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 36em) {
+    .cbp-hrmenu .cbp-hrsub-inner > div {
+        width: 100%;
+        float: none;
+        padding: 0 2em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    #cbp-hrmenu{
+        position: fixed;
+        overflow: auto;
+        height: 100%;
+    }
+    .cbp-hrmenu > ul > li {
+        display: block;
+        height: inherit;
+    }
+
+    .flagPos {
+        position: absolute;
+        right: 10px;
+        top: 16px;
+    }
+
+    .cbp-hrmenu .cbp-hrsub {
+        top: 0;
+    }
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px){
+    /*nav#cbp-hrmenu.cbp-hrmenu ul.main li.search {
+        display:none;
+    }*/
+    
+}
+
+@media screen and (max-width: 780px){
+    .cbp-hrmenu {
+    font-size: 120%;
+    border: none;
+}
+
+    header form {
+        margin-top: -1px;
+        margin-bottom: 13px;
+        width: 85%;
+        float: none;
+}
+.cbp-hrmenu > ul > li {
+    display: block;
+    height: inherit;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+}
+.cbp-hrmenu > ul > li.search {
+    border-bottom: 0px solid #dadada
+}
+.cbp-hrmenu > ul > li > a {
+    background-color: transparent;
+    display: block;
+    margin-top: 0;
+    padding: 1em 3em;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: #002838;
+    display: inline-block;
+    font-weight: 300;
+    padding: 14px 9px;
+    text-decoration: none;
+}
+#recherche {
+    display: block;
+    height: 56px;
+    width: 100%;
+    padding-left: 50px;
+}
+}
+
