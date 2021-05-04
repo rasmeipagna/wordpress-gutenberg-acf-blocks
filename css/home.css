@@ -1,0 +1,767 @@
+
+#home h2 {
+    text-align: left;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 15px;
+}
+/**************POST HEADER HOME*****************/
+.home-title {
+    background: url('../images/design/visuel-top-home.jpg') no-repeat center top;
+    height: 840px;
+    position: relative;
+    margin-bottom: 60px;
+    top: 50px;
+}
+
+.crop-circle {
+    background: url('../images/design/_half-circle-home.png') no-repeat center top;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 229px);
+    height: 223px;
+    width: 458px;
+    text-align: center;
+}
+
+.crop-circle h1 {
+    font-weight: 300;
+    font-size: 22px;
+    margin-bottom: 28px;
+    margin-top: 40px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 8px 10px;
+}
+
+.crop-circle h1 span {
+    font-weight: 700;
+}
+
+.crop-circle span.petit {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 11px;
+    display: block;
+    font-weight: 400;
+    margin-left: 80px;
+    margin-top: -10px;
+}
+
+.crop-circle span.petit-en {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 11px;
+    display: block;
+    font-weight: 400;
+    margin-left: 84px;
+    margin-top: 0px;
+    width: 303px;
+    text-align: left;
+}
+
+.crop-circle span.petit img {
+    float: left;
+}
+
+.crop-circle span.petit-en img {
+    float: left;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.crop-circle span.petit span.petitText {
+    margin-left: 10px;
+    float: left;
+    text-align: left;
+}
+
+.bloc-encadre {
+    padding: 15px; 
+    border: 3px solid #00b1eb; 
+    margin-bottom: 15px;
+}
+
+.jphome {
+    text-align: center;
+    background: none #00b1eb;
+    width: 271px;
+    height: 238px;
+    position: absolute;
+    right: 0;
+    top: 152px;
+    font-size: 26px;
+    font-weight: 300;
+    padding-top: 90px;
+}
+
+.jphome .date {
+    display: inline-block;
+    padding: 5px 52px;
+    border: solid 1px #fff;
+    color: #fff;
+    font-size: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+
+/* TMP */
+
+.jphome .date.fsize {
+    font-size: 24px;
+}
+
+.jphome .title-date {
+    color: #fff;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 37px;
+}
+
+
+/* TMP */
+
+.jphome {
+    padding-top: 17px;
+}
+.jphome span {
+    text-align: left;
+}
+
+.jphome .title-date.fsize {
+    font-size: 22px;
+}
+
+.jphome .titleBulle {
+    font-size: 22px;
+}
+
+.jphome .registration {
+    font-size: 17px;
+    color:#fff;
+    display:block;
+}
+
+.displayEventHomeParis,
+.displayTypeJPOParis,
+.displayTypeJPOLyon,
+.displayTypeBiotechParis,
+.displayTypeBiotechLyon {
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    top: -4px;
+    margin: 0 0 10px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.displayEventHomeParis span,
+.displayTypeJPOParis span,
+.displayTypeJPOLyon span,
+.displayTypeBiotechParis span,
+.displayTypeBiotechLyon span {
+    color: #fff;
+    font-size: 22px;
+}
+
+.displayEventHomeParis,
+.displayTypeJPOParis,
+.displayTypeJPOLyon,
+.displayEventHomeParis span,
+.displayTypeJPOParis span,
+.displayTypeJPOLyon span {
+    font-size: 19px;
+}
+
+.displayEventHomeParis .linkplus,
+.displayTypeJPOParis .linkplus,
+.displayTypeJPOLyon .linkplus,
+.displayTypeBiotechParis .linkplus,
+.displayTypeBiotechLyon .linkplus {
+    transform: scale(0.7);
+    display: block;
+    margin: 0 auto;
+    width: 59px !important;
+    height: 68px !important;
+    background-position: 0 0 !important;
+    background-image: url("../images/design/off_link_type.png") !important;
+    background-repeat: no-repeat;
+}
+
+    .displayEventHomeParis .linkplus:hover,
+    .displayTypeJPOParis .linkplus:hover,
+    .displayTypeJPOLyon .linkplus:hover,
+    .displayTypeBiotechParis .linkplus:hover,
+    .displayTypeBiotechLyon .linkplus:hover {
+        background-image: url("../images/design/hover_link_type.png") !important;
+        background-position: 0 0 !important;
+    }
+
+    .home-title .contact-clic a.rdvperso {
+        background-image: url("../images/design/sprite.png");
+        background-position: -947px -846px;
+        padding-top: 115px;
+        line-height: 17px;
+        width: 177px;
+    }
+    .home-title .contact-clic a.entretien {
+        background-position: -393px -748px;
+        padding-top: 135px;
+        margin-right: -4px;
+    }    
+
+/************ ALAUNE SLIDER LODER  *****/
+#alaune { background-color: #EFEFEF;}
+.slider-une {
+    visibility: hidden;
+}
+
+.slider-une.slick-initialized {
+    visibility: visible;
+}
+
+.loader {
+    position: relative;
+    width: 100%;
+}
+
+.slick-initialized~.loader {
+    display: none;
+}
+
+.slider-une.slick-initialized {
+    visibility: visible;
+}
+
+@-webkit-keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes uil-ring-anim {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.uil-ring-css {
+    background: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -20px;
+}
+
+.uil-ring-css>div {
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 160px;
+    top: 20px;
+    left: 20px;
+    border-radius: 80px;
+    box-shadow: 0 6px 0 0 #afdb00;
+    -ms-animation: uil-ring-anim 1s linear infinite;
+    -moz-animation: uil-ring-anim 1s linear infinite;
+    -webkit-animation: uil-ring-anim 1s linear infinite;
+    -o-animation: uil-ring-anim 1s linear infinite;
+    animation: uil-ring-anim 1s linear infinite;
+}
+
+
+/**************SLIDERS*****************/
+
+.slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+    padding-bottom: 30px;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+/*.slider-actu {}*/
+
+.slick-slide {
+    display: none;
+    float: left;
+    min-height: 1px;
+    position: relative;
+}
+
+.slider-video .slick-slide {
+    pointer-events: none;
+}
+
+.slick-slide.slick-center {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slide-video {
+    position: relative;
+}
+
+.slide-video .videoWrapper {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    z-index: 201;
+}
+
+#alaune .text {
+    padding-right: 80px;
+    position: static;
+}
+
+
+/***************SLIDER ARROWS****************/
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    display: block;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+
+/*************Sldier UNE************/
+
+.slider-une .entete {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.slider-une .sous-entete {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.slider-une .entete-warning {
+    font-size: 15px;
+    background-color: #afdb00;
+    padding: 3px 8px;
+    display: inline-block;
+    font-weight: 500;
+}
+.slide-une .text p.entete a.class-off {
+    color: #002838;
+    font-size: 24px;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+.slide-une .text p a.class-off {
+    font-size: 15px;
+    color: #002838;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.slide-une .text p a.class-off .registration {
+    font-size: 16px;
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.slider-actu figure, .slider-une figure {
+    padding: 0 25px 0 0;
+}
+.slider-une .linkplus {
+    position: relative;
+    right: none;
+    bottom: 0;
+    background-position: -752px -77px;
+    background-image: none;
+    float: none;
+    width: 100px;
+    height: 28px;
+    color:#002838;
+    border: 1px solid #002838;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.slider-une .linkplus:hover {
+    background-color: #002838;
+    color: #fff;
+}
+
+.slider-une .slick-prev,
+.slider-une .slick-next {
+    height: 110px;
+    width: 51px;
+    top: calc( 40% - 55px);
+}
+
+.slider-actu .slick-prev,
+.slider-actu .slick-next {
+    height: 110px;
+    width: 51px;
+    top: calc( 50% - 55px);
+}
+
+.slider-actu .slick-prev,
+.slider-une .slick-prev {
+    left: 0;
+    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -21px -532px;
+}
+
+.slider-actu .slick-next,
+.slider-une .slick-next {
+    right: 0;
+    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -118px -532px;
+}
+
+.slider-actu .slick-prev:hover,
+.slider-une .slick-prev:hover {
+    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -233px -532px;
+}
+
+.slider-actu .slick-next:hover,
+.slider-une .slick-next:hover {
+    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -330px -532px;
+}
+
+[dir='rtl'] .slick-prev {
+    left: auto;
+}
+
+[dir='rtl'] .slick-next {
+    right: auto;
+}
+
+
+/*************PRESENTATION************/
+
+#presentation {
+    padding: 20px 0;
+    background-color: #fff;
+    /*color: #fff;*/
+    margin-top: 180px;
+    position: relative;
+    height: auto;
+}
+#presentation p.mobile-font {
+    font-size: 18px;
+    width: 80%;
+    line-height: 25px;
+    }
+.first-row {
+    position: absolute;
+    top: -150px;
+}
+.second-row {
+    position: absolute;
+    left: -122px;
+    top: 87px;
+}
+.polygone {
+    width: 278px;
+    height: 345px;
+    background-image: url("../images/design/hexagone-vert-home.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    float: left;
+    display: block;
+    margin-top: 0px;
+    line-height: 25px;
+    text-align: center;
+    padding-top: 66px;
+}
+.polygone-interne {
+    width: 225px;
+    margin-left: 28px;
+}
+
+.polygone-interne p span{
+    font-weight:bold;
+}
+    .polygone p {
+        color: #002838;
+        font-size:21px;
+        font-weight: 300;
+    }
+h3.polygoneH3{
+    font-family :Roboto;
+    font-size:21px;
+    font-weight:bold;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+/*CHIFFRES*/
+#chiffres {
+    margin: -17px 0 50px 0;
+    background-color:#002838;
+    padding: 200px 0 50px;
+}
+#chiffres p{
+font-family: Roboto;
+    color:#fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+}
+#chiffres p span{
+    text-transform:uppercase;
+    font-size:35px;
+    font-weight:bold;
+}
+
+

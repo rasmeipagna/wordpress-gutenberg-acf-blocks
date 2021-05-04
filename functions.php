@@ -7,7 +7,9 @@ function theme_enqueue_styles() {
  wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
  wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'));
  wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'));
+ wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
  wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/js/main.js', array('parent-style'));
+ wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/js/boostrap.js', array('parent-style'));
 	
 }
 
@@ -204,6 +206,15 @@ function my_acf_init() {
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'information',
 			'keywords'			=> array( 'information' ),
+		));
+        // register a tabs-block
+		acf_register_block(array(
+			'name'				=> 'tabs-block',
+			'title'				=> __('tabs-block'),
+			'description'		=> __('tabs-block'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'contact',
+			'keywords'			=> array( 'contact' ),
 		));
 	}
 }
