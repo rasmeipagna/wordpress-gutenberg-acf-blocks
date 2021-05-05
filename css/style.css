@@ -250,6 +250,25 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     margin-left:100px;
 }
 /*PAGE EQUIPE*/
+/*BLOC ACF/GUTENBERG */
+.bloc-contact.spe {
+    background-color: #aed136;
+    padding: 30px;
+    color: #002838;
+    margin-bottom:20px;
+}
+.bloc-contact.spe h4 {
+    margin:0;
+    color: #002838;
+}
+.bloc-contact.spe p {
+    margin:0;
+    width:100%;
+}
+.bloc-contact.spe a {
+    color: #002838;
+    text-decoration: none;
+}
 /*BLOC GUTENBERG à dupliquer*/
 .wp-block-media-text {
     direction: ltr;
@@ -350,11 +369,12 @@ figure.wp-block-image.is-style-default p{
     font-size: 16px;
     font-weight: 200;
 
-} */
+} 
 .wp-block-column p.background-color-blue a, .wp-block-column p.background-color-green a{
     color: #fff;
     text-decoration: none;
-}
+}*/
+
 /*BLOC ACF/GUTENBERG HUB-BLUE*/
 h3.hub-blue-title{
     color:#00b1eb;
