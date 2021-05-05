@@ -16,11 +16,11 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
 <div id="<?php echo $id; ?>" class="team-block <?php echo $align_class; ?>">
-   <div class="col-sm-12 bloc-contact spe">
-       <div class="col-sm-2">
+   <div class="col-xs-12 col-sm-12 bloc-contact spe">
+       <div class="col-sm-3">
        <div class="team-block-img"><img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" /></div>
        </div>
-       <div class="col-sm-10">
+       <div class="col-xs-12 col-sm-9 closer-left">
        <h4><?php the_field('prenom_nom'); ?></h4><br />
        <p><strong><?php the_field('poste'); ?></strong></p><br /><br />
        <p><?php the_field('statut'); ?></p><br />

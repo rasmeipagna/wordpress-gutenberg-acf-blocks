@@ -261,6 +261,25 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     margin:0;
     color: #002838;
 }
+.bloc-contact.spe img {
+    width: 120px;
+    margin-left: -13px;
+}
+.bloc-contact.spe .closer-left{
+    margin-left: -80px;
+}
+@media screen and (max-width:580px){
+    .bloc-contact.spe img {
+        margin: 10px 85px;
+    }
+    .bloc-contact.spe .closer-left{
+        margin-left: 0px;
+    }
+    .bloc-contact.spe {    
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+}
 .bloc-contact.spe p {
     margin:0;
     width:100%;
