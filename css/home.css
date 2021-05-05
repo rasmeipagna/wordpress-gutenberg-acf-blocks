@@ -7,10 +7,10 @@
 }
 /**************POST HEADER HOME*****************/
 .home-title {
-    background: url('../images/design/visuel-top-home.jpg') no-repeat center top;
-    height: 840px;
+    background: url('../images/design/visuel-top-header-home.png') no-repeat center top;
+    height: 690px;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
     top: 50px;
 }
 
@@ -763,5 +763,127 @@ font-family: Roboto;
     font-size:35px;
     font-weight:bold;
 }
+
+/* secteur avenir */
+#avenir {
+    margin-bottom: 63px;
+}
+
+#avenir h3 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 82px;
+    margin-top: 0;
+}
+
+.domaine {
+    border: solid 1px #aed136;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 368px;
+    padding-bottom: 30px;
+}
+
+.domaine div {
+    height: 80px;
+    background-image: url('../images/design/pictos-domaines-supbio.png');
+    background-repeat: no-repeat;
+    margin: 30px auto;
+    width: 80px;
+}
+
+.domaine.sante div {
+    background-position: -4px -12px;
+}
+
+.domaine.energie div {
+    background-position: -94px -12px;
+    width: 60px;
+}
+
+.domaine.agri div {
+    background-position: -166px -12px;
+    width: 90px;
+}
+
+.domaine.cosme div {
+    background-position: -268px -12px;
+}
+
+.domaine h4 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.domaine p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+ /* section debouches */
+ #debouches {
+    background-image: url('../images/design/bg-section-debouches.png');
+    background-repeat: no-repeat;
+}
+#debouches h2 {
+    color: #aed136;
+    margin-top: 50px;
+}
+#debouches p {
+    color: #fff;
+}
+#debouches .simple-button {
+    margin: 30px auto 30px;
+    display: block;
+    width: 220px;
+    background-color: transparent;
+    border: 1px solid #aed136;
+    color: #aed136;
+    font-size: 18px;
+    padding: 9px 20px;
+    text-align: center;
+}
+#debouches ul li {
+    color: #fff;
+    list-style: none;
+}
+#debouches ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#debouches li a::before {
+    content: ' ';
+    display: inline-block;
+    background: url('../images/design/puce-li.png') no-repeat 0 0;
+    height: 14px;
+    width: 12px;
+    margin-right: 8px;
+    margin-top: 5px;
+    float: left;
+}
+#debouches .bloc-alumni {
+    background-color: rgba(75,93,102,0.8);
+    color: #fff;
+    padding: 50px;
+    margin-top: 54px;
+    margin-bottom: 100px;
+    margin-right: -20px;
+}
+#debouches .bloc-alumni h3 {
+    color: #aed136;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#debouches .bloc-alumni p {
+    margin-left: 0;
+    margin-top: -27px;
+}
+
 
 

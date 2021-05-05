@@ -86,6 +86,7 @@ get_header();
 		</div>
 
     </section><!-- end home-title -->
+	<div class="clearfix"></div>
 
 <!-- section à la une -->
 	<section id="alaune" class="une"> 
@@ -161,6 +162,7 @@ get_header();
 	</div>
 	</div>
 </section>	<!-- end section à la une -->
+<div class="clearfix"></div>
 
 <!-- section presentation -->
 	<section id="presentation">
@@ -239,52 +241,170 @@ get_header();
 					</div>
 				</div>
 			</div>
-</section><!-- end section presentation -->
+</section>
+<!-- end section presentation -->
 <div class="clearfix"></div>
 
+<!-- section chiffres -->
 <section id="chiffres">
     <div class="container">
         <div class="col-sm-12">
             <center>
                 <div class="col-sm-2">
-                    <img src="https://www.supbiotech.fr/Content/images/design/diplome.png" style="margin-bottom: 36px;" />
+                    <img src="https://www.supbiotech.fr/Content/images/design/diplome.png" style="margin-bottom: 46px;" />
                     <p><span>diplôme</span><br /> d'ingénieurs CTI</p>
 
                 </div>
             </center>
             <center>
                 <div class="col-sm-2">
-                    <img src="https://www.supbiotech.fr/Content/images/design/campus.png" style="margin-bottom: 45px;"/>
+                    <img src="https://www.supbiotech.fr/Content/images/design/campus.png" style="margin-bottom: 55px;"/>
                     <p><span>2</span><br /> campus Paris et Lyon</p>
                 </div>
             </center>
             <center>
                 <div class="col-sm-2">
-                    <img src="https://www.supbiotech.fr/Content/images/design/travel.png" style="margin-bottom: 45px; padding-top: 20px;" />
+                    <img src="https://www.supbiotech.fr/Content/images/design/travel.png" style="margin-bottom: 55px; padding-top: 20px;" />
                     <p><span>1</span><br /> semestre à l'étranger</p>
                 </div>
             </center>
             <center>
                 <div class="col-sm-2">
-                    <img src="https://www.supbiotech.fr/Content/images/design/calendar.png" style="margin-bottom: 33px;" />
+                    <img src="https://www.supbiotech.fr/Content/images/design/calendar.png" style="margin-bottom: 43px;" />
                     <p><span>12</span><br /> mois de stages sur 3 ans</p>
                 </div>
             </center>
             <center>
                 <div class="col-sm-2">
-                    <img src="https://www.supbiotech.fr/Content/images/design/labs.png" style="margin-bottom: 1px;" />
+                    <img src="https://www.supbiotech.fr/Content/images/design/labs.png" style="margin-bottom: 11px;" />
                     <p><span>4</span> <br />laboratoires de recherche</p>
                 </div>
             </center>
             <center>
                 <div class="col-sm-2">
-                    <img src="https://www.supbiotech.fr/Content/images/design/hired.png" style=" margin-bottom: 31px; margin-top: 20px;" />
+                    <img src="https://www.supbiotech.fr/Content/images/design/hired.png" style=" margin-bottom: 41px; margin-top: 20px;" />
                     <p><span>+90%</span><br /> d'embauche en moins de 6 mois après la sortie</p>
                 </div>
             </center>
         </div>
     </div>
 </section>
+<!-- end section chiffres -->
+
+<!-- section les avenir -->
+<section id="avenir">
+    <div class="container">
+        <h2>
+            Un secteur d’avenir qui <span>transforme le monde</span>
+        </h2>
+        <h3 class="_bef">Les domaines</h3>
+
+        <div class="col-sm-3">
+            <a href="">
+                <div class="domaine sante">
+                    <div></div>
+                    <h4>Santé et bien-être :</h4>
+                    <p>
+                        Santé et bien-être :
+                        développement de biomédicaments,
+                        de thérapies innovantes, géniques
+                        ou cellulaires, organes artificiels…
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="">
+                <div class="domaine energie">
+                    <div></div>
+                    <h4>
+                        Environnement, énergie
+                        et transition écologique :
+                    </h4>
+                    <p>production d’énergie, recyclage des matériaux conçus à partir d’agro-ressources pour les substituer aux produits d’origine pétrolière.</p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="">
+                <div class="domaine agri">
+                    <div></div>
+                    <h4>
+                        Agroalimentaire,
+                        agriculture et développement durable :
+                    </h4>
+                    <p>
+                        alicaments, amélioration des
+                        rendements de culture, …
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-3">
+            <a href="">
+                <div class="domaine cosme">
+                    <div></div>
+                    <h4>Cosmétique :</h4>
+                    <p>
+                        lutte contre le vieillissement, peaux
+                        artificielles, produits plus naturels, …
+                    </p>
+                </div>
+            </a>
+        </div>
+		</div>
+		</section>
+		<!-- end section avenir -->
+        <div class="clearfix"></div>
+
+<!-- section debouches -->
+		<section id="debouches">
+		
+			<div class="container">
+			<h2 class=""><span>Les débouchés</span></h2>
+			<p>Expert·e·s en biotechnologies qui occupent des postes de cadres scientifiques en entreprise : </p>
+			
+			<div class="col-md-6">
+				<ul>
+					<li><a href="/Content/docs/ingenieur-recherche.pdf" target="_blank">Ingénieur de recherche</a></li>
+					<li><a href="/Content/docs/charge-affaires-reglementaires.pdf" target="_blank">Chargé des affaires réglementaires</a></li>
+					<li><a href="/Content/docs/chef-projet.pdf" target="_blank">Chef de projet</a></li>
+					<li><a href="/Content/docs/ingenieur-procede.pdf" target="_blank">Ingénieur procédés</a></li>
+					
+				</ul>
+			</div>
+
+			<div class="col-md-6">
+				<ul>					
+					<li><a href="/Content/docs/ingenieur-etudes.pdf" target="_blank">Ingénieur d'études</a></li>
+					<li><a href="/Content/docs/consultante-communication.pdf" target="_blank">Consultants</a></li>
+					<li><a href="/Content/docs/coordinateur-marketing.pdf" target="_blank">Coordinateur Marketing</a></li>
+					<li><a href="/Content/docs/ingenieur-technico-commercial.pdf" target="_blank">Ingénieur Technico commercial</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+
+			<div><a href="" class=" simple-button blue">Tous les métiers</a></div>
+
+			<div class="clearfix"></div>
+
+
+				<div class="col-md-4 bloc-alumni">
+				<h3 class="blanc">Les Alumni à la une</h3>
+					<p>> Découvrez les témoignages de nos Alumni</p>
+					<div><a href="" class=" simple-button blue">Tous les témoignages</a></div>
+				</div>
+				<div class="col-md-8 ">
+					
+					<div class="video-container">
+						<iframe width="550" height="300" src="https://www.youtube.com/embed/Kiq_5hN0QW4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+<!-- end section debouchés -->
 
 
 

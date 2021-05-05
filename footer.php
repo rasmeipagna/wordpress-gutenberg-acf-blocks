@@ -41,7 +41,7 @@
 
                     <ul>
                         <li><img src="https://www.supbiotech.fr/Content/images/design/cti-logo.jpg" alt="logo CTI" /></li>
-                        <li class="iar"><img src="https://www.supbiotech.fr/Content/images/design/logo-iar.png" alt="logo IAR" /></li>
+                        <li class="iar"><img src="https://www.supbiotech.fr/Content/images/design/logo-iar.png" width="100" alt="logo IAR" /></li>
                     </ul>
                     
 

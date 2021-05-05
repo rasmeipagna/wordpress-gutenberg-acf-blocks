@@ -16,7 +16,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
    <div class="block-green-featured">
 
     <!-- On appelle la zone de texte comme on l'a appelé dans ACF	 -->
-        <div class="block-green-featured-content-text"><p><?php the_field('zone_de_texte'); ?></p>
+        <div class="block-green-featured-content-text"><?php the_field('zone_de_texte'); ?>
         </div>
  
         
