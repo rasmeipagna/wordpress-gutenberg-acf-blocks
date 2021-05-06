@@ -59,6 +59,32 @@
 						<li><a href="https://www.supbiotech.fr/politique-confidentialite">Politique de confidentialité</a></li>
 						<li><a href="https://www.supbiotech.fr/cgv-conditions-generales-vente">C.G.V</a></li>
                         <li><a href="https://www.supbiotech.fr/ecole-ingenieurs-biotechnologies/agenda">Agenda</a></li>
+                        <?php
+								/* wp_nav_menu ( array (
+								 'theme_location' => 'footer-menu' ,
+								'walker' => new SupBio_Footer_Walker(),
+								'container' => '',
+								 'menu_class' => 'menu', 
+								 ) );
+                                 */
+                            ?>
+
+
+<?php
+/*
+wp_nav_menu( array( 
+    'theme_location' => 'menu-1',
+    'menu_id'        => 'primary-menu',
+    'container' => 'div',
+    'container_class' => '_cbp-hrsub',
+    //'container_id' => 'eeee',
+    'menu_class' => 'menu',
+    //'menu_id' => 'zzzz',
+    //'items_wrap'      => '<ul class="main">%3$s</ul>',
+    'walker'          => new My_Walker_Nav_Menu()
+) );
+*/
+?>
                     </ul>
 					<div class="logo-reseaux">
                         <a class="facebook" href="https://www.facebook.com/supbiotech"></a>
@@ -147,7 +173,7 @@
     </div>
 </div><!-- #page -->
 	<?php wp_footer(); ?>
-    <!--<script src="/Scripts/main.js"></script>-->
+    <script src="/js/main.js"></script>
 	<script type="text/javascript">
         $(document).ready(function () {
             $(".fancybox").fancybox();

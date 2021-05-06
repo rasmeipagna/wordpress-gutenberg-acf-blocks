@@ -54,6 +54,8 @@ get_header();
 				</p>
 				<p class="displayTypeJPOLyon"></p>
 
+				<ul><?php echo do_shortcode('[eventdb id="1189"]'); ?></ul>
+
 				<!-- <p class="displayJPOHome"></p>
 					<p class="displayBiotechDayHome"></p>
 

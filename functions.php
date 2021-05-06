@@ -163,6 +163,7 @@ register_block_style(
 
 // ADD BLOCK ACF PERSO
 add_action('acf/init', 'my_acf_init');
+//Create function to init acf
 function my_acf_init() {
 	
 	// check function exists
@@ -228,9 +229,11 @@ function my_acf_init() {
 		));
 	}
 }
+
+//Create function to get bloc acf
 function my_acf_block_render_callback( $block ) {
 	
-	// convert name ("acf/hub-blue") into path friendly slug ("hub-blue")
+	// convert le name ("acf/hub-blue") into path friendly slug ("hub-blue")
 	$slug = str_replace('acf/', '', $block['name']);
 	
 	// include a template part from within the "template-parts/block" folder

@@ -16,9 +16,10 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
 <div class="clearfix"></div>
+
 <div id="<?php echo $id; ?>" class="tabs-block <?php echo $align_class; ?> ">
-<div class="col-sm-12">
-<div id="myTabs">
+    <div class="col-sm-12">
+        <div id="myTabs">
 
             <ul class="nav nav-pills">
                 <li class="active">
@@ -32,30 +33,22 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
             <div class="tab-content clearfix">
 
                 <div class="tab-pane active" id="paris">
-                    <br />
-                    
-                    <br />
                     <div class="col-sm-12">
                         <p><?php the_field('zone_de_texte1'); ?></p>
                     </div>
-
-                    <div class="clearfix"></div>
-                   
-
-
+                    <div class="clearfix"></div>               
                 </div>
-                <div class="tab-pane" id="lyon">
-                    
+
+                <div class="tab-pane" id="lyon">                    
                     <div class="col-sm-12">
                         <p><?php the_field('zone_de_texte2'); ?>
                         </p>
                     </div>
-                
                     <div class="clearfix"></div>
                 </div>
 
-                </div>
+            </div>
         </div>
-        </div>
+    </div>
 </div>
 <div class="clearfix"></div>
