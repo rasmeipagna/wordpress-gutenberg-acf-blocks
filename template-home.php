@@ -46,17 +46,19 @@ get_header();
 			<div class="jphome">
 				<p class="titleBulle">Venez nous rencontrer</p>
 
-				<p class="displayEventHomeParis">
+				<!--<p class="displayEventHomeParis">
 				<span class="city fsize"> Campus : Paris</span><br />
 				<span class="title-type fsize">Biotech Day</span><br />
 				<span class="date-type fsize">le 22/05/2021</span>
 				<a  class="linkplus" href=""></a>
-				</p>
-				<p class="displayTypeJPOLyon"></p>
+				</p>-->			
 
-				<ul><?php echo do_shortcode('[eventdb id="1189"]'); ?></ul>
+				
+				<div class="displayBiotechDayHome"><?php echo do_shortcode('[eventdb id="1206"]'); ?></div>
+				<!-- <div class="displayEventHomeParis"></div>
+				<div class="displayTypeJPOLyon"></div>
 
-				<!-- <p class="displayJPOHome"></p>
+				<p class="displayJPOHome"></p>
 					<p class="displayBiotechDayHome"></p>
 
 				<p class="displayTypeJPOParis"></p>
