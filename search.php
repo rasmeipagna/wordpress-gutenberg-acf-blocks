@@ -42,7 +42,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-<div class="append-articles"></div>
+	<div class="append-articles"></div>
 		<div class="clearfix"></div>
 		<div class="posButtonLoad">
 			<a href="#" class="afficher-plus">Afficher plus d'articles</a>

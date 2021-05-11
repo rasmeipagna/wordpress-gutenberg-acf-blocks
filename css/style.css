@@ -618,6 +618,7 @@ footer .apropos h3, footer .info-pratique h3, footer .infos h3 {
 footer .apropos p{
     color:#fff;
     font-weight: 300;
+    margin-top: 30px;
 }
 footer .logo-reseaux a {
     background-image: url(../images/design/sprite.png);
@@ -637,7 +638,7 @@ footer .logo-cti ul {
 }
 
 footer .logo-cti li {
-    padding: 80px 10px 10px 10px;
+    padding: 70px 10px 10px 10px;
 }
 footer .logo-cti li.iar {
     padding: 20px 10px 10px 10px;

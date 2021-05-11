@@ -27,15 +27,33 @@
 		</div> .site-info -->
 		<div class="col-lg-12 propos">
             <div class="container">
-                <div class="col-md-5 apropos rel">
+                <!--<div class="col-md-5 apropos rel">-->
 
-                    <h3>À propos</h3>
-                     <p>Sup'Biotech est une <a href="/ecole-ingenieurs-biotechnologies/presentation">école d'ingénieur spécialisée en biotechnologies à Paris et à Lyon,</a> proche du monde de la <a href="/recherche-biotechnologie/presentation-laboratoires">Recherche</a> comme du monde de l'<a href="/entreprise-ecole-ingenieurs/formation-insertion-professionnelle">Entreprise</a>, qui propose une <a href="/formation-ingenieur-biologie/cursus/presentation">formation innovante en 5 ans après le bac</a>. Ce cursus permet aux étudiants d'accéder rapidement à des postes à responsabilités, en France comme à l'<a href="/international-ecole-biologie/etudes-international">International</a>, dans les secteurs très porteurs de la <a href="/debouches-metier-biologie/secteurs/carriere-sante">santé et la pharmacie</a>, de <a href="/debouches-metier-biologie/secteurs/carriere-agroalimentaire">l’innovation agroalimentaire</a>, de la <a href="/debouches-metier-biologie/secteurs/carriere-cosmetique">cosmétique</a>, de la <a href="/recherche-biotechnologie/laboratoire-birl-bioinformatique">bio-informatique</a> ou encore de l'<a href="/debouches-metier-biologie/secteurs/carriere-environnement">environnement</a>. Les études, combinant fondamentaux académiques, <a href="/formation-ingenieur-biologie/projets-etudiants">projets étudiants</a> et <a href="/entreprise-ecole-ingenieurs/recherche-stagiaire">stages en entreprise</a>, sont découpées en deux parties selon la norme européenne : le cycle <a href="/formation-ingenieur-biologie/cursus/bachelor1">Bachelor of Biotechnology (3 ans)</a> et le cycle <a href="/formation-ingenieur-biologie/cursus/master1">Expertise</a> (2 ans). La formation des ingénieurs en biotechnologies de Sup'Biotech est <a href="/ecole-ingenieurs-biotechnologies/partenaires-academiques-label">labellisée par Medicen Paris Région et Industries and Agro-Ressources (I.A.R.)</a>. <br /> Sup’Biotech propose également une <a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage">filière apprentissage</a> à partir de bac+3, ainsi qu’une formation Bachelor en Biotechnologies, accessible après le bac. Sup’Biotech est un établissement d’enseignement supérieur privé habilité à délivrer le <a href="/debouches-metier-biologie/remise-diplomes">titre d’ingénieur</a> et reconnu par l’État (arrêté du 15/12/14 et B.O du 08/01/15).</p>
+                <?php  
+                // create id attribute for specific styling
+                    //$id = 'a_propos_' . $block['id'];
+
+                    // create align class ("alignwide") from block setting ("wide")
+                   // $align_class = $block['align'] ? 'align' . $block['align'] : '';
+                
+                ?>
+
+<!-- appel le widget Footer  "à propos" dans le Footer -->
+                    <?php
+                        if(is_active_sidebar('footer-1')) : ?>                            
+                                
+                                    <?php dynamic_sidebar('footer-1'); ?>
+                                                            
+                        <?php endif; 
+                        ?>
 
 
+                    <!--<h3>--><?php echo the_field('titre_a_propos'); ?> <!--A propos--><!--</h3>-->
+                    <!--<p>--><?php //the_field('texte_a_propos'); ?><!--Sup'Biotech est une <a href="/ecole-ingenieurs-biotechnologies/presentation">école d'ingénieur spécialisée en biotechnologies à Paris et à Lyon,</a> proche du monde de la <a href="/recherche-biotechnologie/presentation-laboratoires">Recherche</a> comme du monde de l'<a href="/entreprise-ecole-ingenieurs/formation-insertion-professionnelle">Entreprise</a>, qui propose une <a href="/formation-ingenieur-biologie/cursus/presentation">formation innovante en 5 ans après le bac</a>. Ce cursus permet aux étudiants d'accéder rapidement à des postes à responsabilités, en France comme à l'<a href="/international-ecole-biologie/etudes-international">International</a>, dans les secteurs très porteurs de la <a href="/debouches-metier-biologie/secteurs/carriere-sante">santé et la pharmacie</a>, de <a href="/debouches-metier-biologie/secteurs/carriere-agroalimentaire">l’innovation agroalimentaire</a>, de la <a href="/debouches-metier-biologie/secteurs/carriere-cosmetique">cosmétique</a>, de la <a href="/recherche-biotechnologie/laboratoire-birl-bioinformatique">bio-informatique</a> ou encore de l'<a href="/debouches-metier-biologie/secteurs/carriere-environnement">environnement</a>. Les études, combinant fondamentaux académiques, <a href="/formation-ingenieur-biologie/projets-etudiants">projets étudiants</a> et <a href="/entreprise-ecole-ingenieurs/recherche-stagiaire">stages en entreprise</a>, sont découpées en deux parties selon la norme européenne : le cycle <a href="/formation-ingenieur-biologie/cursus/bachelor1">Bachelor of Biotechnology (3 ans)</a> et le cycle <a href="/formation-ingenieur-biologie/cursus/master1">Expertise</a> (2 ans). La formation des ingénieurs en biotechnologies de Sup'Biotech est <a href="/ecole-ingenieurs-biotechnologies/partenaires-academiques-label">labellisée par Medicen Paris Région et Industries and Agro-Ressources (I.A.R.)</a>. <br /> Sup’Biotech propose également une <a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage">filière apprentissage</a> à partir de bac+3, ainsi qu’une formation Bachelor en Biotechnologies, accessible après le bac. Sup’Biotech est un établissement d’enseignement supérieur privé habilité à délivrer le <a href="/debouches-metier-biologie/remise-diplomes">titre d’ingénieur</a> et reconnu par l’État (arrêté du 15/12/14 et B.O du 08/01/15).</p>-->
+               
+                        
 
-
-                </div>
+                <!--</div>-->
 				
 				<div class="col-md-3 logo-cti">
 
@@ -50,7 +68,7 @@
                 <div class="col-md-4 info-pratique">
                     <h3>Infos pratiques</h3>
                     <ul>
-                        <li><a href="https://www.supbiotech.fr/contact">Contact</a></li>
+                        <!--<li><a href="https://www.supbiotech.fr/contact">Contact</a></li>
                         <li><a href="https://newsroom.ionis-group.com/sup-biotech/" target="_blank">Newsroom</a></li>
                         <li><a href="https://newsroom.ionis-group.com/revue-de-presse/revue-de-presse-ecole-sup-biotech/" target="_blank">Revue de Presse</a></li>
                         <li><a href="https://www.supbiotech.fr/plan-site">Plan du site</a></li>
@@ -58,15 +76,15 @@
                         <li><a href="#" onclick="window.Sddan.cmp.displayUI(); return false;">Politique de cookies</a></li>
 						<li><a href="https://www.supbiotech.fr/politique-confidentialite">Politique de confidentialité</a></li>
 						<li><a href="https://www.supbiotech.fr/cgv-conditions-generales-vente">C.G.V</a></li>
-                        <li><a href="https://www.supbiotech.fr/ecole-ingenieurs-biotechnologies/agenda">Agenda</a></li>
+                        <li><a href="https://www.supbiotech.fr/ecole-ingenieurs-biotechnologies/agenda">Agenda</a></li>-->
                         <?php
-								/* wp_nav_menu ( array (
-								 'theme_location' => 'footer-menu' ,
-								'walker' => new SupBio_Footer_Walker(),
+								 wp_nav_menu ( array (
+								 'theme_location' => 'menu-footer' ,
+								//'walker' => new SupBio_Footer_Walker(),
 								'container' => '',
 								 'menu_class' => 'menu', 
 								 ) );
-                                 */
+                                 
                             ?>
 
 

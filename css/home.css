@@ -135,7 +135,10 @@
 }
 
 .jphome .titleBulle {
-    font-size: 22px;
+    font-size: 20px;
+    color: #002838;
+    text-align: left;
+    margin: 0 15px;
 }
 
 .jphome .registration {
@@ -211,7 +214,30 @@
         background-position: -393px -748px;
         padding-top: 135px;
         margin-right: -4px;
-    }    
+    } 
+    
+/*** JPO HOME HEADER ***/
+.event {
+    margin: 0 15px;
+}
+.event .campus {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    color: #fff;
+    text-align: left;
+}
+.event .campus span {
+    text-transform: uppersize;
+}   
+.event .label {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    display: block;
+    padding: 0.1em 0;
+}
 
 /************ ALAUNE SLIDER LODER  *****/
 #alaune { background-color: #EFEFEF;}

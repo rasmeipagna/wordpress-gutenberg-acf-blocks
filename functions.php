@@ -118,6 +118,12 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
     }
 }
 
+// This theme uses wp_nav_menu() in one location.
+register_nav_menus( array(
+    'menu-footer' => esc_html__( 'Footer', 'supbiotech-blog' ),
+) );
+
+
 /*LOAD CSS TO STYLE THE GUTENBERG BLOCK EDITOR LIKE THE FRONT END */
 // add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
 // function enqueue_parent_styles() {
@@ -227,7 +233,33 @@ function my_acf_init() {
 			'category'			=> 'contact',
 			'keywords'			=> array( 'contact' ),
 		));
+
+        
 	}
+}
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Theme General Settings',
+		'menu_title'	=> 'Theme Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Header Settings',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Theme Footer Settings',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
 }
 
 //Create function to get bloc acf
@@ -241,4 +273,18 @@ function my_acf_block_render_callback( $block ) {
 		include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
 	}
 }
+
+function supbiotech_footer_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer', 'supbiotech-blog' ),
+		'id'            => 'footer-1',
+		'description'   => esc_html__( 'A propos.', 'supbiotech-blog' ),
+		'before_widget' => '<div class="col-md-5 apropos">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+
+}
+add_action( 'widgets_init', 'supbiotech_footer_widgets_init' );
 
