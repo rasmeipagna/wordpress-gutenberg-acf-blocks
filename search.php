@@ -9,18 +9,19 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area col-sm-8">
+<section class="container page">
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
 		<?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<div class="page-header">
 				<h1 class="page-title"><?php
 					/* translators: %s: search query. */
 					printf( esc_html__( 'Résultats de la recherche: %s', 'supbiotech-blog' ), '<span>' . get_search_query() . '</span>' );
 				?></h1>
-			</header>
+			</div>
 
 			<?php
 			/* Start the Loop */
@@ -31,7 +32,7 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content-index', 'search' );
+				get_template_part( 'template-parts/content', 'search' );
 
 			endwhile;
 
@@ -48,7 +49,7 @@ get_header(); ?>
 			<a href="#" class="afficher-plus">Afficher plus d'articles</a>
 		</div>
 		</main><!-- #main -->
-	</section><!-- #primary -->
+	</div><!-- #primary -->
 
 <?php
 get_footer();

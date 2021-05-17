@@ -14,7 +14,7 @@
 
 	<div class="entry-content">
 	<figure class="blog-hp">
-		<a href="<?php echo  get_relative_permalink() ?>" rel="bookmark">
+		<a href="<?php echo  get_permalink() ?>" rel="bookmark">
 
 
 
@@ -53,7 +53,7 @@
              
           ?>
 		</a>
-		<a class="linkplus" href="<?php echo get_relative_permalink() ?>" rel="bookmark"></a>
+		<a class="linkplus" href="<?php echo get_permalink() ?>" rel="bookmark"></a>
 		 
 	</figure>
 	<div class="blog-tag">
@@ -64,7 +64,7 @@
       }*/
 			$cat = get_the_category(); $cat = $cat[0]; echo $cat->cat_name; ?>
 		</div>
-	<h3><a href="<?php echo  get_relative_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+	<h3><a href="<?php echo  get_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 	<?php the_excerpt(); ?>
 
 	</div><!-- .entry-content -->

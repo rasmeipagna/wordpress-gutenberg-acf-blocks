@@ -101,8 +101,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="cbp-hrmenu search-bloc">
                 <ul class="main2">
                 <li class="search">
+                <!--<form class="form-inline my-2 my-lg-0" action="<?= esc_url(home_url('/')) ?>">
+                    <input class="form-control mr-sm-2" name="s" type="search" placeholder="Recherche" aria-label="Search" value="<?= get_search_query() ?>">
+                    <button class="btn btn-outline my-2 my-sm-0" type="submit">Rechercher</button>
+                </form>-->
+
                     <form method="get" action="/">
-                        <input id="recherche" type="text" placeholder="Rechercher" name="search">
+                        <input id="recherche" type="text" placeholder="Rechercher" name="s">
                         <input class="bouton-recherche" type="submit" value="Ok">
                     </form>
                 </li>

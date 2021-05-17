@@ -123,25 +123,31 @@ wp_nav_menu( array(
 
                         <div class="bloc-left">
                             <div class="displayParisFooter">
+                            <?php echo do_shortcode('[eventdb id="1373"]'); ?>
+                            
+                                <!--<br />
+                                <p><span>Inscription obligatoire</span></p>
                                 <h4>Campus de Paris</h4>
                                 <p>Biotech day</p>
                                 <div class="date">Le 22/05/2021</div>
                                 <div class="btn-plus"><a href="">S'inscrire</a></div>
                                 <br />
                                 <br />
-                                <p><span>Inscription obligatoire</span></p>
+                                <p><span>Inscription obligatoire</span></p>-->
                             </div>
                         </div>
 
                         <div class="bloc-right">
                             <div class="displayLyonFooter">
-                            <h4>Campus de Lyon</h4>
+                            <?php echo do_shortcode('[eventdb id="1374"]'); ?>
+                           
+                            <!--<h4>Campus de Lyon</h4>
                                 <p>Journée Portes Ouvertes</p>
                                 <div class="date">Le 29/05/2021</div>
                                 <div class="btn-plus"><a href="">S'inscrire</a></div>
                                 <br />
                                 <br />
-                                <p><span>Inscription obligatoire</span></p>
+                                <p><span>Inscription obligatoire</span></p>-->
                             </div>
                         </div>
 

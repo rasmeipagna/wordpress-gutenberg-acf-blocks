@@ -13,15 +13,15 @@
  */
 
 get_header(); ?>
-
+<section class="container page">
 <div id="primary" class="content-area col-sm-8">
-<div class="col-md-12">
+<!--<div class="col-md-12">
 	<ul class="ariane">
 		<li><h6><a href="https://www.supbiotech.fr/">Accueil </a></h6></li>
 		<li><h6><a href="https://www.supbiotech.fr/blogs">Actualités de l'école</a></h6></li>
 		<li><h6>Blog</h6></li>
 	</ul>
-</div>
+</div>-->
 	<div id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>

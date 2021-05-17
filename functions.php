@@ -44,8 +44,11 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
             </a>
         </div>
         <div class="jpo">
-                <p><span>Venez nous rencontrer</span></p>
-                <p class="displayParisHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 22/05/2021</span><br>Biotech Day à Paris<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/biotech-day"></a></span></p>
+		<p><span>Venez nous rencontrer</span></p>';
+		$output .= do_shortcode('[eventdb id="1372"]'); 
+		$output .='
+
+                <!--<p class="displayParisHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 22/05/2021</span><br>Biotech Day à Paris<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/biotech-day"></a></span></p>-->
                 <p class="displayLyonHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 29/05/2021</span><br>Journée Portes Ouvertes à Lyon<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/journees-portes-ouvertes-jpo"></a></span></p>
                 
         </div>
