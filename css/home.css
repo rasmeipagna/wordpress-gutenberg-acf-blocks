@@ -228,7 +228,7 @@
     text-align: left;
 }
 .event .campus span {
-    text-transform: uppersize;
+    text-transform: uppercase;
 }   
 .event .label {
     font-size: 16px;
@@ -236,7 +236,25 @@
     color: #fff;
     text-align: left;
     display: block;
-    padding: 0.1em 0;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+.event .ladate .date {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    background-color: #fff;
+    color: #00b1eb;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 12px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    height: 32px;
+}
+.event .ladate .url {
+    color: #fff;
+    padding: 0 10px;
+    border: 1px solid #fff;
 }
 
 /************ ALAUNE SLIDER LODER  *****/

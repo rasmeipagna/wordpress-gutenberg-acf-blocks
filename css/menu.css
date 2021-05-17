@@ -306,7 +306,20 @@
         font-size: 14px;
     }
 	.flagPos {
-        right: 30px;
+        right: -85%;
+    }
+    .cbp-hrmenu ul.menu > li {
+        font-size: 13px;
+        font-weight:500;
+    }
+    li.search {
+        right: -12%;
+    }
+    .cbp-hrmenu .cbp-hrsub {
+        top: 99px;
+    }
+    footer .rencontre {
+        min-height: 100px;
     }
 }
 

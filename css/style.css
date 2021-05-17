@@ -11,6 +11,20 @@ a:focus {
 }
 
 /* NEW CSS SAME VERSION MVC */
+/*VIDEO RESPONSIVE*/
+.wp-block-embed__wrapper {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.wp-block-embed__wrapper iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
 .container.page {
     max-width: 890px;
 	padding-top:0;
@@ -527,20 +541,7 @@ h3.hub-green-title{
         padding: 60px 20px;
     }
 }
-.wp-block-embed__wrapper{
-    width:100%;
-}
-.wp-block-embed__wrapper iframe{
-    min-height:500px;
-}
-@media screen and (max-width:580px){
-    .wp-block-embed__wrapper{
-        width:100%;
-    }
-    .wp-block-embed__wrapper iframe{
-        height:auto;
-    }
-}
+
 .wp-block-button__link:hover {
     /* color:white !important; */
     transition: 0.1s ease-in-out;
@@ -654,6 +655,7 @@ footer .rencontre h4 {
 }
 footer .rencontre .bloc-left, footer .rencontre .bloc-right { 
     width: 48%;
+    padding: 10px 10px 20px;
 }
 footer .rencontre .bloc-right {
     margin-right:0;
@@ -732,6 +734,13 @@ footer .vousetes a.rdvperso:hover {
     background-position: -578px -1661px;
     margin-right: 1px;
     color: #f79653;
+}
+.ecoles ul li {
+    margin: 5px 0;
+}
+.ecoles ul li a {
+    color: #002838;
+    text-decoration: none;
 }
 
 @media screen and (max-width:640px) {
