@@ -11,7 +11,7 @@
     height: 690px;
     position: relative;
     margin-bottom: 80px;
-    top: 50px;
+    top: 16px;
 }
 
 .crop-circle {
@@ -31,6 +31,34 @@
     margin-top: 40px;
     background-color: rgba(255,255,255,0.7);
     padding: 8px 10px;
+}
+.crop-circle h1::before {
+    content: ' ';
+    display: inline-block;
+    border-left: 1px solid #eee;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    height: 12px;
+    width: 350px;
+    margin-right: 8px;
+    margin-top: 5px;
+    position: absolute;
+    top: 17px;
+    left: 50px;
+}
+.crop-circle h1::after {
+    content: ' ';
+    display: inline-block;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    height: 12px;
+    width: 350px;
+    margin-right: 8px;
+    margin-top: 5px;
+    position: absolute;
+    top: 82px;
+    left: 50px;
 }
 
 .crop-circle h1 span {
@@ -119,7 +147,12 @@
     text-transform: uppercase;
     line-height: 37px;
 }
-
+.CTI-logo {
+    text-align: left;
+    position: absolute;
+    right: 5px;
+    top: 400px;;
+}
 
 /* TMP */
 
@@ -209,6 +242,10 @@
         padding-top: 115px;
         line-height: 17px;
         width: 177px;
+    }
+    .home-title .contact-clic a.rdvperso:hover {
+        background-position: -947px -1070px;
+        color: #ff974f;
     }
     .home-title .contact-clic a.entretien {
         background-position: -393px -748px;
@@ -791,21 +828,22 @@ h3.polygoneH3{
 
 /*CHIFFRES*/
 #chiffres {
-    margin: -17px 0 50px 0;
     background-color:#002838;
+    margin: -17px 0 50px 0;    
     padding: 200px 0 50px;
 }
 #chiffres p{
-font-family: Roboto;
-    color:#fff;
+    color:#fff;   
     text-align: center;
-    font-size: 22px;
-    font-weight: normal;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2em;
 }
-#chiffres p span{
-    text-transform:uppercase;
+#chiffres p span{    
     font-size:35px;
     font-weight:bold;
+    text-transform:uppercase;
 }
 
 /* secteur avenir */
@@ -858,8 +896,10 @@ font-family: Roboto;
 
 .domaine h4 {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    min-height: 70px;
 }
 
 .domaine p {
