@@ -29,17 +29,7 @@ get_header();
 		<section class="home-title">
         <div class="container rel">
             <div class="crop-circle">
-                <h1>L'école <strong>des ingénieur·e·s</strong> en biotechnologies</h1>
-                <span class="petit">
-                    <a href="https://www.cti-commission.fr/" target="_blank">
-						<img src="https://www.supbiotech.fr/Content/images/design/logo-cti.png" alt="logo Commission des Titres d'Ingénieur">
-					</a>
-                    <!--<span class="petitText">
-                        L’institut supérieur des biotechnologies<br> de Paris
-                        (Sup’Biotech) est reconnu par<br> l’état et délivre
-                        un diplôme d’ingénieur<br> habilité par la CTI
-                    </span>-->
-                </span>
+                <h1>L'école <strong>des ingénieur·e·s</strong> en biotechnologies</h1>               
             </div> 
 			
 			<!-- carré bleu header JPO -->
@@ -66,6 +56,18 @@ get_header();
 
 				<p class="displayTypeBiotechParis"></p>
 					<p class="displayTypeBiotechLyon"></p>-->
+			</div>
+			<div class="CTI-logo">
+			<span class="petit">
+                    <a href="https://www.cti-commission.fr/" target="_blank">
+						<img src="https://www.supbiotech.fr/Content/images/design/logo-cti.png" alt="logo Commission des Titres d'Ingénieur">
+					</a>
+                    <!--<span class="petitText">
+                        L’institut supérieur des biotechnologies<br> de Paris
+                        (Sup’Biotech) est reconnu par<br> l’état et délivre
+                        un diplôme d’ingénieur<br> habilité par la CTI
+                    </span>-->
+                </span>
 			</div>
 
         </div>
@@ -187,7 +189,7 @@ get_header();
 						<div class="polygone-interne">
 							<h3 class="polygoneH3">
 								<a style="color:#ffffff" href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/cycle-preparatoire">
-									Cycle
+									Cycle<br />
 									préparatoire
 								</a>                            
 							</h3>
@@ -201,7 +203,7 @@ get_header();
 							
 							<h3 class="polygoneH3">
 								<a style="color:#ffffff" href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/presentation">
-									Cycle
+									Cycle<br />
 									ingénieur
 								</a>
 							</h3>

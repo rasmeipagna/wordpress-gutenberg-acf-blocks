@@ -36,6 +36,10 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                     <div class="col-sm-12">
                         <p><?php the_field('zone_de_texte1'); ?></p>
                     </div>
+                    <div class="clearfix"></div> 
+                    <div class="col-sm-12">
+                        <p><?php the_field('image_full'); ?></p>
+                    </div>
                     <div class="clearfix"></div>               
                 </div>
 
