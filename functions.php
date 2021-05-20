@@ -233,8 +233,26 @@ function my_acf_init() {
 			'title'				=> __('tabs-block'),
 			'description'		=> __('tabs-block'),
 			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'campus', 'contact'
+			'keywords'			=> array( 'campus', 'contact' ),
+		));
+		// register a tabs-contact-block
+		acf_register_block(array(
+			'name'				=> 'tabs-contact-block',
+			'title'				=> __('tabs-contact-block'),
+			'description'		=> __('tabs-contact-block'),
+			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'contact',
 			'keywords'			=> array( 'contact' ),
+		));
+		// register a tabs-booking-block
+		acf_register_block(array(
+			'name'				=> 'tabs-booking-block',
+			'title'				=> __('tabs-booking-block'),
+			'description'		=> __('tabs-booking-block'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'booking',
+			'keywords'			=> array( 'booking' ),
 		));
 
         
@@ -291,3 +309,12 @@ function supbiotech_footer_widgets_init() {
 }
 add_action( 'widgets_init', 'supbiotech_footer_widgets_init' );
 
+/**
+ * Set Google Maps API key
+*/
+// function acf_google_maps_api_key( $value ) {
+// 	return 'GOOGLE_MAPS_API_KEY';
+//   }
+//   add_filter( 'acf/settings/google_api_key', 'acf_google_maps_api_key' );
+
+ 
