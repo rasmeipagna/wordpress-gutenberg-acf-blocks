@@ -1,8 +1,8 @@
 <?php
 /**
- * Block Name: Tabs Block
+ * Block Name: Tabs Contact Block
  *
- * This is the template that displays the tabs block.
+ * This is the template that displays the tabs contact block.
  */
 
 // get image field (array)
@@ -11,7 +11,7 @@ $image_full1 = get_field('image_full1');
 $image_full2 = get_field('image_full2');
 
 // create id attribute for specific styling
-$id = 'tabs-block-' . $block['id'];
+$id = 'tabs-contact-block-' . $block['id'];
 
 // create align class ("alignwide") from block setting ("wide")
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
@@ -19,7 +19,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 ?>
 <div class="clearfix"></div>
 
-<div id="<?php echo $id; ?>" class="tabs-block <?php echo $align_class; ?> ">
+<div id="<?php echo $id; ?>" class="tabs-contact-block <?php echo $align_class; ?> ">
     <div class="col-sm-12">
         <div id="myTabs">
 
@@ -35,34 +35,49 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
             <div class="tab-content clearfix">
 
                 <div class="tab-pane active" id="paris">
-                    <div class="col-sm-6">
-                        <?php the_field('image_mid_width'); ?>
+                    <div class="col-sm-12">
+                        <?php the_field('map_ville1'); ?>
                     </div>                
-                    <div class="col-sm-6">
-                        <p><?php the_field('zone_de_texte1'); ?></p>
-                    </div>
+                   
                     <div class="clearfix"></div> 
-                    <div class="col-md-6 justify-content-center">
-                        
-                        <img class="center" src="<?php echo $image_full1['url']; ?>" alt="<?php echo $image_full1['alt']; ?>" />
-                        
+                    <div class="col-md-4">
+                        <?php the_field('metro1'); ?>    
+                    </div>
+                    <div class="col-md-4">
+                        <?php the_field('bus1'); ?>
+
+                    </div>
+                    <div class="col-md-4">
+                        <?php the_field('voiture1'); ?>
+    
                     </div>
                     <div class="clearfix"></div>               
                 </div>
 
+
+
+
+
+                
+
                 <div class="tab-pane" id="lyon">                    
-                    <div class="col-sm-12">
-                        <p><?php the_field('zone_de_texte2'); ?>
-                        </p>
-                    </div>
-                    
-                    <div class="col-md-12 justify-content-center">
-                        <img src="<?php echo $image_full2['url']; ?>" alt="<?php echo $image_full2['alt']; ?>" />
-                    </div>
+                <div class="col-sm-12">
+                        <?php the_field('map_ville1'); ?>
+                    </div>                
                    
-                    
+                    <div class="clearfix"></div> 
+                    <div class="col-md-4">
+                        <?php the_field('metro1'); ?>    
                     </div>
-                    <div class="clearfix"></div>
+                    <div class="col-md-4">
+                        <?php the_field('bus1'); ?>
+
+                    </div>
+                    <div class="col-md-4">
+                        <?php the_field('voiture1'); ?>
+    
+                    </div>
+                    <div class="clearfix"></div>  
                 </div>
 
             </div>
