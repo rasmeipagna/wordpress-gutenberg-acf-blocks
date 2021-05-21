@@ -105,11 +105,11 @@ wp_nav_menu( array(
 ?>
                     </ul>
 					<div class="logo-reseaux">
-                        <a class="facebook" href="https://www.facebook.com/supbiotech"></a>
-                        <a class="twitter" href="https://twitter.com/supbiotech"></a>
-                        <a class="youtube" href="https://www.youtube.com/user/supbiotech"></a>
-                        <a class="insta" href="https://www.instagram.com/supbiotech/"></a>
-                        <a class="linkedin" href="https://www.linkedin.com/edu/sup'biotech-%C3%A9cole-de-biotechnologies-43565"></a>
+                        <a class="facebook" href="https://www.facebook.com/supbiotech" target="_blank"></a>
+                        <a class="twitter" href="https://twitter.com/supbiotech" target="_blank"></a>
+                        <a class="youtube" href="https://www.youtube.com/user/supbiotech" target="_blank"></a>
+                        <a class="insta" href="https://www.instagram.com/supbiotech/" target="_blank"></a>
+                        <a class="linkedin" href="https://www.linkedin.com/edu/sup'biotech-%C3%A9cole-de-biotechnologies-43565" target="_blank"></a>
                     </div>
                 </div>
             </div>
@@ -156,16 +156,16 @@ wp_nav_menu( array(
 
                 <div class="col-md-6 vousetes">
                     <div class="inner">                   
-                        <a class="documentation" href="https://www.supbiotech.fr/admission-ecole-ingenieur/documentation">
+                        <a class="documentation" href="/admissions-ecole-ingenieur/documentation/">
                             Documentation
                         </a>
-                        <a class="candidature" href="https://www.supbiotech.fr/admission-ecole-ingenieur/candidature">
+                        <a class="candidature" href="admission-ecole-ingenieur/candidature">
                             Candidature
                         </a>
-                        <a class="agenda" href="https://www.supbiotech.fr/admission-ecole-ingenieur/candidature">
+                        <a class="agenda" href="/agenda">
                             Agenda
                         </a>
-                        <a class="rdvperso" href="https://www.supbiotech.fr/contact">
+                        <a class="rdvperso" href="/admissions-ecole-ingenieur/rdv-personnalises">
                             RDV<br />personnalisé
                         </a>
                     </div>

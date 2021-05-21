@@ -233,8 +233,8 @@ function my_acf_init() {
 			'title'				=> __('tabs-block'),
 			'description'		=> __('tabs-block'),
 			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'campus', 'contact'
-			'keywords'			=> array( 'campus', 'contact' ),
+			'category'			=> 'campus',
+			'keywords'			=> array( 'campus'),
 		));
 		// register a tabs-contact-block
 		acf_register_block(array(
@@ -254,6 +254,7 @@ function my_acf_init() {
 			'category'			=> 'booking',
 			'keywords'			=> array( 'booking' ),
 		));
+		
 
         
 	}
@@ -280,6 +281,7 @@ if( function_exists('acf_add_options_page') ) {
 		'menu_title'	=> 'Footer',
 		'parent_slug'	=> 'theme-general-settings',
 	));
+	
 	
 }
 
@@ -308,6 +310,36 @@ function supbiotech_footer_widgets_init() {
 
 }
 add_action( 'widgets_init', 'supbiotech_footer_widgets_init' );
+
+/**
+ * Field Structure:
+ *
+ * - parent_repeater (Repeater)
+ *   - parent_title (Text)
+ *   - child_repeater (Repeater)
+ *     - child_title (Text)
+ */
+if( have_rows('parent_repeater') ):
+    while( have_rows('parent_repeater') ) : the_row();
+
+        // Get parent value.
+        $parent_title = get_sub_field('parent_title');
+
+        // Loop over sub repeater rows.
+        if( have_rows('child_repeater') ):
+            while( have_rows('child_repeater') ) : the_row();
+
+                // Get sub value.
+                $child_title = get_sub_field('child_title');
+
+            endwhile;
+        endif;
+    endwhile;
+endif;
+
+
+
+
 
 /**
  * Set Google Maps API key

@@ -412,9 +412,232 @@ get_header();
 		</section>
 <!-- end section debouchés -->
 
+<section id="actus" class="actus">
+    <div class="container">
+        <h2>Actualités de <span>l'école</span></h2>
+        <div class="_slider-actu">
+			<row>
+				<div class="col-md-7 main-actu">
+					<figure>
+						<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/05/double-diplome-hepl-haute-ecole-liege-supbiotech-international-belgique-biotechnologies-home.jpg" alt="" />
+					</figure>
+				</div>
+			
+				<div class="col-md-5 main-resume">
+						<h4><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</strong></h4>
+						<p class="detail">
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
+						</p>
+						<!--<span class="linkplus"></span>-->
+					</div>
+				</div>
+				<div class="clearboth"></div>
+			</row>	
 
+			<row>           
+				<div class="col-md-4 autre-actu">
+					<a href="#" class="actualite rel">
+						
+							<figure>
+								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/05/mathematiques-biotechnologies-concours-advance-supbiotech-recherche-etudes-pedagogie-ouerdia-arkoun-2021-home.jpg" alt="" />
+							</figure>                   
+						
+						<div class="_resume">
+							<h4>But I must explain to you how all this mistaken idea</h4>
+							<p class="detail">
+							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
+							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+							</p>
+							<!--<span class="linkplus"></span>-->
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 autre-actu">
+					<a href="#" class="actualite rel">                
+							<figure>
+								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/04/portrait-sophie-mothre-sbip-femmes-ingenieures-supbiotech-home.jpg" alt="" />
+							</figure>
+						
+						<div class="_resume">
+							<h4>To take a trivial example, which of us ever undertakes</h4>
+							<p class="detail">
+							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
+							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.or one who avoids a pain that produces no resultant pleasure?
+							</p>
+							<!--<span class="linkplus"></span>-->
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 autre-actu">
+					<a href="#" class="actualite rel">                
+							<figure>
+								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/03/retour-conference-epopee-vaccins-anti-covid-19-supbiotech-innovation-2021-home.jpg" alt="" />
+							</figure>
+						
+						<div class="_resume">
+							<h4>At vero eos et accusamus et iusto odio dignissimos </h4>
+							<p class="detail">
+							Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime 
+							placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+							</p>
+							<!--<span class="linkplus"></span>-->
+						</div>
+					</a>
+				</div>
+				<div class="clearboth"></div>
+			</row>
+			
+			<row>
+				<div class="col-md-4">
+					&nbsp;
+				</div>
+				<div class="col-md-4">
+					<a href="https://www.supbiotech.fr/blogs/" class="simple-button">Toutes les actualités</a>
+				</div>
+				<div class="col-md-4">
+					&nbsp;
+				</div>
+			</row>
 
+    	</div>
+    
+    </div>
+</section>
+<!-- end section actu -->
+
+<!-- section replay -->
+
+<!--section id="actu" class="actu">
+    <div class="_container">
+        <h2>Replay de <span>l'école</span></h2>
+        <div class="slider-actu">           
+            <div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/e5FV-slYOoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 1 </p>
+                        <p class="_detail">
+                            Paragraphe essai 1
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>
+                
+            <div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/DknEFZZ2uNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 2 </p>
+                        <p class="_detail">
+                            Paragraphe essai 2
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>
+               
+            <div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/x-QLIdanDNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 3 </p>
+                        <p class="_detail">
+                            Paragraphe essai 3
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>                   
+            <div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZfsR9a9-5ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 4 </p>
+                        <p class="_detail">
+                            Paragraphe essai 4
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>
+			<div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+                    !--<figure>
+                        <img src="https://www.supbiotech.fr/Content/images/design/visuel-slide-une.jpg" alt="etudiantes en laboratoire">
+                    </figure>--
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/k2DmJhIf4HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 5 </p>
+                        <p class="_detail">
+                            Paragraphe essai 5
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>
+			<div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/2FHcvbO1kYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 6 </p>
+                        <p class="_detail">
+                            Paragraphe essai 6
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>
+			<div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/4E_8R6zZkEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 7 </p>
+                        <p class="_detail">
+                            Paragraphe essai 7
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>
+			<div class="slide-actu">
+                <a href="" class="actualite rel">
+                
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BvNrnZB02V4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   
+                    <div class="resume">
+                        <p>Essai 7 </p>
+                        <p class="_detail">
+                            Paragraphe essai 7
+                        </p>
+                        <span class="linkplus"></span>
+                    </div>
+                </a>    
+            </div>
+        </div>
+        <a href="https://www.supbiotech.fr/blogs/" class="simple-button">Toutes les actualités</a>
+    </div>
+</section-->
+
+<section id="replay">
+
+</section>
 
 		
 		
@@ -430,7 +653,7 @@ get_header();
 		
 		</div><!--end home -->
 
-		<h1>Homepage en travaux ....</h1>
+		
 
 			<?php
 			/*while ( have_posts() ) : the_post();

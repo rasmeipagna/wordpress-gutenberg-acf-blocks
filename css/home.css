@@ -969,9 +969,55 @@ h3.polygoneH3{
     margin-top: -27px;
 }
 
-/* bloc actus 
-#actus {
-    
- }
-*/
+/* bloc actus */
+.main-resume {
+    background-color: #00B1EB;
+    margin-left: -15px;
+    margin-top: 16px;
+    padding: 30px 42px;
+    height: 389px;
+}
+.main-resume h4 {
+    color: #fff;
+    line-height: 1.1em;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+.main-resume p {
+    color: #fff;
+    font-size: 15px;
+}
+
+.autre-actu h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+#actus .simple-button {
+    float: none;
+    margin: 20px auto 0;
+    width: 52%;
+    display: block;
+    font-size: 17px;
+    color: #00B1EB;
+    border: 1px solid #00b1eb;
+    padding: 8px 15px;
+    font-weight: 500;
+}
+#actus .simple-button:hover {
+    border: solid 1px #002838;
+}
+
+/* block replay */
+
+.slick-slide.slide-actu {
+    width: 470px !important;
+    box-sizing: border-box;
+}
+.slide-actu iframe {
+    width: 100%;
+    height: 260px;
+}
+
+
 

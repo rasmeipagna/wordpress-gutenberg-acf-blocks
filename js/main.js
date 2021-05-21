@@ -187,22 +187,26 @@
 
     // Slider Actualités
     $('.slider-actu').slick({
-        slidesToShow: 2,
+        variableWidth: true,
+        fade: true,
+        slidesToShow: 4,
         slidesToScroll: 2,
         responsive: [
             {
                 breakpoint: 1025,
                 settings: {
                     arrows: true,
+                    variableWidth: true,
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
                     arrows: true,
-                    slidesToShow: 1,
+                    variableWidth: true,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },

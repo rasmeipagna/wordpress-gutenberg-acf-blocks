@@ -6,9 +6,8 @@
  */
 
 // get image field (array)
+$avatar = get_field('image');
 
-$image_full1 = get_field('image_full1');
-$image_full2 = get_field('image_full2');
 
 // create id attribute for specific styling
 $id = 'tabs-contact-block-' . $block['id'];
@@ -32,26 +31,36 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                 </li>
             </ul>
 
+            <h2>PLAN D'ACCÈS</h2>
+
             <div class="tab-content clearfix">
 
                 <div class="tab-pane active" id="paris">
                     <div class="col-sm-12">
-                        <?php the_field('map_ville1'); ?>
+                        
+                        <?php the_field('map_ville_1'); ?>
                     </div>                
                    
                     <div class="clearfix"></div> 
                     <div class="col-md-4">
-                        <?php the_field('metro1'); ?>    
+                        <p><span class="bleu">Métro :</span><br />
+                        <?php the_field('metro_1'); ?>  </p>  
                     </div>
                     <div class="col-md-4">
-                        <?php the_field('bus1'); ?>
+                        <p><span class="bleu">Bus :</span><br />
+                        <?php the_field('bus_1'); ?></p>
 
                     </div>
                     <div class="col-md-4">
-                        <?php the_field('voiture1'); ?>
+                        <p><span class="bleu">Voiture :</span><br />
+                        <?php the_field('voiture_1'); ?></p>
     
                     </div>
-                    <div class="clearfix"></div>               
+                    <div class="clearfix"></div> 
+                    <div class="col-sm-12">
+                        
+                        <?php the_field('principal', 'service'); ?>
+                    </div>                
                 </div>
 
 
@@ -62,19 +71,19 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
                 <div class="tab-pane" id="lyon">                    
                 <div class="col-sm-12">
-                        <?php the_field('map_ville1'); ?>
+                        <?php the_field('map_ville_2'); ?>
                     </div>                
                    
                     <div class="clearfix"></div> 
                     <div class="col-md-4">
-                        <?php the_field('metro1'); ?>    
+                        <?php the_field('metro_2'); ?>    
                     </div>
                     <div class="col-md-4">
-                        <?php the_field('bus1'); ?>
+                        <?php the_field('bus_2'); ?>
 
                     </div>
                     <div class="col-md-4">
-                        <?php the_field('voiture1'); ?>
+                        <?php the_field('voiture_2'); ?>
     
                     </div>
                     <div class="clearfix"></div>  
