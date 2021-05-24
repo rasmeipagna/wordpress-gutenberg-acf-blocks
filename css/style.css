@@ -424,7 +424,7 @@ figure.wp-block-image.is-style-default p{
     text-decoration: none;
 }*/
 
-/*BLOC ACF/GUTENBERG HUB-BLUE*/
+/*BLOC ACF/GUTENBERG BLOC-HUB-BLUE*/
 h3.hub-blue-title{
     color:#00b1eb;
 }
@@ -433,7 +433,13 @@ h3.hub-blue-title{
     min-height:490px;
     position:relative;
 }
-
+@media screen and (max-width:580px) {
+    .hub-blue-block {
+        background-color: #00b1eb;
+        min-height: 410px;
+        position: relative;
+    }
+}
 .hub-blue-block .hub-blue-img img{
     width:100%;
 }
@@ -462,7 +468,7 @@ h3.hub-blue-title{
     border:1px solid #fff;
     color:#fff;
 }
-/*BLOC ACF/GUTENBERG HUB-GREEN*/
+/*BLOC ACF/GUTENBERG BLOC-HUB-GREEN*/
 h3.hub-green-title{
     color:#aed136;
 }
@@ -471,7 +477,13 @@ h3.hub-green-title{
     min-height:490px;
     position:relative;
 }
-
+@media screen and (max-width:580px) {
+    .hub-green-block {
+        background-color: #aed136;
+        min-height: 410px;
+        position: relative;
+    }
+}
 .hub-green-block .hub-green-img img{
     width:100%;
 }
