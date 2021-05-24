@@ -188,41 +188,41 @@ function my_acf_init() {
 			'keywords'			=> array( 'testimonial', 'quote' ),
 		));
 
-        // register a block-team
+        // register a bloc-equipe
 		acf_register_block(array(
-			'name'				=> 'team-block',
-			'title'				=> __('team-block'),
-			'description'		=> __('A custom team-block block.'),
+			'name'				=> 'bloc-equipe',
+			'title'				=> __('bloc-equipe'),
+			'description'		=> __('Mon bloc-equipe personnalisé.'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'team',
 			'keywords'			=> 'team',
 		));
 		
-		// register a hub-blue block
+		// register a bloc-hub-blue
 		acf_register_block(array(
-			'name'				=> 'hub-blue',
-			'title'				=> __('hub-blue'),
-			'description'		=> __('A custom hub-blue block'),
+			'name'				=> 'bloc-hub-blue',
+			'title'				=> __('bloc-hub-blue'),
+			'description'		=> __('Mon bloc-hub-blue personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formation',
-			'keywords'			=> array( 'formation' ),
+			'category'			=> 'formation-blue',
+			'keywords'			=> array( 'formation-blue' ),
 		));
 
-        // register a hub-green block
+        // register a bloc-hub-green block
 		acf_register_block(array(
-			'name'				=> 'hub-green',
-			'title'				=> __('hub-green'),
-			'description'		=> __('A custom hub-green block'),
+			'name'				=> 'bloc-hub-green',
+			'title'				=> __('bloc-hub-green'),
+			'description'		=> __('Mon bloc-hub-green personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formation',
-			'keywords'			=> array( 'formation' ),
+			'category'			=> 'formation-green',
+			'keywords'			=> array( 'formation-green' ),
 		));
 
         // register a block-green-featured
 		acf_register_block(array(
 			'name'				=> 'block-green-featured',
 			'title'				=> __('block-green-featured'),
-			'description'		=> __('A custom block-green-featured block'),
+			'description'		=> __('Mon block-green-featured block personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'information',
 			'keywords'			=> array( 'information' ),
@@ -231,7 +231,7 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'tabs-block',
 			'title'				=> __('tabs-block'),
-			'description'		=> __('tabs-block'),
+			'description'		=> __('Mon campus tabs-block personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'campus',
 			'keywords'			=> array( 'campus'),
@@ -240,7 +240,7 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'tabs-contact-block',
 			'title'				=> __('tabs-contact-block'),
-			'description'		=> __('tabs-contact-block'),
+			'description'		=> __('Mon tabs-contact-block personnsalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'contact',
 			'keywords'			=> array( 'contact' ),
@@ -249,10 +249,19 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'tabs-booking-block',
 			'title'				=> __('tabs-booking-block'),
-			'description'		=> __('tabs-booking-block'),
+			'description'		=> __('Mon tabs-booking-block personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'booking',
 			'keywords'			=> array( 'booking' ),
+		));
+		// register a tabs-booking-block
+		acf_register_block(array(
+			'name'				=> 'tabs-partners-university-block',
+			'title'				=> __('tabs-partenrs-university-block'),
+			'description'		=> __('Mon tabs-partners-university-block personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'partners university',
+			'keywords'			=> array( ' partners university' ),
 		));
 		
 
