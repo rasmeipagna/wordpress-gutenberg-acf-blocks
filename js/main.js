@@ -168,7 +168,7 @@
     $('.slider-actu').slick({
         variableWidth: true,
         fade: true,
-        slidesToShow: 4,
+        slidesToShow: 2,
         slidesToScroll: 2,
         responsive: [
             {

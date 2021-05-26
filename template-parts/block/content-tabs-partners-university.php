@@ -55,8 +55,9 @@ if( have_rows('university_'. $continent) ):
                     <img class="marker1" src="<?php echo $logo; ?>" alt="<?php echo $ecole; ?>">
                     <p class="name-univ"><strong><?php echo $ecole; ?></strong></p>
                     <p class="city"><?php echo $ville; ?></p>
+                    <a class="more-univ" href="<?php echo $lien; ?>" target="_blank">> Visiter le site </a>
                 </div>
-                <a class="more-univ" href="<?php echo $lien; ?>" target="_blank">> Visiter le site </a>
+                
             </div>
 <?php 
     // End loop.

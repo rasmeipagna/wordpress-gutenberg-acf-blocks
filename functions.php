@@ -53,8 +53,7 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
                 
         </div>
 
-        </div>
-            
+        </div>           
         
             <a class="close" href=""></a>
         
@@ -138,6 +137,8 @@ register_nav_menus( array(
 // }
 // add_action( 'enqueue_block_editor_assets', 'site_block_editor_styles' );
 
+
+
 /* Colors theme support */
 add_theme_support( 'editor-color-palette', array(
 	array(
@@ -177,7 +178,7 @@ function my_acf_init() {
 	
 	// check function exists
 	if( function_exists('acf_register_block') ) {
-        // register a testimonial block
+        // register a testimonial block DEMO
 		acf_register_block(array(
 			'name'				=> 'testimonial',
 			'title'				=> __('Testimonial'),
@@ -219,8 +220,8 @@ function my_acf_init() {
 		// register a hub-blue OLD
 		acf_register_block(array(
 			'name'				=> 'hub-blue',
-			'title'				=> __('bloc-hub-blue'),
-			'description'		=> __('Mon bloc-hub-blue personnalisé'),
+			'title'				=> __('hub-blue'),
+			'description'		=> __('Mon hub-blue personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formation-blue',
 			'keywords'			=> array( 'formation-blue' ),
@@ -255,11 +256,11 @@ function my_acf_init() {
 			'category'			=> 'information',
 			'keywords'			=> array( 'information' ),
 		));
-        // register a tabs-block
+        // register a tabs-campus
 		acf_register_block(array(
-			'name'				=> 'tabs-block',
-			'title'				=> __('tabs-block'),
-			'description'		=> __('Mon campus tabs-block personnalisé'),
+			'name'				=> 'tabs-campus',
+			'title'				=> __('tabs-campus'),
+			'description'		=> __('Mon campus tabs-campus personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'campus',
 			'keywords'			=> array( 'campus'),
