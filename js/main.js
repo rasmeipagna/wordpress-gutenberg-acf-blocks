@@ -1,23 +1,5 @@
 ﻿$(document).ready(function () {
-
-    $('#Ecoles').ecoles({
-        'ecole': 'supbiotech',
-        'element': "ul",
-        'separation': ' '
-    });
-
-    /********Menu dépliant***********/
-    var $subMenu = $('#cbp-hrmenu ul li')
-    var $boutonMenu = $('#cbp-hrmenu ul li a.trigger')
-    var $body = $('body')
-    $boutonMenu.click(function (e) {
-        e.preventDefault();
-        $(this).parent('li').toggleClass('cbp-hropen');
-        $subMenu.not($(this).parent('li')).removeClass('cbp-hropen');
-    })
-    $("body:not(.cbp-hropen)").click(function () {
-        $subMenu.removeClass('cbp-hropen');
-    })
+    
     // Header Home
 
     if ($(window).width() > 769) {
@@ -144,10 +126,7 @@
         return false;
     });
 
-    /********************** ECOLES ***************************/
-
-    $('.ecoles').ecoles({ 'ecole': 'supbiotech', 'element': "ul", 'separation': ' - ' });
-
+    
     /*********************     SLIDER UNE     *********************/
 
     $('.slider-une').slick({
@@ -216,5 +195,53 @@
    
 });
 
-/****************ILS FONT AVANCER LA RECHERCHE********************/
+/************** Afficher les Universités partenaires par continent *************/
+
+$(document).ready(function () {
+    //Dès qu'on clique sur.contnient1 , on applique hide() aux autres continents sauf l'afrique
+    $("#continent").click(function () {
+        $('.amerique, .afrique, .asie, .europe, .oceanie').show();
+    });
+
+    $("#continent1").click(function () {
+        console.log('#continent1')
+        $('.afrique').show();
+        $('.amerique, .asie, .europe, .oceanie').hide();
+    });
+
+    $("#continent2").click(function () {
+        console.log('#continent2')
+        $('.amerique').show();
+        $('.afrique, .asie, .europe, .oceanie').hide();
+    });
+
+    $("#continent3").click(function () {
+        $('.asie').show();
+        $('.afrique, .amerique, .europe, .oceanie').hide();
+    });
+
+    $("#continent4").click(function () {
+        $('.europe').show();
+        $('.afrique, .amerique, .asie, .oceanie').hide();
+    });
+
+    $("#continent5").click(function () {
+        $('.oceanie').show();
+        $('.afrique, .amerique, .europe, .asie').hide();
+    });
+
+    $('#head-1').click(function () {
+        $('#tab-2 , #tab-3').hide();
+        $('#tab-1').show();
+    });
+    $('#head-2').click(function () {
+        $('#tab-1 , #tab-3').hide();
+        $('#tab-2').show();
+    });
+    $('#head-3').click(function () {
+        $('#tab-1 , #tab-2').hide();
+        $('#tab-3').show();
+    });
+
+});
 

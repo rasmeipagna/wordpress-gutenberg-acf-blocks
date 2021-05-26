@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Name: hub-blue
+ * Block Name: hub-blue OLD
  *
  * This is the template that displays the hub-blue block.
  */

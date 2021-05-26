@@ -197,7 +197,6 @@ wp_nav_menu( array(
     </div>
 </div><!-- #page -->
 	<?php wp_footer(); ?>
-    <script src="/js/main.js"></script>
 	<script type="text/javascript">
         $(document).ready(function () {
             $(".fancybox").fancybox();

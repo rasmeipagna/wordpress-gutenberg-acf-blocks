@@ -8,8 +8,8 @@ function theme_enqueue_styles() {
  wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'));
  wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'));
  wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
- wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/js/main.js', array('parent-style'));
- wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/js/boostrap.js', array('parent-style'));
+ wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js');
+//  wp_enqueue_script('child-theme-bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.js');
 	
 }
 
@@ -194,6 +194,15 @@ function my_acf_init() {
 			'title'				=> __('bloc-equipe'),
 			'description'		=> __('Mon bloc-equipe personnalisé.'),
 			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'équipe',
+			'keywords'			=> 'équipe',
+		));
+		// register a team-block OLD 
+		acf_register_block(array(
+			'name'				=> 'team-block',
+			'title'				=> __('team-block'),
+			'description'		=> __('Mon team-block personnalisé.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'team',
 			'keywords'			=> 'team',
 		));
@@ -207,12 +216,31 @@ function my_acf_init() {
 			'category'			=> 'formation-blue',
 			'keywords'			=> array( 'formation-blue' ),
 		));
+		// register a hub-blue OLD
+		acf_register_block(array(
+			'name'				=> 'hub-blue',
+			'title'				=> __('bloc-hub-blue'),
+			'description'		=> __('Mon bloc-hub-blue personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formation-blue',
+			'keywords'			=> array( 'formation-blue' ),
+		));
 
         // register a bloc-hub-green block
 		acf_register_block(array(
 			'name'				=> 'bloc-hub-green',
 			'title'				=> __('bloc-hub-green'),
 			'description'		=> __('Mon bloc-hub-green personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'formation-green',
+			'keywords'			=> array( 'formation-green' ),
+		));
+
+		// register a green-blue OLD
+		acf_register_block(array(
+			'name'				=> 'hub-green',
+			'title'				=> __('hub-green'),
+			'description'		=> __('Mon hub-green personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formation-green',
 			'keywords'			=> array( 'formation-green' ),
@@ -254,20 +282,32 @@ function my_acf_init() {
 			'category'			=> 'booking',
 			'keywords'			=> array( 'booking' ),
 		));
-		// register a tabs-booking-block
+		// register a bloc-partners-university
 		acf_register_block(array(
-			'name'				=> 'tabs-partners-university-block',
-			'title'				=> __('tabs-partenrs-university-block'),
-			'description'		=> __('Mon tabs-partners-university-block personnalisé'),
+			'name'				=> 'tabs-partners-university',
+			'title'				=> __('tabs-partners-university'),
+			'description'		=> __('Mon tabs-partners-university personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'partners university',
-			'keywords'			=> array( ' partners university' ),
+			'category'			=> 'partners',
+			'keywords'			=> array( ' partners','university' ),
 		));
 		
 
         
 	}
 }
+//Create function to get bloc acf
+function my_acf_block_render_callback( $block ) {
+	
+	// convert le name ("acf/bloc-hub-blue") into path friendly slug ("bloc-hub-blue")
+	$slug = str_replace('acf/', '', $block['name']);
+	
+	// include a template part from within the "template-parts/block" folder
+	if( file_exists( get_theme_file_path("/template-parts/block/content-{$slug}.php") ) ) {
+		include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
+	}
+}
+
 
 if( function_exists('acf_add_options_page') ) {
 	
@@ -294,17 +334,7 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 
-//Create function to get bloc acf
-function my_acf_block_render_callback( $block ) {
-	
-	// convert le name ("acf/hub-blue") into path friendly slug ("hub-blue")
-	$slug = str_replace('acf/', '', $block['name']);
-	
-	// include a template part from within the "template-parts/block" folder
-	if( file_exists( get_theme_file_path("/template-parts/block/content-{$slug}.php") ) ) {
-		include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
-	}
-}
+
 
 function supbiotech_footer_widgets_init() {
 	register_sidebar( array(
@@ -320,42 +350,13 @@ function supbiotech_footer_widgets_init() {
 }
 add_action( 'widgets_init', 'supbiotech_footer_widgets_init' );
 
-/**
- * Field Structure:
- *
- * - parent_repeater (Repeater)
- *   - parent_title (Text)
- *   - child_repeater (Repeater)
- *     - child_title (Text)
- */
-if( have_rows('parent_repeater') ):
-    while( have_rows('parent_repeater') ) : the_row();
-
-        // Get parent value.
-        $parent_title = get_sub_field('parent_title');
-
-        // Loop over sub repeater rows.
-        if( have_rows('child_repeater') ):
-            while( have_rows('child_repeater') ) : the_row();
-
-                // Get sub value.
-                $child_title = get_sub_field('child_title');
-
-            endwhile;
-        endif;
-    endwhile;
-endif;
 
 
 
 
 
-/**
- * Set Google Maps API key
-*/
-// function acf_google_maps_api_key( $value ) {
-// 	return 'GOOGLE_MAPS_API_KEY';
-//   }
-//   add_filter( 'acf/settings/google_api_key', 'acf_google_maps_api_key' );
+
+
+
 
  

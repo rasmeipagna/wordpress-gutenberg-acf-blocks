@@ -1,6 +1,6 @@
 <?php
 /**
- * Block Name: team-block
+ * Block Name: team-block OLD
  *
  * This is the template that displays the team-block block.
  */
@@ -22,7 +22,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
        </div>
        <div class="col-xs-12 col-sm-9 closer-left">
        <h4><?php the_field('prenom_nom'); ?></h4><br />
-       <p><strong><?php the_field('poste'); ?></strong></p><br /><br />
+       <p><strong><?php the_field('poste'); ?></strong></p>
        <p><?php the_field('statut'); ?></p><br />
        <p><span class="icon-contact"></span><a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?> </a></p>
        
