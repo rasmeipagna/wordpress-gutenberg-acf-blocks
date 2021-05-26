@@ -41,6 +41,12 @@ iframe.iframegroupeionis{
     max-width: 890px;
 	padding-top:0;
 }
+@media screen and (max-width:580px) {
+    .container.page {
+        width: 100%;
+        padding: 60px 20px;
+    }
+}
 .container.page.full-width{
     max-width: 100%;
 	padding-top:0;
@@ -522,7 +528,7 @@ h3.hub-green-title{
     color: #fff;
     text-align: center;
 }
-/*ACF/GUTENBERG TABS */
+/*ACF/GUTENBERG TABS Campus */
 #myTabs .nav-pills > li:nth-child(odd) {
     float: left;
     width: 49.6%;
@@ -562,13 +568,121 @@ h3.hub-green-title{
     background-color: #002838;
     text-decoration : none;
 }
-
-@media screen and (max-width:580px) {
-    .container.page {
-        width: 100%;
-        padding: 60px 20px;
-    }
+/* ACF/GUTENBERG TABS PARTNERS UNIVERSITY */
+/* TABS CONTINENTS */
+.container .page ul#myTab li:before {
+    background: none !important;
 }
+.page .col-md-8 ul, .widget.metiers ul {
+    margin-bottom: 20px;
+}
+.page .col-md-8 .six .nav-tabs li {
+    width: 16.6%;
+    padding: 0px;
+}
+.page .col-md-8 .nav-tabs li {
+    clear: none;
+    padding: 1px;
+}
+.page .col-md-8 .nav-tabs li.active a {
+    background-color: #062838;
+    color: #fff;
+}
+.page .col-md-8 li, .page .col-md-12 .list li {
+    margin: 12px 0;
+    clear: both;
+    font-size: 15px;
+    font-weight: 400;
+}
+.page .col-md-8 .continents .nav-tabs li a {
+    color: #062838;
+    background-color: #fff;
+    border: solid 1px #062838;
+}
+.page .col-md-8 .nav-tabs li.active a {
+    color: #fff;
+    background-color: #00b1eb;
+    position: relative;
+}
+.page .col-md-8 .nav-tabs li a {
+    display: inline-block;
+    min-height: 20px;
+    width: 100%;
+    text-align: center;
+    color: #00b1eb;
+    background-color: #fff;
+    border: solid 1px #00b1eb;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-weight: 300;
+    font-size: 15px;
+    text-decoration: none;
+}
+/* PANEL TABS PAYS */
+.continents .bloc-universite {
+    border: 1px solid #062838;
+    margin: 10px 30px 40px;
+    height: 340px;
+    padding: 5px;
+}
+.continents .bloc-universite .country {
+    margin: 12px;
+    height: 35px;
+    background-color: #00b1eb;
+    color: #fff;
+    padding: 5px 0 0 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.continents .bloc-universite .country:before {
+    background: url(../images/design/icon-location.png) no-repeat scroll 0 0;
+    content: ' ';
+    height: 20px;
+    width: 15px;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+}
+.centerBloc {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.centerBloc img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 220px;
+}
+.continents .bloc-universite img {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.continents .bloc-universite .name-univ {
+    font-size: 17px;
+    line-height: 23px;
+    text-align: center;
+}
+.continents .bloc-universite .city {
+    margin: 10px;
+    color: #062838;
+    font-weight: 300;
+    text-align: center;
+}
+.continents .bloc-universite .more-univ {
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    width: auto;
+    height: 30px;
+    color: #062838;
+    line-height: 30px;
+    text-decoration: underline;
+}
+.continents .bloc-universite .more-univ:hover {
+    color: #00b1e6;
+}
+/* FIN TABS PARTNERS */
 
 .wp-block-button__link:hover {
     /* color:white !important; */
