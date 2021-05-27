@@ -36,7 +36,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
                 <div class="tab-pane active" id="paris">
                     <div class="col-sm-6">
-                        <?php the_field('image_mid_width'); ?>
+                        <?php the_field('image_left1'); ?>
                     </div>                
                     <div class="col-sm-6">
                         <p><?php the_field('zone_de_texte1'); ?></p>
@@ -44,25 +44,27 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                     <div class="clearfix"></div> 
                     <div class="col-md-6 justify-content-center">
                         
-                        <img class="center" src="<?php echo $image_full1['url']; ?>" alt="<?php echo $image_full1['alt']; ?>" />
+                        <img class="center" src="<?php the_field('image_full1'); ?>" />
                         
                     </div>
                     <div class="clearfix"></div>               
                 </div>
 
-                <div class="tab-pane" id="lyon">                    
-                    <div class="col-sm-12">
-                        <p><?php the_field('zone_de_texte2'); ?>
-                        </p>
+                <div class="tab-pane" id="lyon">
+                    <div class="col-sm-6">
+                        <?php the_field('image_left2'); ?>
+                    </div>                
+                    <div class="col-sm-6">
+                        <p><?php the_field('zone_de_texte2'); ?></p>
                     </div>
-                    
-                    <div class="col-md-12 justify-content-center">
-                        <img src="<?php echo $image_full2['url']; ?>" alt="<?php echo $image_full2['alt']; ?>" />
+                    <div class="clearfix"></div> 
+                    <div class="col-md-6 justify-content-center">
+                        
+                        <img class="center" src="<?php the_field('image_full2'); ?>" />
+                        
                     </div>
-                   
-                    
-                    </div>
-                    <div class="clearfix"></div>
+                    <div class="clearfix"></div>      
+                
                 </div>
 
             </div>

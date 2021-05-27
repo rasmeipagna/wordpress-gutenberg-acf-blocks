@@ -573,38 +573,46 @@ h3.hub-green-title{
 .container .page ul#myTab li:before {
     background: none !important;
 }
-.page .col-md-8 ul, .widget.metiers ul {
-    margin-bottom: 20px;
+.continents .nav-tabs {
+    border-bottom: none;
 }
-.page .col-md-8 .six .nav-tabs li {
+.six .nav-tabs li {
     width: 16.6%;
     padding: 0px;
 }
-.page .col-md-8 .nav-tabs li {
+.nav-tabs li {
     clear: none;
     padding: 1px;
 }
-.page .col-md-8 .nav-tabs li.active a {
-    background-color: #062838;
-    color: #fff;
+.nav-tabs li.active a {
+    background-color: #062838 !important;
+    color: #fff !important;
 }
-.page .col-md-8 li, .page .col-md-12 .list li {
-    margin: 12px 0;
-    clear: both;
-    font-size: 15px;
-    font-weight: 400;
-}
-.page .col-md-8 .continents .nav-tabs li a {
+.continents .nav-tabs li a {
     color: #062838;
     background-color: #fff;
     border: solid 1px #062838;
+    text-decoration:none;
 }
-.page .col-md-8 .nav-tabs li.active a {
+
+.continents .nav-tabs li.active:after {
+    background: url(../images/design/bottom-tab-partners.png) no-repeat scroll center center;
+    content: ' ';
+    display: inline-block;
+    height: 7px;
+    width: 15px;
+    position: absolute;
+    bottom: -7px;
+    left: calc(50% - 7px);
+}
+
+
+/* .nav-tabs li.active a {
     color: #fff;
     background-color: #00b1eb;
     position: relative;
-}
-.page .col-md-8 .nav-tabs li a {
+} */
+.nav-tabs li a {
     display: inline-block;
     min-height: 20px;
     width: 100%;
