@@ -35,59 +35,98 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
             <div class="tab-content clearfix">
 
-                <div class="tab-pane active" id="paris">
+                
+<?php
+$villes = ['paris','lyon'];
+    
+foreach( $villes as $ville ) :
+
+// Check rows exists.
+if( have_rows('contact_'. $ville) ):
+    // Loop through rows.
+    while( have_rows('contact_'. $ville) ) : the_row();
+        // Load sub field value.
+        $titre = get_sub_field('departement');
+		$photo = get_sub_field('photo');
+		$nom_prenom = get_sub_field('nom_prenom');
+		$titre = get_sub_field('titre');
+		$telephone = get_sub_field('telephone');
+        $email = get_sub_field('email');
+        $bouton = get_sub_field('bouton');
+
+        // Do something...
+// Check rows exists.
+if( have_rows('ville') ):
+    // Loop through rows.
+    while( have_rows('ville') ) : the_row();
+        // Load sub field value.
+        $titre = get_sub_field('plan');
+		$photo = get_sub_field('metro');
+		$nom_prenom = get_sub_field('bus');
+		$titre = get_sub_field('voiture');
+        // Do something...
+
+?>
+<div class="tab-pane active" id="<?php echo $ville; ?>">
                     <div class="col-sm-12">
                         
-                        <?php the_field('map_ville_1'); ?>
+                        <?php the_field('plan'); ?>
                     </div>                
                    
                     <div class="clearfix"></div> 
                     <div class="col-md-4">
                         <p><span class="bleu">Métro :</span><br />
-                        <?php the_field('metro_1'); ?>  </p>  
+                        <?php the_field('metro'); ?>  </p>  
                     </div>
                     <div class="col-md-4">
                         <p><span class="bleu">Bus :</span><br />
-                        <?php the_field('bus_1'); ?></p>
+                        <?php the_field('bus'); ?></p>
 
                     </div>
                     <div class="col-md-4">
                         <p><span class="bleu">Voiture :</span><br />
-                        <?php the_field('voiture_1'); ?></p>
+                        <?php the_field('voiture'); ?></p>
     
                     </div>
-                    <div class="clearfix"></div> 
-                    <div class="col-sm-12">
-                        
-                        <?php the_field('principal', 'service'); ?>
-                    </div>                
+                    <div class="clearfix"></div>
+                    
+                    
+                   <div class="petit-blocs <?php echo $ville; ?>">
+                        <div class="contact vert">
+                            <h3><?php the_field('departement'); ?></h3>
+                            <img src="<?php the_field('photo'); ?>" class="portrait"/>
+                            <h4><?php the_field('nom_prenom'); ?></h4>
+                            <p class="colorSpeMail"><?php the_field('titre'); ?><br><br>
+                            <?php the_field('telephone'); ?><br>
+                            <?php the_field('email'); ?>
+                                <br />
+                                <br />
+                                <a href="<?php the_field('bouton'); ?>" class="newsroom" target="_blank">Newsroom Groupe IONIS</a>
+                            </p>
+                        </div>
+
+
+                   </div>
+                
+            </div>              
                 </div>
 
 
-
+                <?php 
+    // End loop.
+    endwhile;
+// No value.
+else :  
+    echo 'coucou';
+    // Do something...
+endif;
+endforeach;
+?>
 
 
                 
 
-                <div class="tab-pane" id="lyon">                    
-                <div class="col-sm-12">
-                        <?php the_field('map_ville_2'); ?>
-                    </div>                
-                   
-                    <div class="clearfix"></div> 
-                    <div class="col-md-4">
-                        <?php the_field('metro_2'); ?>    
-                    </div>
-                    <div class="col-md-4">
-                        <?php the_field('bus_2'); ?>
-
-                    </div>
-                    <div class="col-md-4">
-                        <?php the_field('voiture_2'); ?>
-    
-                    </div>
-                    <div class="clearfix"></div>  
-                </div>
+                
 
             </div>
         </div>

@@ -7,8 +7,8 @@
 
 // get image field (array)
 
-$image_full1 = get_field('image_full1');
-$image_full2 = get_field('image_full2');
+// $image_full1 = get_field('image_full1');
+// $image_full2 = get_field('image_full2');
 
 // create id attribute for specific styling
 $id = 'tabs-campus-' . $block['id'];
@@ -36,32 +36,32 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
                 <div class="tab-pane active" id="paris">
                     <div class="col-sm-6">
-                        <?php the_field('image_left1'); ?>
+                    <img class="center" src="<?php the_field('image_left1'); ?>" />
                     </div>                
                     <div class="col-sm-6">
                         <p><?php the_field('zone_de_texte1'); ?></p>
                     </div>
                     <div class="clearfix"></div> 
-                    <div class="col-md-6 justify-content-center">
-                        
+                    <div class="col-md-12 justify-content-center">
+                        <center>
                         <img class="center" src="<?php the_field('image_full1'); ?>" />
-                        
+                        </center>
                     </div>
                     <div class="clearfix"></div>               
                 </div>
 
                 <div class="tab-pane" id="lyon">
                     <div class="col-sm-6">
-                        <?php the_field('image_left2'); ?>
+                        <img class="center" src="<?php the_field('image_left2'); ?>" />
                     </div>                
                     <div class="col-sm-6">
                         <p><?php the_field('zone_de_texte2'); ?></p>
                     </div>
                     <div class="clearfix"></div> 
-                    <div class="col-md-6 justify-content-center">
-                        
+                    <div class="col-md-12 justify-content-center">
+                        <center>
                         <img class="center" src="<?php the_field('image_full2'); ?>" />
-                        
+                        </center>
                     </div>
                     <div class="clearfix"></div>      
                 
