@@ -606,12 +606,6 @@ h3.hub-green-title{
     left: calc(50% - 7px);
 }
 
-
-/* .nav-tabs li.active a {
-    color: #fff;
-    background-color: #00b1eb;
-    position: relative;
-} */
 .nav-tabs li a {
     display: inline-block;
     min-height: 20px;
@@ -691,7 +685,16 @@ h3.hub-green-title{
     color: #00b1e6;
 }
 /* FIN TABS PARTNERS */
-
+/* TABS BOOKING tabs-booking */
+/* .tabs-booking iframe{
+    min-height:2900px;
+}
+@media screen and (max-width:580px) {
+    .tabs-booking iframe{
+        min-height:1500px;
+    }
+} */
+/* FIN TABS BOOKING */
 .wp-block-button__link:hover {
     /* color:white !important; */
     transition: 0.1s ease-in-out;

@@ -4,7 +4,7 @@
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
  */
-( function() {
+/*( function() {
 	var container, button, menu, links, i, len;
 
 	container = document.getElementById( 'site-navigation' );
@@ -49,12 +49,12 @@
 	for ( i = 0, len = links.length; i < len; i++ ) {
 		links[i].addEventListener( 'focus', toggleFocus, true );
 		links[i].addEventListener( 'blur', toggleFocus, true );
-	}
+	}*/
 
 	/**
 	 * Sets or removes .focus class on an element.
 	 */
-	function toggleFocus() {
+	/*function toggleFocus() {
 		var self = this;
 
 		// Move up through the ancestors of the current link until we hit .nav-menu.
@@ -71,12 +71,12 @@
 
 			self = self.parentElement;
 		}
-	}
+	}*/
 
 	/**
 	 * Toggles `focus` class to allow submenu access on tablets.
 	 */
-	( function( container ) {
+	/*( function( container ) {
 		var touchStartFn, i,
 			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
 
@@ -103,12 +103,12 @@
 			}
 		}
 	}( container ) );
-} )();
+} )(); */
 /*******************************************************************************************************************************************************************/
 /**********************************************************************************JS SITE**************************************************************************/
 /*******************************************************************************************************************************************************************/
 $(document).ready(function () {
-    /********Menu dépliant***********/
+    /********Menu dépliant***********
     var $subMenu = $('#cbp-hrmenu ul li')
     var $boutonMenu = $('#cbp-hrmenu ul li a.trigger')
     var $body = $('body')
@@ -188,8 +188,8 @@ $(document).ready(function () {
 
             return true;
         });
-    }
-    /*************   CHANGEMENT IMAGE LOGO AU SCROLL   **************/
+    }*/
+    /*************   CHANGEMENT IMAGE LOGO AU SCROLL   **************
 
     $(window).scroll(function () {
 
@@ -203,11 +203,11 @@ $(document).ready(function () {
             $('.top-logo').fadeIn(400);
             $('.scroll-logo').stop().fadeOut(400);
         }
-    });
+    }); */
 
     /*************   CHOIX IMAGE LOGO AU CHARGEMENT  **************/
 
-    posScroll = $(document).scrollTop();
+    /*posScroll = $(document).scrollTop();
 
     if (posScroll >= 150) {
         $('.top-logo').hide();
@@ -216,11 +216,11 @@ $(document).ready(function () {
     else {
         $('.top-logo').show();
         $('.scroll-logo').hide();
-    }
+    }*/
     
     /*************   BOUTON/MENU MOBILE  **************/
 
-    $(".burger_boite").click(function (e) {
+    /*$(".burger_boite").click(function (e) {
         e.stopPropagation();
         $('#cbp-hrmenu').slideToggle();
         $(this).toggleClass('cross');
@@ -255,7 +255,7 @@ $(document).ready(function () {
         });
 
         return false;
-    });
+    }); */
 
     /********************** ECOLES **********************
 
@@ -294,21 +294,23 @@ $(document).ready(function () {
         ]
     });
 
-    /*********************     SLIDER ACTU     *********************/
+    /*********************     SLIDER REPLAY   *********************/
 
    
 
     // Slider Actualités
-    $('.slider-actu').slick({
-        slidesToShow: 2,
-        slidesToScroll: 2,
+    $('.slider-replay').slick({
+        //variableWidth: true,
+        centerMode: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1025,
                 settings: {
                     arrows: true,
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {

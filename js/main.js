@@ -165,11 +165,11 @@
    
 
     // Slider Actualités
-    $('.slider-actu').slick({
+    /*$('.slider-actu').slick({
         variableWidth: true,
-        fade: true,
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        centerMode: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 1025,
@@ -177,7 +177,7 @@
                     arrows: true,
                     variableWidth: true,
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 2
                 }
             },
             {
@@ -185,8 +185,8 @@
                 settings: {
                     arrows: true,
                     variableWidth: true,
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             },
            
@@ -194,7 +194,7 @@
     });
    
 });
-
+*/
 /************** Afficher les Universités partenaires par continent *************/
 
 $(document).ready(function () {

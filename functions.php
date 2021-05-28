@@ -8,7 +8,8 @@ function theme_enqueue_styles() {
  wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'));
  wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'));
  wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
- wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js');
+ wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js', array(), null, null);
+ wp_enqueue_script('child-theme-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
 //  wp_enqueue_script('child-theme-bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.js');
 	
 }
@@ -269,16 +270,16 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'tabs-contact-block',
 			'title'				=> __('tabs-contact-block'),
-			'description'		=> __('Mon tabs-contact-block personnsalisé'),
+			'description'		=> __('Mon tabs-contact-block personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'contact',
 			'keywords'			=> array( 'contact' ),
 		));
-		// register a tabs-booking-block
+		// register a tabs-booking
 		acf_register_block(array(
-			'name'				=> 'tabs-booking-block',
-			'title'				=> __('tabs-booking-block'),
-			'description'		=> __('Mon tabs-booking-block personnalisé'),
+			'name'				=> 'tabs-booking',
+			'title'				=> __('tabs-booking'),
+			'description'		=> __('Mon tabs-booking personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'booking',
 			'keywords'			=> array( 'booking' ),

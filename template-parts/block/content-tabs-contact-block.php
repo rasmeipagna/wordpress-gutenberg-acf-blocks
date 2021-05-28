@@ -36,34 +36,17 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
             <div class="tab-content clearfix">
 
                 
+
 <?php
-$villes = ['paris','lyon'];
-    
-foreach( $villes as $ville ) :
-
 // Check rows exists.
-if( have_rows('contact_'. $ville) ):
+// if( have_rows('ville') ):
     // Loop through rows.
-    while( have_rows('contact_'. $ville) ) : the_row();
+    // while( have_rows('ville') ) : the_row();
         // Load sub field value.
-        $titre = get_sub_field('departement');
-		$photo = get_sub_field('photo');
-		$nom_prenom = get_sub_field('nom_prenom');
-		$titre = get_sub_field('titre');
-		$telephone = get_sub_field('telephone');
-        $email = get_sub_field('email');
-        $bouton = get_sub_field('bouton');
-
-        // Do something...
-// Check rows exists.
-if( have_rows('ville') ):
-    // Loop through rows.
-    while( have_rows('ville') ) : the_row();
-        // Load sub field value.
-        $titre = get_sub_field('plan');
-		$photo = get_sub_field('metro');
-		$nom_prenom = get_sub_field('bus');
-		$titre = get_sub_field('voiture');
+        // $titre = get_sub_field('plan');
+		// $photo = get_sub_field('metro');
+		// $nom_prenom = get_sub_field('bus');
+		// $titre = get_sub_field('voiture');
         // Do something...
 
 ?>
@@ -89,9 +72,35 @@ if( have_rows('ville') ):
     
                     </div>
                     <div class="clearfix"></div>
+<?php     // End loop.
+    // endwhile;
+// No value.
+// else :
+    // Do something...
+// endif;
+?>
+<?php
+// $villes = ['paris','lyon'];
+    
+// foreach( $villes as $ville ) :
+
+// Check rows exists.
+// if( have_rows('contact_'. $ville) ):
+    // Loop through rows.
+    // while( have_rows('contact_'. $ville) ) : the_row();
+        // Load sub field value.
+        // $titre = get_sub_field('departement');
+		// $photo = get_sub_field('photo');
+		// $nom_prenom = get_sub_field('nom_prenom');
+		// $titre = get_sub_field('titre');
+		// $telephone = get_sub_field('telephone');
+        // $email = get_sub_field('email');
+        // $bouton = get_sub_field('bouton');
+
+        // Do something...
+?>                    
                     
-                    
-                   <div class="petit-blocs <?php echo $ville; ?>">
+                   <div class="petit-blocs">
                         <div class="contact vert">
                             <h3><?php the_field('departement'); ?></h3>
                             <img src="<?php the_field('photo'); ?>" class="portrait"/>
@@ -113,14 +122,8 @@ if( have_rows('ville') ):
 
 
                 <?php 
-    // End loop.
-    endwhile;
-// No value.
-else :  
-    echo 'coucou';
-    // Do something...
-endif;
-endforeach;
+
+// endforeach;
 ?>
 
 

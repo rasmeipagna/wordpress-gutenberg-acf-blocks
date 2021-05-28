@@ -256,38 +256,38 @@ get_header();
 			<div class="col-sm-12">
 				<center>
 					<div class="col-sm-2">
-						<img src="https://www.supbiotech.fr/Content/images/design/diplome.png" style="margin-bottom: 46px;" />
+						<img src="https://www.supbiotech.fr/Content/images/design/diplome.png" class="picto-diplome" />
 						<p><span>diplôme</span><br /> d'ingénieurs CTI</p>
 
 					</div>
 				</center>
 				<center>
 					<div class="col-sm-2">
-						<img src="https://www.supbiotech.fr/Content/images/design/campus.png" style="margin-bottom: 55px;"/>
+						<img src="https://www.supbiotech.fr/Content/images/design/campus.png"  class="picto-campus" />
 						<p><span>2</span><br /> campus Paris et Lyon</p>
 					</div>
 				</center>
 				<center>
 					<div class="col-sm-2">
-						<img src="https://www.supbiotech.fr/Content/images/design/travel.png" style="margin-bottom: 55px; padding-top: 20px;" />
+						<img src="https://www.supbiotech.fr/Content/images/design/travel.png"  class="picto-travel" />
 						<p><span>1</span><br /> semestre à l'étranger</p>
 					</div>
 				</center>
 				<center>
 					<div class="col-sm-2">
-						<img src="https://www.supbiotech.fr/Content/images/design/calendar.png" style="margin-bottom: 43px;" />
+						<img src="https://www.supbiotech.fr/Content/images/design/calendar.png"  class="picto-calendar" />
 						<p><span>12</span><br /> mois de stages sur 3 ans</p>
 					</div>
 				</center>
 				<center>
 					<div class="col-sm-2">
-						<img src="https://www.supbiotech.fr/Content/images/design/labs.png" style="margin-bottom: 11px;" />
+						<img src="https://www.supbiotech.fr/Content/images/design/labs.png"  class="picto-labs" />
 						<p><span>4</span> <br />laboratoires de recherche</p>
 					</div>
 				</center>
 				<center>
 					<div class="col-sm-2">
-						<img src="https://www.supbiotech.fr/Content/images/design/hired.png" style=" margin-bottom: 41px; margin-top: 20px;" />
+						<img src="https://www.supbiotech.fr/Content/images/design/hired.png"  class="picto-hired" />
 						<p><span>+90%</span><br /> d'embauche en moins de 6 mois après la sortie</p>
 					</div>
 				</center>
@@ -508,13 +508,13 @@ get_header();
 
 <!-- section replay -->
 <section id="replay actu" class="actu">
-    <div class="_container">
+    <div class="container-fluid replay-container">
 		<div class="container">
 		<h2>Revivez <span>les temps forts de l'école</span></h2>
 		</div>					
         
-        <div class="slider-actu">           
-            <div class="slide-actu">
+        <div class="slider-replay">           
+            <div class="slide-replay">
                 <a href="" class="actualite rel">
                 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/e5FV-slYOoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -529,7 +529,7 @@ get_header();
                 </a>    
             </div>
                 
-            <div class="slide-actu">
+            <div class="slide-replay">
                 <a href="" class="actualite rel">
                 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/DknEFZZ2uNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -545,7 +545,7 @@ get_header();
                 </a>    
             </div>
                
-            <div class="slide-actu">
+            <div class="slide-replay">
                 <a href="" class="actualite rel">
                 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/x-QLIdanDNM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -561,7 +561,7 @@ get_header();
                 </a>    
             </div>
 
-            <div class="slide-actu">
+            <div class="slide-replay">
                 <a href="" class="actualite rel">
                 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/ZfsR9a9-5ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -576,7 +576,7 @@ get_header();
                     </div>
                 </a>    
             </div>
-			<div class="slide-actu">
+			<div class="slide-replay">
                 <a href="" class="actualite rel">
                 
                     <!--<figure>
@@ -587,14 +587,13 @@ get_header();
                     <div class="resume">
                         <h4>Innovation Challenge Day 2019</h4>
                         <p class="_detail">
-						L’Innovation Challenge Day est un événement annuel qui se déroule en juillet pour les 3e et 4e année de l’école. Durant cette journée, les étudiants de 4e année évaluent les Sup'Biotech Innovation Projects (SBIP) portés par les différentes équipes étudiantes de 3e année avant d’inverser les rôles : une bonne façon de récolter des critiques et conseils constructifs, 
-						mais aussi de comprendre ce que peuvent attendre les membres d'un jury.
+						L’Innovation Challenge Day est un événement annuel qui se déroule en juillet pour les 3e et 4e année de l’école. Durant cette journée, les étudiants de 4e année évaluent les Sup'Biotech Innovation Projects (SBIP) portés par les différentes équipes étudiantes de 3e année avant d’inverser les rôles ...
                         </p>
                         <!--<span class="linkplus"></span>-->
                     </div>
                 </a>    
             </div>
-			<div class="slide-actu">
+			<div class="slide-replay">
                 <a href="" class="actualite rel">
                 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/2FHcvbO1kYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -603,13 +602,13 @@ get_header();
                         <h4>Mon 1er semestre d'apprenti - Marius (promo 2023)</h4>
                         <p class="_detail">
 						Marius Bat (promo 2023) vient d’intégrer la 1re année du cycle ingénieur par la voie de l'apprentissage. Il a été admis au cursus via le Advance parallèle. 
-						Il nous raconte ses premières impressions en ce début d'année au sein de l'école et de l’entreprise Novartis où il est expert process.
+						Il nous raconte ses premières impressions ...
                         </p>
                         <!--<span class="linkplus"></span>-->
                     </div>
                 </a>    
             </div>
-			<div class="slide-actu">
+			<div class="slide-replay">
                 <a href="" class="actualite rel">
                 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/4E_8R6zZkEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -618,13 +617,13 @@ get_header();
                         <h4>Projets Innovants – Plants & Water</h4>
                         <p class="_detail">
 						Avec les trois quarts de la surface du Globe couverts par les océans, la masse d'eau de mer représente un gisement considérable. En effet, 97% du total de la ressource en eau est salée. Avec une demande en eau douce supérieure aux ressources disponibles, 
-						les usines de dessalement se sont développées pour faire face à l’un des principaux enjeux du XXIe siècle. 
+						les usines de dessalement se sont développées... 
                         </p>
                         <!--<span class="linkplus"></span>-->
                     </div>
                 </a>    
             </div>
-			<div class="slide-actu">
+			<div class="slide-replay">
                 <a href="" class="actualite rel">
                 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/BvNrnZB02V4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -638,13 +637,14 @@ get_header();
                     </div>
                 </a>    
             </div>
+			
         </div>
 
 		<div class="container">
-		<a href="https://www.supbiotech.fr/blogs/" class="simple-button">Toutes les actualités</a>
+		<a href="https://www.supbiotech.fr/blogs/" class="simple-button replay">Toutes les actualités</a>
 		</div>
         
-    </div>
+    <!--</div>-->
 </section>
 
 
