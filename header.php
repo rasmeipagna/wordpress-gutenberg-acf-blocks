@@ -51,8 +51,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<nav id="banner">
             <div class="content-banner">
                 <ul class="ul-banner">
-                    <li><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
-                    <li><a href="https://www.supbiotech.fr/contact">Contact</a></li>
+                    <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
                 
                     <ul class="logo-reseaux">
@@ -594,25 +594,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
             -->
 			<div id="bloc-contact-mobile">
-                <a href="https://www.supbiotech.fr/admissions-ecoleIngenieur-documentation">
+                <a href="/admissions-ecole-ingenieur/documentation/">
                     <div class="bloc-contact-inside documentation">
                         <span><img src="https://www.supbiotech.fr/Content/images/design/picto-documentation-mobile.png" />Documentation</span>
 
                     </div>
                 </a>
-                <a href="https://www.supbiotech.fr/ecole-ingenieurs-biotechnologies/agenda">
+                <a href="/agenda">
                     <div class="bloc-contact-inside entretien">
                         <span><img src="https://www.supbiotech.fr/Content/images/design/picto-entretien-mobile.png" />Agenda</span>
                         
                     </div>
                 </a>
-                    <a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
+                    <a href="admission-ecole-ingenieur/candidature">
                         <div class="bloc-contact-inside candidature">
                             <span><img src="https://www.supbiotech.fr/Content/images/design/picto-candidature-mobile.png" />Candidature</span>
 
                         </div>
                     </a>
-                    <a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
+                    <a href="/admissions-ecole-ingenieur/rdv-personnalises">
                         <div class="bloc-contact-inside rdvperso">
                             <span><img src="https://www.supbiotech.fr/Content/images/design/picto-rdvperso-mobile.png" />rdv personnalisé</span>
 

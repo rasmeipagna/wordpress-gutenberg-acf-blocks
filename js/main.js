@@ -191,10 +191,10 @@
             },
            
         ]
-    });
+    });*/
    
 });
-*/
+
 /************** Afficher les Universités partenaires par continent *************/
 
 $(document).ready(function () {

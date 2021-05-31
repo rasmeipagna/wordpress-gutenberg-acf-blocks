@@ -32,25 +32,38 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                 </li>
             </ul>
 
-            <div class="tab-content clearfix video-container rdv-booking">
+            <div class="tab-content clearfix">
+                <div class="container">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        
 
-                <div class="tab-pane active" id="paris">
-                                  
-                    <div class="col-sm-12">
-                        <?php the_field('wysiwyg1'); ?>
-                    </div>
-                    <div class="clearfix"></div> 
-            
-                </div>
+                            <div class="tab-pane active" id="paris">
+                                            
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="video-container rdv-booking">
+                                            <?php the_field('wysiwyg1'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>             
+                            </div>
 
-                <div class="tab-pane" id="lyon">
-                                  
-                    <div class="col-sm-12">
-                        <?php the_field('wysiwyg2'); ?>
+                            <div class="tab-pane" id="lyon">
+                                            
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="video-container rdv-booking">
+                                            <?php the_field('wysiwyg2'); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div> 
+                                                
+                            </div>
+                       
+
                     </div>
-                    <div class="clearfix"></div> 
-                      
-                
                 </div>
 
             </div>

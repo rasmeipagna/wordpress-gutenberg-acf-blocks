@@ -37,7 +37,7 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
             <a class="candidature" href="/admissions-ecole-ingenieur/candidature">
                 Candidature
             </a>   
-            <a class="entretien" href="/ecole-ingenieurs-biotechnologies/agenda">
+            <a class="entretien" href="/agenda">
                     Agenda
             </a>
             <a class="rdvperso" href="/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
@@ -47,10 +47,12 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
         <div class="jpo">
 		<p><span>Venez nous rencontrer</span></p>';
 		$output .= do_shortcode('[eventdb id="1372"]'); 
+		$output .= '<div class="clearboth"></div>'; 
+		$output .= do_shortcode('[eventdb id="1705"]'); 
 		$output .='
 
                 <!--<p class="displayParisHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 22/05/2021</span><br>Biotech Day à Paris<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/biotech-day"></a></span></p>-->
-                <p class="displayLyonHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 29/05/2021</span><br>Journée Portes Ouvertes à Lyon<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/journees-portes-ouvertes-jpo"></a></span></p>
+                <!--<p class="displayLyonHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 29/05/2021</span><br>Journée Portes Ouvertes à Lyon<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/journees-portes-ouvertes-jpo"></a></span></p>-->
                 
         </div>
 
@@ -266,11 +268,11 @@ function my_acf_init() {
 			'category'			=> 'campus',
 			'keywords'			=> array( 'campus'),
 		));
-		// register a tabs-contact-block
+		// register a tabs-contact
 		acf_register_block(array(
-			'name'				=> 'tabs-contact-block',
-			'title'				=> __('tabs-contact-block'),
-			'description'		=> __('Mon tabs-contact-block personnalisé'),
+			'name'				=> 'tabs-contact',
+			'title'				=> __('tabs-contact'),
+			'description'		=> __('Mon tabs-contact personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'contact',
 			'keywords'			=> array( 'contact' ),
@@ -292,6 +294,17 @@ function my_acf_init() {
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'partners',
 			'keywords'			=> array( ' partners','university' ),
+		));
+		// register a widget bloc
+		acf_register_block(array(
+			'name'				=> 'tabs-partners-university',
+			'title'				=> __('tabs-partners-university'),
+			'description'		=> __('Mon tabs-partners-university personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'partners',
+			'keywords'			=> array( ' partners','university' ),
+			'align'             => 'full',
+			'supports'          => array('align' => array( 'full' )),
 		));
 		
 

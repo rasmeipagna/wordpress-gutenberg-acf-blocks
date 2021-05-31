@@ -1,8 +1,8 @@
 <?php
 /*
-Description: Theme enfant de Sup'Biotech
-Author: Pagna Toung
-Template Name: Template Home Sup'Biotech
+* Description: Theme enfant de Sup'Biotech
+* Author: Annie Binet
+* Template Name: Template Homepage Sup'Biotech
 */
 
 get_header(); 
@@ -143,12 +143,12 @@ get_header();
 							</figure>
 						</a>
 						<div class="col-md-7 text">
-
-							<h2 class="bef">À la <span>une</span></h2>
+							
 							<a class="class-off" href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/sb-career-day/forum-stage-emplois">
 								<p class="entete">
 									SB Career Day
 								</p>
+								<p class="sous-entete">> Le forum stage et 1er emploi</p>
 							</a>
 
 							<p>
@@ -160,6 +160,8 @@ get_header();
 
 						</div>
 					</div>
+					<div class="slide-une"><?php echo do_shortcode('[eventdb id="1707"]'); ?></div>
+
 					<div class="slide-une displayJPOSlide"></div>
 					<div class="slide-une displayBiotechDaySlide"></div>
 					<div class="slide-une displayConferenceSlide"></div>
@@ -648,19 +650,7 @@ get_header();
 </section>
 
 
-<!--<section id="replay">
-<h2>Work in progress ...</h2>
-</section>-->
-
-
-		
 		</div><!--end home -->
-
-		
-
-			
-
-
 
 
 		</main><!-- #main -->
