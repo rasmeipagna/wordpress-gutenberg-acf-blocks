@@ -286,7 +286,7 @@ function my_acf_init() {
 			'category'			=> 'booking',
 			'keywords'			=> array( 'booking' ),
 		));
-		// register a bloc-partners-university
+		// register a tabs-partners-university
 		acf_register_block(array(
 			'name'				=> 'tabs-partners-university',
 			'title'				=> __('tabs-partners-university'),
@@ -297,12 +297,12 @@ function my_acf_init() {
 		));
 		// register a widget bloc
 		acf_register_block(array(
-			'name'				=> 'tabs-partners-university',
-			'title'				=> __('tabs-partners-university'),
+			'name'				=> 'widget',
+			'title'				=> __('widget'),
 			'description'		=> __('Mon tabs-partners-university personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'partners',
-			'keywords'			=> array( ' partners','university' ),
+			'category'			=> 'widget',
+			'keywords'			=> array( ' widget' ),
 			'align'             => 'full',
 			'supports'          => array('align' => array( 'full' )),
 		));

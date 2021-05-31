@@ -55,9 +55,71 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                         
                     </div>
 
-                    <div class="clearfix"></div> 
+                    <div class="clearfix"></div>
+<?php
+
+// Check rows exists.
+if( have_rows('contact_paris') ):
+
+    // Loop through rows.
+    while( have_rows('contact_paris') ) : the_row();
+
+        // Load sub field value.
+        $departement = get_sub_field('departement');
+        $departement = get_sub_field('adresse');
+        $codepostal = get_sub_field('codepostal');
+        $ville = get_sub_field('ville');
+        $photo = get_sub_field('photo');
+        $nom_prenom = get_sub_field('nom_prenom');
+        $titre = get_sub_field('titre');
+        $telephone = get_sub_field('telephone');
+        $fax1 = get_sub_field('fax_1');
+        $fax2 = get_sub_field('fax_2');
+        $email = get_sub_field('email');
+        $bouton = get_sub_field('bouton');
+        // Do something...
+
+    // End loop.
+    endwhile;
+
+// No value.
+else :
+    // Do something...
+endif;
+?>
                     <div class="col-md-12">
-                        <!-- PETIT BLOC DE CONTACTS -->
+                    <div class="petit-blocs">
+                        <div class="contact vert img-out">
+                            <h3><?php echo $departement; ?></h3>
+                            <p><?php echo $adresse; ?><br>
+                            <?php echo $codepostal; ?> <?php echo $ville; ?><br><br>
+
+                                Tél. : <?php echo $telephone; ?><br>
+                                Fax : <?php echo $fax_1; ?><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $fax_2; ?>
+                            </p>
+                            <p class="colorSpeMail">
+                            <?php echo $email; ?>
+                            </p>
+                        </div>
+
+                        <div class="contact vert">
+                            <h3><?php echo $departement; ?></h3>
+                            <img src="<?php echo $photo; ?>" class="portrait">
+                            <h4>
+                            <?php echo $prenom; ?><br>
+                            <?php echo $nom; ?>
+                            </h4>
+                            <p class="colorSpeMail">
+                            <?php echo $titre; ?><br><br>
+
+                            <?php echo $telephone; ?><br>
+                            <?php echo $email; ?>
+                                <br>
+                                <br>
+                                <a href="<?php echo $bouton; ?>" class="newsroom" target="_blank"><?php echo $bouton; ?></a>
+                            </p>
+                        </div>
                     </div>
                     <div class="clearfix"></div>               
                 </div>
