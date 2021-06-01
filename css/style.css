@@ -594,7 +594,17 @@ h3.hub-green-title{
     border: solid 1px #062838;
     text-decoration:none;
 }
-
+@media screen and (max-width:580px) {
+    .continents .nav-tabs li a {
+        color: #062838;
+        background-color: #fff;
+        border: solid 1px #062838;
+        text-decoration: none;
+        font-size: 11px;
+        padding: 10px 0px;
+        font-weight:bold;
+    }
+}
 .continents .nav-tabs li.active:after {
     background: url(../images/design/bottom-tab-partners.png) no-repeat scroll center center;
     content: ' ';
