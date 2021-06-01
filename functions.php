@@ -263,7 +263,7 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'tabs-campus',
 			'title'				=> __('tabs-campus'),
-			'description'		=> __('Mon campus tabs-campus personnalisé'),
+			'description'		=> __('Mon tabs-campus personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'campus',
 			'keywords'			=> array( 'campus'),
@@ -295,6 +295,16 @@ function my_acf_init() {
 			'category'			=> 'partners',
 			'keywords'			=> array( ' partners','university' ),
 		));
+		// register a sitemap 
+		acf_register_block_type(array(
+			'name'              => 'sitemap',
+			'title'             => 'Plan de site',
+			'description'		=> __('Mon plan-de-site personnalisé'),
+			'render_callback'   => 'my_acf_block_render_callback',
+			'category'          => 'widgets',
+			'icon'              => 'menu',
+			'keywords'          => array( 'menu', 'sitemap' ),
+		  ));
 		// register a widget bloc
 		acf_register_block(array(
 			'name'				=> 'widget',

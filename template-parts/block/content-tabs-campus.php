@@ -5,11 +5,6 @@
  * This is the template that displays the tabs campus.
  */
 
-// get image field (array)
-
-// $image_full1 = get_field('image_full1');
-// $image_full2 = get_field('image_full2');
-
 // create id attribute for specific styling
 $id = 'tabs-campus-' . $block['id'];
 
