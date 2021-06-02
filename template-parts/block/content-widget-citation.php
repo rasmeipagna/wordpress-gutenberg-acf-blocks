@@ -25,7 +25,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
             </div>
             <div class="col-xs-12 col-sm-9 citation-content">
             <p class="citation"><strong><?php the_field('citation'); ?></strong></p>       
-       </div>  
+            </div>  
         </div>
              
     </div>
