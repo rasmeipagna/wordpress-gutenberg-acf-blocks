@@ -2,7 +2,7 @@
 /*
 Description: Theme enfant de Sup'Biotech
 Author: Pagna Toung
-Template Name: Template Page interne
+Template Name: Template Pages Internes
 */
 
 

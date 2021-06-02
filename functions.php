@@ -182,16 +182,16 @@ function my_acf_init() {
 	
 	// check function exists
 	if( function_exists('acf_register_block') ) {
-        // register a testimonial block DEMO
-		acf_register_block(array(
-			'name'				=> 'testimonial',
-			'title'				=> __('Testimonial'),
-			'description'		=> __('A custom testimonial block.'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
-			'keywords'			=> array( 'testimonial', 'quote' ),
-		));
+        // register a testimonial block TEST
+		// acf_register_block(array(
+		// 	'name'				=> 'testimonial',
+		// 	'title'				=> __('Testimonial'),
+		// 	'description'		=> __('A custom testimonial block.'),
+		// 	'render_callback'	=> 'my_acf_block_render_callback',
+		// 	'category'			=> 'formatting',
+		// 	'icon'				=> 'admin-comments',
+		// 	'keywords'			=> array( 'testimonial', 'quote' ),
+		// ));
 
         // register a bloc-equipe
 		acf_register_block(array(
@@ -201,15 +201,6 @@ function my_acf_init() {
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'équipe',
 			'keywords'			=> 'équipe',
-		));
-		// register a team-block OLD 
-		acf_register_block(array(
-			'name'				=> 'team-block',
-			'title'				=> __('team-block'),
-			'description'		=> __('Mon team-block personnalisé.'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'team',
-			'keywords'			=> 'team',
 		));
 		
 		// register a bloc-hub-blue
@@ -221,31 +212,12 @@ function my_acf_init() {
 			'category'			=> 'formation-blue',
 			'keywords'			=> array( 'formation-blue' ),
 		));
-		// register a hub-blue OLD
-		acf_register_block(array(
-			'name'				=> 'hub-blue',
-			'title'				=> __('hub-blue'),
-			'description'		=> __('Mon hub-blue personnalisé'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formation-blue',
-			'keywords'			=> array( 'formation-blue' ),
-		));
 
-        // register a bloc-hub-green block
+        // register a bloc-hub-green
 		acf_register_block(array(
 			'name'				=> 'bloc-hub-green',
 			'title'				=> __('bloc-hub-green'),
 			'description'		=> __('Mon bloc-hub-green personnalisé'),
-			'render_callback'	=> 'my_acf_block_render_callback',
-			'category'			=> 'formation-green',
-			'keywords'			=> array( 'formation-green' ),
-		));
-
-		// register a green-blue OLD
-		acf_register_block(array(
-			'name'				=> 'hub-green',
-			'title'				=> __('hub-green'),
-			'description'		=> __('Mon hub-green personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formation-green',
 			'keywords'			=> array( 'formation-green' ),
@@ -316,7 +288,18 @@ function my_acf_init() {
 			'keywords'			=> array( ' widget' ),
 			'align'             => 'full',
 			'supports'          => array('align' => array( 'full' )),
-		));	       
+		));
+		// register a widget-citation
+		acf_register_block(array(
+			'name'				=> 'widget-citation',
+			'title'				=> __('widget-citation'),
+			'description'		=> __('Mon widget citation personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'widget',
+			'keywords'			=> array( ' widget' ),
+			'align'             => 'full',
+			'supports'          => array('align' => array( 'full' )),
+		));	 	       
 	}
 }
 

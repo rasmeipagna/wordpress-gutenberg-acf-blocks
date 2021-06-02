@@ -1,7 +1,7 @@
 <?php
 /**
  * Block Name: Testimonial
- *
+ * BLOC DE TEST
  * This is the template that displays the testimonial block.
  */
 
