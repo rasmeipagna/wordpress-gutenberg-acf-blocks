@@ -15,8 +15,8 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
 <div id="<?php echo $id; ?>" class="widget-citation <?php echo $align_class; ?>">
-    <div class="col-xs-12 col-sm-12 portrait-content">
-        <div class="col-xs-12 col-sm-8 d-flex justify-content-center">
+    <div class="col-xs-12 col-sm-12 container-widget content">
+        <div class="col-xs-12">
             <div class="col-sm-3">
                     <div class="portrait"><img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" /><br />
                     <h4><?php the_field('nom'); ?> <?php the_field('prenom'); ?></h4><br />
