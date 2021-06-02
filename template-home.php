@@ -44,7 +44,7 @@ get_header();
 						</p>-->			
 
 						
-						<div class="displayBiotechDayHome"><?php echo do_shortcode('[eventdb id="1206"]'); ?></div>
+						<div class="displayBiotechDayHome"><?php echo do_shortcode('[eventdb id="1206"]'); ?> <?php //echo do_shortcode('[eventdb id="2267"]'); ?></div>
 						<!-- <div class="displayEventHomeParis"></div>
 						<div class="displayTypeJPOLyon"></div>
 
@@ -509,7 +509,7 @@ get_header();
 <!-- end section actu -->
 
 <!-- section replay -->
-<section id="replay actu" class="actu">
+<section id="replay" class="actu">
     <div class="container-fluid replay-container">
 		<div class="container">
 		<h2>Revivez <span>les temps forts de l'école</span></h2>

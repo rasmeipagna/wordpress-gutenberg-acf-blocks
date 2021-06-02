@@ -203,4 +203,5 @@ wp_nav_menu( array(
         });
     </script>
 </body>
+    </div>
 </html>

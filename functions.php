@@ -4,13 +4,13 @@
 **/
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles', 99 );
 function theme_enqueue_styles() {
- wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
- wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'));
- wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'));
- wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
+ wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css', null, null );
+ wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'), null, null);
+ wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'), null, null);
+ wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'), null, null);
  wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js', array(), null, null);
  wp_enqueue_script('child-theme-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
-//  wp_enqueue_script('child-theme-bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.js');
+//wp_enqueue_script('child-theme-bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.js');
 	
 }
 
@@ -165,6 +165,7 @@ add_theme_support( 'editor-color-palette', array(
 		'color' => '#ffffff', 
 	),
 ) );
+
 register_block_style(
     'core/table',
     array(
@@ -173,7 +174,7 @@ register_block_style(
         'isDefault'=> 'true',
     )
 );
-
+add_theme_support( 'align-wide' );
 // ADD BLOCK ACF PERSO
 add_action('acf/init', 'my_acf_init');
 //Create function to init acf
@@ -305,22 +306,20 @@ function my_acf_init() {
 			'icon'              => 'menu',
 			'keywords'          => array( 'menu', 'sitemap' ),
 		  ));
-		// register a widget bloc
+		// register a widget-nous-rencontrer
 		acf_register_block(array(
-			'name'				=> 'widget',
-			'title'				=> __('widget'),
-			'description'		=> __('Mon tabs-partners-university personnalisé'),
+			'name'				=> 'widget-nous-rencontrer',
+			'title'				=> __('widget-nous-rencontrer'),
+			'description'		=> __('Mon widget venez nous rencontrer personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'widget',
 			'keywords'			=> array( ' widget' ),
 			'align'             => 'full',
 			'supports'          => array('align' => array( 'full' )),
-		));
-		
-
-        
+		));	       
 	}
 }
+
 //Create function to get bloc acf
 function my_acf_block_render_callback( $block ) {
 	
@@ -374,6 +373,26 @@ function supbiotech_footer_widgets_init() {
 
 }
 add_action( 'widgets_init', 'supbiotech_footer_widgets_init' );
+/*
+ * Create class attribute allowing for custom "className" and "align" values.
+ */
+function acf_block_class( $block, $class = null ) {
+	$className = '';
+  
+	if ( !empty($class) ) {
+	  $className .= $class;
+	}
+  
+	if( !empty($block['className']) ) {
+	  $className .= ' ' . $block['className'];
+	}
+  
+	if( !empty($block['align']) ) {
+	  $className .= ' align' . $block['align'];
+	}
+  
+	echo 'class="' . $className . '"';
+  }
 
 
 

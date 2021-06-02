@@ -724,6 +724,71 @@ h3.hub-green-title{
 }
 */
 /* FIN TABS BOOKING */
+/* WIDGETS */
+.layout-container {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    }
+.alignwide {
+    margin-left: -50px;
+    margin-right: -50px;
+}
+    
+.alignfull {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+/* WIDGET VENEZ NOUS RENCONTRER */
+.widget-nous-rencontrer {
+    background-image: url(../images/media/widgets/widget-nous-rencontrer.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height:281px;
+    position:relative;
+}
+.widget-nous-rencontrer .content-text {
+    position: absolute;
+    top: 70px;
+    left: 20%;
+}
+.widget-nous-rencontrer .content-text p.text{
+    color:#fff !important;
+    font-size:40px;
+    line-height:40px;
+    font-weight:bold;
+}
+.widget-button-en-savoir-plus a{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    color: #fff;
+}
+.widget-button-en-savoir-plus a:hover{
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    background-color: #fff;
+    color:#031924;
+}
+/* FIN WIDGET VENEZ NOUS RENCONTRER */
+/* WIDGET CITATION */
+.widget-citation{
+    background-color:#dedede;
+    height:337px;
+    position:relative;
+}
+.widget-citation .portrait{
+
+}
+.widget-citation h4{
+
+}
+.widget-citation p.promo{
+
+}
+.widget-citation p.citation{
+
+}
+/* FIN WIDGET CITATION */
 .wp-block-button__link:hover {
     /* color:white !important; */
     transition: 0.1s ease-in-out;
