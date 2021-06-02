@@ -798,7 +798,11 @@ h3.hub-green-title{
     font-size:18px;
     font-weight:lighter;
 }
-.widget-citation .citation-content:before{
+.widget-citation .citation-content p.citation:before{
+    content: ' ';
+    display: inline-block;
+    width:100px;
+    height:100px;
     background-image: url(../images/design/apostrophe.png);
     background-position: 10px 50px;
     background-repeat: no-repeat;
