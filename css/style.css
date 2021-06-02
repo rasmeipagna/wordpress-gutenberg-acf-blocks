@@ -775,6 +775,8 @@ h3.hub-green-title{
     background-color:#dedede;
     height:337px;
     position:relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .widget-citation .container-widget{
     max-width: 890px;
@@ -783,8 +785,8 @@ h3.hub-green-title{
 .widget-citation .content{
 
 }
-.widget-citation .portrait{
-
+.widget-citation .portrait {
+    padding: 20px 0;
 }
 .widget-citation h4{
     text-transform:uppercase;
