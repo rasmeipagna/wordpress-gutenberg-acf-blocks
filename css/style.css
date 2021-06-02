@@ -790,9 +790,11 @@ h3.hub-green-title{
     text-transform:uppercase;
     font-size:18px;
     font-weight:bold;
+    color:#031924;
 }
 .widget-citation p.promo{
     font-size:18px;
+    font-weight:lighter;
 }
 .widget-citation .citation-content:before{
     background-image: url(../images/design/apostrophe.png);
