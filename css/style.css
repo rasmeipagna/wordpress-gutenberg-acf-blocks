@@ -797,10 +797,12 @@ h3.hub-green-title{
     .widget-citation .citation-content p.citation:before {
         margin: 0 30px;
     }
+    .widget-citation .content {
+        width: 100%;
+        background-color: #dedede;
+    }
 } 
-.widget-citation .content{
 
-}
 .widget-citation .portrait {
     padding: 20px 0;
 }
