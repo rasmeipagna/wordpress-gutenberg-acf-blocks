@@ -782,6 +782,16 @@ h3.hub-green-title{
     max-width: 890px;
     margin-left: 280px;
 }
+@media screen and (max-width:992px) {
+    .widget-citation .container-widget {
+        width:100%;
+        margin-left: 0px;
+    }
+    .col-xs-12.mobile-bkg {
+        width: 100%;
+        background-color: #dedede;
+    }
+} 
 .widget-citation .content{
 
 }
@@ -1041,4 +1051,22 @@ footer .vousetes a.rdvperso:hover {
 .page-header {
     margin: 120px 0 0px;
     border-bottom: 0px solid #eee;
+}
+
+
+
+/*************************************************************
+Style home blog
+**************************************************************/
+
+.container-blog {
+    width: 1240px;
+    margin: 0 auto;
+}
+.container-blog.page {
+    padding-top: 171px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    position: relative;
 }

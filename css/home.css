@@ -992,18 +992,26 @@ h3.polygoneH3{
 }
 
 /* bloc actus */
+.main-actu figure img {
+    width: auto;
+    height: 420px;
+} 
 .main-resume {
     background-color: #00B1EB;
     margin-left: -15px;
     margin-top: 16px;
     padding: 30px 42px;
-    height: 389px;
+    height: 420px;
 }
 .main-resume h4 {
     color: #fff;
     line-height: 1.1em;
     margin-bottom: 25px;
     font-size: 30px;
+    font-weight: 700;
+}
+.main-resume h4 a {
+    color: #fff;
 }
 .main-resume p {
     color: #fff;
@@ -1180,6 +1188,13 @@ h3.polygoneH3{
         margin-bottom: 20px; 
         margin-top: 20px;
     }
+
+    #debouches .bloc-alumni {
+        margin-bottom: 80px;
+        margin-right: 0px;
+        margin-top: 24px;
+    }
+
     #actus .simple-button { 
         width: 65%;
     }
@@ -1189,7 +1204,24 @@ h3.polygoneH3{
         box-sizing: border-box;
         margin-left: 20px;
     }
+
+    .main-actu figure img {
+        width: 100%;
+        height: 200px;
+    }
+    .main-resume {
+        margin-left: 15px;
+        margin-top: 16px;
+        height: auto;
+        margin-right: 0;
+    }
+    .main-resume h4 {
+        font-size: 25px;
+    }
 }
+
+
+
 
 
 

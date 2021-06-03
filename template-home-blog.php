@@ -1,32 +1,21 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Sup\'Biotech_Blog
- */
+/*
+* Description: Theme enfant de Sup'Biotech
+* Author: Annie Binet
+* Template Name: Template Home Blog Sup'Biotech
+*
+*/
 
 get_header(); ?>
-<section class="container-blog page">
+
+<section class="container-blog _page">
+    
 <div id="primary" class="content-area col-sm-8">
 <div class="col-md-12">
-	<!-- le fil d'ariane -->
 	<ul class="ariane">
-		<span>
-			<span>
-				<a href="/">Accueil</a>  
-				<span>
-					<a href="/blogs">Actualités de l'école</a>  
-					<span class="breadcrumb_last" aria-current="page">Blog</span>
-				</span>
-			</span>
-		</span>
+		<li><h6><a href="/">Accueil </a></h6></li>
+		<li><h6><a href="/blogs">Actualités de l'école</a></h6></li>
+		<li><h6>Blog</h6></li>
 	</ul>
 </div>
 	<div id="main" class="site-main">

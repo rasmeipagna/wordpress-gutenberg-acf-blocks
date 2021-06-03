@@ -159,7 +159,7 @@ wp_nav_menu( array(
                         <a class="documentation" href="/admissions-ecole-ingenieur/documentation/">
                             Documentation
                         </a>
-                        <a class="candidature" href="admission-ecole-ingenieur/candidature">
+                        <a class="candidature" href="/admission-ecole-ingenieur/candidature">
                             Candidature
                         </a>
                         <a class="agenda" href="/agenda">

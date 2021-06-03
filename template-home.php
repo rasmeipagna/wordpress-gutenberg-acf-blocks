@@ -3,6 +3,11 @@
 * Description: Theme enfant de Sup'Biotech
 * Author: Annie Binet
 * Template Name: Template Homepage Sup'Biotech
+*
+* @link https://codex.wordpress.org/Template_Hierarchy
+*
+* @package Sup\'Biotech_Blog
+*
 */
 
 get_header(); 
@@ -44,17 +49,17 @@ get_header();
 						</p>-->			
 
 						
-						<div class="displayBiotechDayHome"><?php echo do_shortcode('[eventdb id="1206"]'); ?> <?php //echo do_shortcode('[eventdb id="2267"]'); ?></div>
-						<!-- <div class="displayEventHomeParis"></div>
+						<!--<div class="displayBiotechDayHome"> <?php //echo do_shortcode('[eventdb id="2267"]'); ?></div>
+						 <div class="displayEventHomeParis"></div>
 						<div class="displayTypeJPOLyon"></div>
 
 						<p class="displayJPOHome"></p>
-							<p class="displayBiotechDayHome"></p>
+							<p class="displayBiotechDayHome"></p>-->
 
-						<p class="displayTypeJPOParis"></p>
-							<p class="displayTypeJPOLyon"></p>
+						<div class="displayTypeJPOParis"><?php echo do_shortcode('[eventdb id="1206"]'); ?></div>
+							<div class="displayTypeJPOLyon"><?php echo do_shortcode('[eventdb id="2269"]'); ?></div>
 
-						<p class="displayTypeBiotechParis"></p>
+						<!--<p class="displayTypeBiotechParis"></p>
 							<p class="displayTypeBiotechLyon"></p>-->
 					</div>
 					<div class="CTI-logo">
@@ -62,11 +67,7 @@ get_header();
 							<a href="https://www.cti-commission.fr/" target="_blank">
 								<img src="https://www.supbiotech.fr/Content/images/design/logo-cti.png" alt="logo Commission des Titres d'Ingénieur">
 							</a>
-							<!--<span class="petitText">
-								L’institut supérieur des biotechnologies<br> de Paris
-								(Sup’Biotech) est reconnu par<br> l’état et délivre
-								un diplôme d’ingénieur<br> habilité par la CTI
-							</span>-->
+							
 						</span>
 					</div>
 
@@ -74,16 +75,16 @@ get_header();
 
 				<!-- les boutons contact -->
 				<div class="contact-clic hpDesktop">
-					<a class="documentation" href="">
+					<a class="documentation" href="/admissions-ecole-ingenieur/documentation/">
 						Documentation
 					</a>
-					<a class="candidature" href="">
+					<a class="candidature" href="/admission-ecole-ingenieur/candidature">
 						Candidature
 					</a>   
-					<a class="entretien" href="">
+					<a class="entretien" href="/agenda">
 							Agenda
 					</a>
-					<a class="rdvperso" href="">
+					<a class="rdvperso" href="/admissions-ecole-ingenieur/rdv-personnalises">
 						RDV <br /> personnalisé
 					</a>
 					<!--<a class="contacts" href="@Html.Lien("Contact")">
@@ -162,9 +163,9 @@ get_header();
 					</div>
 					<div class="slide-une"><?php echo do_shortcode('[eventdb id="1707"]'); ?></div>
 
-					<div class="slide-une displayJPOSlide"></div>
+					<!--<div class="slide-une displayJPOSlide"></div>
 					<div class="slide-une displayBiotechDaySlide"></div>
-					<div class="slide-une displayConferenceSlide"></div>
+					<div class="slide-une displayConferenceSlide"></div>-->
 
 		</div>
 		</div>
@@ -189,12 +190,12 @@ get_header();
 						<div class="polygone">
 							<div class="polygone-interne">
 								<h3 class="polygoneH3">
-									<a style="color:#ffffff" href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/cycle-preparatoire">
+									<a style="color:#ffffff" href="/programmes/cycle-preparatoire/">
 										Cycle<br />
 										préparatoire
 									</a>                            
 								</h3>
-								<a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/cycle-preparatoire">
+								<a href="/programmes/cycle-preparatoire/">
 									<p>2 premières années de formation entièrement en <span>français</span> ou en <span>anglais</span></p>
 								</a>
 							</div>
@@ -203,15 +204,15 @@ get_header();
 							<div class="polygone-interne">
 								
 								<h3 class="polygoneH3">
-									<a style="color:#ffffff" href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/presentation">
+									<a style="color:#ffffff" href="/ecole-ingenieurs-biotechnologies/presentation/">
 										Cycle<br />
 										ingénieur
 									</a>
 								</h3>
-								<a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/presentation">
+								<a href="/ecole-ingenieurs-biotechnologies/presentation/">
 									<p>5 années à <span>Paris</span> ou <span>Lyon</span> pour devenir ingénieur en biotechnologies</p>
 									</a>
-		</div>
+							</div>
 						</div>
 					</div>
 					
@@ -219,11 +220,11 @@ get_header();
 						<div class="polygone">
 							<div class="polygone-interne">
 								<h3 class="polygoneH3">
-									<a style="color:#ffffff" href="https://www.supbiotech.fr/formation-bachelor">
+									<a style="color:#ffffff" href="/programmes/formation-bachelor/">
 										Bachelor
 									</a>
 								</h3>
-								<a href="https://www.supbiotech.fr/formation-bachelor">
+								<a href="/programmes/formation-bachelor/">
 									<p>
 										Formation en
 										<span>3 ans</span> avec 50% d’enseignements pratiques
@@ -234,11 +235,11 @@ get_header();
 						<div class="polygone">
 							<div class="polygone-interne">
 								<h3 class="polygoneH3">
-									<a style="color:#ffffff" href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage">
+									<a style="color:#ffffff" href="/programmes/apprentissage/">
 										Apprentissage
 									</a>
 								</h3>
-								<a style="color:#ffffff" href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage">
+								<a style="color:#ffffff" href="/programmes/apprentissage/">
 									<p>
 										Devenez <span>ingénieur</span>
 										par la voie de l’apprentissage
@@ -374,7 +375,7 @@ get_header();
 			
 			<div class="col-md-6">
 				<ul>
-					<li><a href="/Content/docs/ingenieur-recherche.pdf" target="_blank">Ingénieur de recherche</a></li>
+					<li><a href="/docs/ingenieur-recherche.pdf" target="_blank">Ingénieur de recherche</a></li>
 					<li><a href="/Content/docs/charge-affaires-reglementaires.pdf" target="_blank">Chargé des affaires réglementaires</a></li>
 					<li><a href="/Content/docs/chef-projet.pdf" target="_blank">Chef de projet</a></li>
 					<li><a href="/Content/docs/ingenieur-procede.pdf" target="_blank">Ingénieur procédés</a></li>
@@ -392,7 +393,7 @@ get_header();
 			</div>
 			<div class="clearfix"></div>
 
-			<div><a href="" class=" simple-button blue">Tous les métiers</a></div>
+			<div><a href="/apres-supbiotech/metiers/" class=" simple-button blue">Tous les métiers</a></div>
 
 			<div class="clearfix"></div>
 
@@ -400,7 +401,7 @@ get_header();
 				<div class="col-md-4 bloc-alumni">
 				<h3 class="blanc">Les Alumni à la une</h3>
 					<p>> Découvrez les témoignages de nos Alumni</p>
-					<div><a href="" class=" simple-button blue">Tous les témoignages</a></div>
+					<div><a href="/apres-supbiotech/metiers/" class=" simple-button blue">Tous les témoignages</a></div>
 				</div>
 				<div class="col-md-8 ">
 					
@@ -419,7 +420,7 @@ get_header();
         <h2>Actualités de <span>l'école</span></h2>
         <div class="_slider-actu">
 			<row>
-				<div class="col-md-7 main-actu">
+				<!--<div class="col-md-7 main-actu">
 					<figure>
 						<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/05/double-diplome-hepl-haute-ecole-liege-supbiotech-international-belgique-biotechnologies-home.jpg" alt="" />
 					</figure>
@@ -432,12 +433,305 @@ get_header();
 						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 						</p>
-						<!--<span class="linkplus"></span>-->
-					</div>
+						
+					</div>-->
+					<?php if ( have_posts() ) : ?>
+			<?php query_posts('posts_per_page=1'); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+<!-- -----------------------------vient de /content/prime.php-------------------- -->
+<div class="entry-header">
+		<!--<h1>Les derniers articles</h1>-->
+		<!--<?php
+		if ( is_singular() ) :
+			the_title( '<h3>', '</h3>' );
+		else :
+			the_title( '<h3><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+		endif;
+
+		if ( 'post' === get_post_type() ) : ?>
+		<div class="entry-meta">
+			<?php supbiotech_blog_posted_on(); ?>
+		</div> .entry-meta -->
+		<?php
+		endif; ?>
+	</div><!-- .entry-header -->
+	<article class="prime-article col-sm-12" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="entry-content primePos">
+		<div class="col-md-7 main-actu _posImg _blog-hp">
+			<figure class="blog-hp">
+				<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
+					<?php 
+
+					if( has_post_thumbnail() ) {
+						the_post_thumbnail("prime");
+						} else {
+  
+ ?>
+              <?php if(has_category( 'actu-technologique' )){ ?>
+              <img alt="Actu Technologique" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actutechnologique.jpg"/>
+              <?php } elseif(has_category( 'entreprise' )) { ?>
+              <img alt="Événements" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/entreprise.jpg"/>
+              <?php } elseif(has_category( 'evenements' )) { ?>
+              <img alt="L'actu par les élèves" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/evenements.jpg"/>
+              <?php } elseif(has_category( 'lactu-biotech-par-les-eleves' )) { ?>
+              <img alt="Mission to Mars" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actubiotecheleves.jpg"/>
+              <?php } elseif(has_category( 'mission-to-mars' )) { ?>
+              <img alt="Non classé" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/missiontomars.jpg"/>
+              <?php } elseif(has_category( 'non-classe' )) { ?>
+              <img alt="Nous rencontrer" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actu-hp.jpg"/>
+              <?php } elseif(has_category( 'nous-rencontrer' )) { ?>
+              <img alt="Pédagogie" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/nousrencontrer.jpg"/>
+              <?php } elseif(has_category( 'pedagogie' )) { ?>
+              <img alt="Portraits d'anciens" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/pedagogie.jpg"/>
+              <?php } elseif(has_category( 'portraits-danciens' )) { ?>
+              <img alt="Projets et recherche" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/portraitsanciens.jpg"/>
+              <?php } elseif(has_category( 'projets-et-recherche' )) { ?>
+              <img alt="Vie étudiante" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/projetsrecherche.jpg"/>
+              <?php } elseif(has_category( 'vie-etudiante' )) { ?>
+              	<img alt="Vie étudiante" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/vieetudiante.jpg"/>
+                    <?php } ?>
+        <?php } 
+             
+          ?>
+				</a>
+				<!--<a class="linkplus" href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"></a>-->
+			</figure>
+
+		</div>
+		<!-- <span class="blog-hp">
+			<a href="" class="linkplus"></a>
+		</span> -->
+		<!--<div class="prime-blog-tag">
+			<?php 
+/*TOUTES LES CATEGORIES*/
+			/*foreach((get_the_category()) as $cat) { 
+        echo $cat->cat_name . '<br />'; 
+      }*/
+			$cat = get_the_category(); $cat = $cat[0]; echo $cat->cat_name; ?>
+		</div>-->
+<div class="col-md-5 main-resume">
+		<h4><a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"><?php the_title(); ?></a></h4>
+		<?php the_excerpt(); ?>
+</div>
+		</div><!-- .entry-content -->
+
+	<!--<footer class="entry-footer">
+		<?php supbiotech_blog_entry_footer(); ?>
+	</footer> .entry-footer -->
+</article><!-- #post-<?php the_ID(); ?> -->
+
+<!-- ---------------------------fin de ce qui vient de content-prime.php------------------------ -->
+<?php //get_template_part( 'template-parts/content-prime', 'first-article' ); ?>
+
+
+			<?php endwhile; ?>
+				
+			<?php query_posts('showposts=3&offset=1'); ?> <!-- pour enlever le premier-->
+
+			<?php while ( have_posts() ) : the_post(); ?>
+
+<!-- ------------------	vient de template-parts/content-index -------------- -->
+<article class="col-sm-4 autre-actu" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<div class="entry-content">
+	<figure class="blog-hp">
+		<a href="<?php echo  get_permalink() ?>" rel="bookmark">
+
+
+
+
+
+		<?php 
+
+		if( has_post_thumbnail() ) {
+						the_post_thumbnail("small");
+						} else {
+	             ?>
+              <?php if(has_category( 'actu-technologique' )){ ?>
+              <img alt="Actu Technologique" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actutechnologique.jpg"/>
+              <?php } elseif(has_category( 'entreprise' )) { ?>
+              <img alt="Événements" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/entreprise.jpg"/>
+              <?php } elseif(has_category( 'evenements' )) { ?>
+              <img alt="L'actu par les élèves" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/evenements.jpg"/>
+              <?php } elseif(has_category( 'lactu-biotech-par-les-eleves' )) { ?>
+              <img alt="Mission to Mars" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actubiotecheleves.jpg"/>
+              <?php } elseif(has_category( 'mission-to-mars' )) { ?>
+              <img alt="Non classé" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/missiontomars.jpg"/>
+              <?php } elseif(has_category( 'non-classe' )) { ?>
+              <img alt="Nous rencontrer" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actu-hp.jpg"/>
+              <?php } elseif(has_category( 'nous-rencontrer' )) { ?>
+              <img alt="Pédagogie" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/nousrencontrer.jpg"/>
+              <?php } elseif(has_category( 'pedagogie' )) { ?>
+              <img alt="Portraits d'anciens" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/pedagogie.jpg"/>
+              <?php } elseif(has_category( 'portraits-danciens' )) { ?>
+              <img alt="Projets et recherche" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/portraitsanciens.jpg"/>
+              <?php } elseif(has_category( 'projets-et-recherche' )) { ?>
+              <img alt="Vie étudiante" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/projetsrecherche.jpg"/>
+              <?php } elseif(has_category( 'vie-etudiante' )) { ?>
+              	<img alt="Vie étudiante" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/vieetudiante.jpg"/>
+                    <?php } ?>
+        <?php } 
+             
+          ?>
+		</a>
+		<!--<a class="linkplus" href="<?php echo get_permalink() ?>" rel="bookmark"></a>-->
+		 
+	</figure>
+	<!--<div class="blog-tag">
+			<?php 
+      /*TOUTES LES CATEGORIES*/
+			/*foreach((get_the_category()) as $cat) { 
+        echo $cat->cat_name . '<br />'; 
+      }*/
+			$cat = get_the_category(); $cat = $cat[0]; echo $cat->cat_name; ?>
+		</div>-->
+	<h3><a href="<?php echo  get_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+	<?php the_excerpt(); ?>
+
+	</div><!-- .entry-content -->
+</article><!-- #post-<?php the_ID(); ?> -->
+
+<!-- ------------------------------------ fin de ce qui vient de template-parts/content-index ------------------- -->
+
+				<?php //get_template_part( 'template-parts/content-index', get_post_format() ); ?>
+			<?php endwhile; ?>
+		<?php else : ?>
+		
+		<!-- ------------------------------------ce qui vient de template-parts/content ------------------- -->	
+		<?php
+		if ( is_singular() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+
+		if ( 'post' === get_post_type() ) : ?>
+		
+		<?php
+		endif; ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+	<div class="entry-content">
+		<figure class="blog-hp">
+			<a href="<?php echo  esc_url( get_permalink() ) ?>" rel="bookmark">
+			
+				<?php 
+				if( has_post_thumbnail() ) {
+					the_post_thumbnail("prime");
+				} else {
+					
+  ?>
+              <?php if(has_category( 'actu-technologique' )){ ?>
+              <img alt="Actu Technologique" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actutechnologique.jpg"/>
+              <?php } elseif(has_category( 'entreprise' )) { ?>
+              <img alt="Événements" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/entreprise.jpg"/>
+              <?php } elseif(has_category( 'evenements' )) { ?>
+              <img alt="L'actu par les élèves" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/evenements.jpg"/>
+              <?php } elseif(has_category( 'lactu-biotech-par-les-eleves' )) { ?>
+              <img alt="Mission to Mars" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actubiotecheleves.jpg"/>
+              <?php } elseif(has_category( 'mission-to-mars' )) { ?>
+              <img alt="Non classé" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/missiontomars.jpg"/>
+              <?php } elseif(has_category( 'non-classe' )) { ?>
+              <img alt="Nous rencontrer" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/actu-hp.jpg"/>
+              <?php } elseif(has_category( 'nous-rencontrer' )) { ?>
+              <img alt="Pédagogie" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/nousrencontrer.jpg"/>
+              <?php } elseif(has_category( 'pedagogie' )) { ?>
+              <img alt="Portraits d'anciens" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/pedagogie.jpg"/>
+              <?php } elseif(has_category( 'portraits-danciens' )) { ?>
+              <img alt="Projets et recherche" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/portraitsanciens.jpg"/>
+              <?php } elseif(has_category( 'projets-et-recherche' )) { ?>
+              <img alt="Vie étudiante" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/projetsrecherche.jpg"/>
+              <?php } elseif(has_category( 'vie-etudiante' )) { ?>
+              	<img alt="Vie étudiante" src="/blogs/wp-content/themes/supbiotech-blog/images/media/cat/vieetudiante.jpg"/>
+                    <?php } ?>
+        <?php } 
+             
+          ?>
+			</a>
+			<!-- <a class="linkplus" href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark"></a> -->
+			<div class="blog-tag-post">
+			<?php 
+			/*TOUTES LES CATEGORIES*/
+			/*foreach((get_the_category()) as $cat) { 
+        echo $cat->cat_name . '<br />'; 
+      }*/
+			foreach((get_the_category()) as $cat) { 
+				echo $cat->cat_name . '<br />'; 
+			} ?>
+		</div>
+		</figure>
+
+		<?php
+		the_content( sprintf(
+			wp_kses(
+				/* translators: %s: Name of current post. Only visible to screen readers */
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'supbiotech-blog' ),
+				array(
+					'span' => array(
+						'class' => array(),
+						),
+					)
+				),
+			get_the_title()
+			) );
+
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'supbiotech-blog' ),
+			'after'  => '</div>',
+			) );
+			?>
+		</div><!-- .entry-content -->
+		<div class="entry-meta">
+
+		</div><!-- .entry-meta -->
+		<script src="https://apis.google.com/js/platform.js" async defer>
+			{lang: 'fr'}
+		</script>
+
+		<p class="posted">
+			<strong>Posté le : <?php echo get_the_date(); ?></strong>
+		</p>
+		<div class="lishare">
+			<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+			<script type="IN/Share" data-url="<$MTEntryPermalink$>" data-counter="right"></script>
+		</div>
+		<div class="twt">
+			<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>       
+		</div>
+		<div class="fb-share-button" data-href="<?php echo  esc_url( get_permalink() ) ?>" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo  esc_url( get_permalink() ) ?>">Partager</a></div>
+		<footer class="entry-footer">
+<!-- 		<?php supbiotech_blog_entry_footer(); ?>
+
+-->	</footer><!-- .entry-footer -->
+</article><!-- #post-<?php the_ID(); ?> -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.10&appId=1777986829106167";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- ------------------------------------ fin de ce qui vient de template-parts/content ------------------- -->	
+
+			<?php //get_template_part( 'template-parts/content', 'none' ); ?>
+		<?php endif; ?>
+
+		<!--<div class="append-articles posPost"></div>
+		<div class="clearfix"></div>
+		<div class="col-sm-3"> </div>
+		<div class="posButtonLoad col-sm-6">
+			<a href="#" class="afficher-plus">Afficher plus d'articles</a>
+		</div>
+		<div class="col-sm-3"> </div>-->
+
 				<div class="clearboth"></div>
 			</row>	
 
-			<row>           
+			<!--<row>           
 				<div class="col-md-4 autre-actu">
 					<a href="#" class="actualite rel">
 						
@@ -451,7 +745,7 @@ get_header();
 							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
 							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
 							</p>
-							<!--<span class="linkplus"></span>-->
+							!--<span class="linkplus"></span>--
 						</div>
 					</a>
 				</div>
@@ -467,7 +761,7 @@ get_header();
 							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
 							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.or one who avoids a pain that produces no resultant pleasure?
 							</p>
-							<!--<span class="linkplus"></span>-->
+							!--<span class="linkplus"></span>--
 						</div>
 					</a>
 				</div>
@@ -483,12 +777,12 @@ get_header();
 							Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime 
 							placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
 							</p>
-							<!--<span class="linkplus"></span>-->
+							!--<span class="linkplus"></span>--
 						</div>
 					</a>
 				</div>
 				<div class="clearboth"></div>
-			</row>
+			</row> -->
 			
 			<row>
 				<div class="col-md-4">
@@ -643,7 +937,7 @@ get_header();
         </div>
 
 		<div class="container">
-		<a href="https://www.supbiotech.fr/blogs/" class="simple-button replay">Toutes les actualités</a>
+		<a href="https://www.youtube.com/user/supbiotech" class="simple-button replay">Toutes les vidéos</a>
 		</div>
         
     <!--</div>-->
