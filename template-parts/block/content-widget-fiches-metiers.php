@@ -17,7 +17,7 @@ if( have_rows('liste_metiers') ):
     while( have_rows('liste_metiers') ) : the_row();
 
         // Load sub field value.
-        $sub_value = get_sub_field('metier');
+        $metier = get_sub_field('metier');
         // Do something...
 
     // End loop.
