@@ -834,6 +834,19 @@ h3.hub-green-title{
 /* FIN WIDGET CITATION */
 
 /* WIDGET FICHES-METIERS */
+.widget-fiches-metiers{
+    background-color:#002838;
+    height:485px;
+    position:relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.widget-fiches-metier h4{
+    color:#AED136;
+    font-weight:bold;
+    text-align:center;
+}
+
 /* FIN WIDGET FICHES-METIERS */
 .wp-block-button__link:hover {
     /* color:white !important; */

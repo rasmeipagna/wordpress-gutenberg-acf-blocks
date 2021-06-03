@@ -10,25 +10,7 @@ $id = 'widget-fiches-metiers-' . $block['id'];
 // create align class ("alignwide") from block setting ("wide")
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
-// Check rows exists.
-if( have_rows('liste_metiers') ):
-
-    // Loop through rows.
-    while( have_rows('liste_metiers') ) : the_row();
-
-        // Load sub field value.
-        $metier = get_sub_field('metier');
-        // Do something...
-
-    // End loop.
-    endwhile;
-
-// No value.
-else :
-    // Do something...
-endif;
 ?>
-
 <div id="<?php echo $id; ?>" class="widget-fiches-metiers <?php echo $align_class; ?>">
     <div class="col-xs-12 col-sm-12">
         <div class="col-xs-12">
@@ -37,7 +19,20 @@ endif;
             <div class="col-xs-12 col-sm-6">
                     <div class="liste-metiers">
                     <ul class="metier">
-                        <li><?php echo $metier; ?></li>
+                    <?php
+                        $featured_posts = get_field('liste_metiers');
+                        if( $featured_posts ): ?>
+                        <ul>
+                        <?php foreach( $featured_posts as $featured_post ):
+                        $permalink = get_permalink( $featured_post->ID );
+                        $title = get_the_title( $featured_post->ID );
+                        ?>
+                        <li>
+                        <a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a>
+                        </li>
+                        <?php endforeach; ?>
+                        </ul>
+                        <?php endif; ?>
                     </ul>
                     </div>
             </div>
@@ -71,3 +66,7 @@ endif;
     </div>
     
 </div>
+
+
+                        
+                    
