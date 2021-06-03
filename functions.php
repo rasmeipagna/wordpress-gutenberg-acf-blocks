@@ -253,7 +253,7 @@ function my_acf_init() {
 		// register a tabs-booking
 		acf_register_block(array(
 			'name'				=> 'tabs-booking',
-			'title'				=> __('tabs-booking'),
+			'title'				=> __('RDV personnalisés'),
 			'description'		=> __('Mon tabs-booking personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'booking',
@@ -262,7 +262,7 @@ function my_acf_init() {
 		// register a tabs-partners-university
 		acf_register_block(array(
 			'name'				=> 'tabs-partners-university',
-			'title'				=> __('tabs-partners-university'),
+			'title'				=> __('Partenaires Université'),
 			'description'		=> __('Mon tabs-partners-university personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'partners',
@@ -281,7 +281,7 @@ function my_acf_init() {
 		// register a widget-nous-rencontrer
 		acf_register_block(array(
 			'name'				=> 'widget-nous-rencontrer',
-			'title'				=> __('widget-nous-rencontrer'),
+			'title'				=> __('Venez nous rencontrer'),
 			'description'		=> __('Mon widget venez nous rencontrer personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'widget',
@@ -292,7 +292,7 @@ function my_acf_init() {
 		// register a widget-citation
 		acf_register_block(array(
 			'name'				=> 'widget-citation',
-			'title'				=> __('widget-citation'),
+			'title'				=> __('Citation'),
 			'description'		=> __('Mon widget citation personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'widget',
@@ -303,7 +303,7 @@ function my_acf_init() {
 		// register a widget-fiches-metiers
 		acf_register_block(array(
 			'name'				=> 'widget-fiches-metiers',
-			'title'				=> __('widget-fiches-métiers'),
+			'title'				=> __('Fiches Métiers'),
 			'description'		=> __('Mon widget fiches-métiers personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'widget',
