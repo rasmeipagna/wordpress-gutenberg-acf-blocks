@@ -791,6 +791,12 @@ h3.hub-green-title{
         width: 100%;
         background-color: #dedede;
     }
+    .widget-citation .citation-content p.citation {
+        margin-top:0;
+    }
+    .widget-citation .citation-content p.citation:before {
+        margin: 0 30px;
+    }
 } 
 .widget-citation .content{
 
@@ -798,11 +804,11 @@ h3.hub-green-title{
 .widget-citation .portrait {
     padding: 20px 0;
 }
-.widget-citation h4{
+.widget-citation h4.citation{
     text-transform:uppercase;
     font-size:18px;
     font-weight:bold;
-    color:##002838;
+    color:#002838;
 }
 .widget-citation p.promo{
     font-size:18px;
@@ -811,15 +817,17 @@ h3.hub-green-title{
 .widget-citation .citation-content p.citation:before{
     content: ' ';
     display: inline-block;
-    width: 88px;
-    height: 114px;
+    width: 77px;
+    height: 63px;
     background-image: url(../images/design/apostrophe.png);
-    background-position: 10px 50px;
     background-repeat: no-repeat;
+    margin: 0 30px 100px 0;
     float: left;
 }
-.widget-citation .citation-content p.citation{
-    font-size:18px;
+.widget-citation .citation-content p.citation {
+    font-size: 18px;
+    margin-top: 70px;
+    font-weight:normal;
 }
 /* FIN WIDGET CITATION */
 .wp-block-button__link:hover {
