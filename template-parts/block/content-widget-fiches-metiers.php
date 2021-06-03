@@ -58,6 +58,8 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                             </a>
                         </div>
                     </div>
+                    <div class="hub-green-button-spe"><a href="<?php the_field('lien'); ?>"><?php the_field('intitule_du_bouton'); ?></a>
+        </div>
                 </div>
                 
             </div>  

@@ -841,10 +841,12 @@ h3.hub-green-title{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.widget-fiches-metier h4{
+.widget-fiches-metiers h4{
+    font-size:35px;
     color:#AED136;
     font-weight:bold;
     text-align:center;
+    margin:20px 0 20px 0;
 }
 
 /* FIN WIDGET FICHES-METIERS */
