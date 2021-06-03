@@ -299,7 +299,18 @@ function my_acf_init() {
 			'keywords'			=> array( ' widget' ),
 			'align'             => 'full',
 			'supports'          => array('align' => array( 'full' )),
-		));	 	       
+		));	
+		// register a widget-fiches-metiers
+		acf_register_block(array(
+			'name'				=> 'widget-fiches-metiers',
+			'title'				=> __('widget-fiches-métiers'),
+			'description'		=> __('Mon widget fiches-métiers personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'widget',
+			'keywords'			=> array( ' widget' ),
+			'align'             => 'full',
+			'supports'          => array('align' => array( 'full' )),
+		)); 	       
 	}
 }
 
