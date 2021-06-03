@@ -832,6 +832,9 @@ h3.hub-green-title{
     font-weight:normal;
 }
 /* FIN WIDGET CITATION */
+
+/* WIDGET FICHES-METIERS */
+/* FIN WIDGET FICHES-METIERS */
 .wp-block-button__link:hover {
     /* color:white !important; */
     transition: 0.1s ease-in-out;
@@ -839,7 +842,6 @@ h3.hub-green-title{
 .wp-block-button__link {
     background-color:transparent;
 }
-
 
 /* BUTTONS COLORS */
 /*BLOC GUTENBERG*/
