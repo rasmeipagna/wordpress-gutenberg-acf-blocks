@@ -51,6 +51,7 @@ get_header(); ?>
 		<div class="posButtonLoad col-sm-6">
 			<a href="#" class="afficher-plus">Afficher plus d'articles</a>
 		</div>
+		<br />
 		<div class="col-sm-3"> </div>
 
 	</div><!-- #main -->

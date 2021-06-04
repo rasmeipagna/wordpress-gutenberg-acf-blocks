@@ -841,6 +841,16 @@ h3.hub-green-title{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+@media screen and (max-width:580px){
+    .widget-fiches-metiers .mobile{
+        position:absolute;
+        top:0;
+        left:0;
+        background-color: #002838;
+        padding:20px;
+    }
+}
+
 .widget-fiches-metiers h4{
     font-size:35px;
     color:#AED136;
@@ -848,7 +858,33 @@ h3.hub-green-title{
     text-align:center;
     margin:20px 0 20px 0;
 }
-
+.widget-fiches-metiers .liste-metiers{
+    margin-left:300px;
+}
+@media screen and (max-width:580px){
+    .widget-fiches-metiers .liste-metiers{
+        margin:0
+    }
+    .widget-fiches-metiers .liste-metiers ul{
+        padding:0;
+    }
+}
+.widget-fiches-metiers ul li a{
+    text-decoration:none;
+    color:#fff;
+    font-weight: bold;
+}
+.widget-fiches-metiers ul li a:hover{
+    margin-left:5px;
+    transition:0.3s;
+}
+.widget-fiches-metiers .domaines {
+    margin:10px;
+}
+.widget-fiches-metiers .fiches-metiers-button{
+    border:1px solid #fff;
+    background-color:#002838;
+}
 /* FIN WIDGET FICHES-METIERS */
 .wp-block-button__link:hover {
     /* color:white !important; */
@@ -1096,4 +1132,16 @@ Style home blog
     padding-left: 0;
     padding-bottom: 0;
     position: relative;
+}
+
+.posButtonLoad a.afficher-plus {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 30px;
+    display: inline-block;
 }

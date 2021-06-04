@@ -51,8 +51,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<nav id="banner">
             <div class="content-banner">
                 <ul class="ul-banner">
-                    <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                <?php
+    $currentlang = get_bloginfo('language');
+    if($currentlang=="en-GB") : ?>
+        <li><a href="/en/contact">Contact</a></li>
+    
+    <?php else : ?>   
+        <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
+        <li><a href="/contact">Contact</a></li>
+        
+        <?php endif; ?>
+
+                    
+                    
                 </ul>
                 
                     <ul class="logo-reseaux">
@@ -112,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </form>
                 </li>
                 <li class="flagDesign">
-                    <a href="https://www.supbiotech.fr/en/" target="_blank" class="flagPos">en</a>
+                    <a href="/en/" target="_blank" class="flagPos">en</a>
                 </li>
                 </ul>
             <!--</div> -->   
