@@ -310,7 +310,18 @@ function my_acf_init() {
 			'keywords'			=> array( ' widget' ),
 			'align'             => 'full',
 			'supports'          => array('align' => array( 'full' )),
-		)); 	       
+		)); 
+		// register a widget-actu
+		acf_register_block(array(
+			'name'				=> 'widget-actualites',
+			'title'				=> __('Actualités Sup\'Biotech'),
+			'description'		=> __('Mon widget Actualités Sup\'Biotech personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'widget',
+			'keywords'			=> array( ' widget' ),
+			'align'             => 'full',
+			'supports'          => array('align' => array( 'full' )),
+		));	       
 	}
 }
 

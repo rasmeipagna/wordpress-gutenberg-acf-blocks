@@ -54,12 +54,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <?php
     $currentlang = get_bloginfo('language');
     if($currentlang=="en-GB") : ?>
-        <li><a href="/en/contact">Contact</a></li>
+        <li><a href="/contact-us">Contact</a></li>
     
     <?php else : ?>   
         <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
-        <li><a href="/contact">Contact</a></li>
-        
+        <li><a href="/contact">Contact</a></li>        
         <?php endif; ?>
 
                     
@@ -110,21 +109,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             
             <div class="cbp-hrmenu search-bloc">
-                <ul class="main2">
-                <li class="search">
+                <ul class="main2">                
+
+                <?php
+    $currentlang = get_bloginfo('language');
+    if($currentlang=="en-GB") : ?>
+        <li class="search">
+            <form method="get" action="/">
+                <input id="recherche" type="text" placeholder="Search" name="s">
+                <input class="bouton-recherche" type="submit" value="Ok">
+            </form>
+        </li>
+        <li class="flagDesign">
+            <a href="../" target="_blank" class="flagPos">FR</a>
+        </li>      
+    
+    <?php else : ?>   
+        <li class="search">
                 <!--<form class="form-inline my-2 my-lg-0" action="<?= esc_url(home_url('/')) ?>">
                     <input class="form-control mr-sm-2" name="s" type="search" placeholder="Recherche" aria-label="Search" value="<?= get_search_query() ?>">
                     <button class="btn btn-outline my-2 my-sm-0" type="submit">Rechercher</button>
-                </form>-->
-
-                    <form method="get" action="/">
-                        <input id="recherche" type="text" placeholder="Rechercher" name="s">
-                        <input class="bouton-recherche" type="submit" value="Ok">
-                    </form>
-                </li>
-                <li class="flagDesign">
-                    <a href="/en/" target="_blank" class="flagPos">en</a>
-                </li>
+                </form>--> 
+            <form method="get" action="/">
+                <input id="recherche" type="text" placeholder="Rechercher" name="s">
+                <input class="bouton-recherche" type="submit" value="Ok">
+            </form>
+        </li>
+         <li class="flagDesign">
+            <a href="/en/" target="_blank" class="flagPos">en</a>
+        </li>   
+    <?php endif; ?>
+                   
                 </ul>
             <!--</div> -->   
 

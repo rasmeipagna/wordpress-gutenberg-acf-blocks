@@ -881,9 +881,25 @@ h3.hub-green-title{
 .widget-fiches-metiers .domaines {
     margin:10px;
 }
-.widget-fiches-metiers .fiches-metiers-button{
-    border:1px solid #fff;
+.widget-fiches-metiers .fiches-metiers-button{  
+    width: 200px;
+    padding: 10px;
+    margin: 30px auto;
+}
+.widget-fiches-metiers .fiches-metiers-button a{
+    border:1px solid #aec742;
     background-color:#002838;
+    font-weight:bold;
+    color:#aec742;
+    padding:20px;
+
+}
+.widget-fiches-metiers .fiches-metiers-button a:hover{
+    border:1px solid #002838;
+    background-color:#aec742;
+    font-weight:bold;
+    color:#002838;
+    transition:0.3s;
 }
 /* FIN WIDGET FICHES-METIERS */
 .wp-block-button__link:hover {
@@ -1135,13 +1151,6 @@ Style home blog
 }
 
 .posButtonLoad a.afficher-plus {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 1px solid #000;
-    margin: 20px;
-    text-align: center;
-    color: #000;
-    font-size: 24px;
-    margin-bottom: 30px;
+    margin: 20px auto 30px;   
     display: inline-block;
 }

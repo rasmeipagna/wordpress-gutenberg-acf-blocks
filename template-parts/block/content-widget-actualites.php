@@ -1,22 +1,22 @@
 <?php
 /**
- * Block Name: widget-fiches-metiers
+ * Block Name: widget-actualites
  *
- * This is the template that displays the widget-fiches-metiers.
+ * This is the template that displays the widget-actualites.
  */
 // create id attribute for specific styling
-$id = 'widget-fiches-metiers-' . $block['id'];
+$id = 'widget-actualites-' . $block['id'];
 
 // create align class ("alignwide") from block setting ("wide")
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
-<div id="<?php echo $id; ?>" class="widget-fiches-metiers <?php echo $align_class; ?>">
+<div id="<?php echo $id; ?>" class="widget-actualites <?php echo $align_class; ?>">
     <div class="col-xs-12 col-sm-12 mobile">
         <div class="col-xs-12">
-        <h4 class="titre-fiches-metiers"><?php the_field('titre'); ?></h4>
+        <h4 class="titre-actualites"><?php the_field('titre'); ?></h4>
 
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-3">
                     <div class="liste-metiers">
                         <ul class="metier">
                         <?php
@@ -37,7 +37,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                         </ul>
                     </div>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-3">
                 <div class="pictos-domaines">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
@@ -58,16 +58,32 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                             <img class="center domaines" src="<?php the_field('image_agriculture'); ?>" />
                             </a>
                         </div>
+                    </div>                   
+                </div>       
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                    <div class="liste-metiers">
+                        <ul class="metier">
+                        <?php
+                            $featured_posts = get_field('liste_metiers');
+                            if( $featured_posts ): 
+                        ?>
+                            <ul>
+                        <?php foreach( $featured_posts as $featured_post ):
+                            $permalink = get_permalink( $featured_post->ID );
+                            $title = get_the_title( $featured_post->ID );
+                        ?>
+                                <li>
+                                <a href="<?php echo esc_url( $permalink ); ?>"><?php echo esc_html( $title ); ?></a>
+                                </li>
+                        <?php endforeach; ?>
+                            </ul>
+                        <?php endif; ?>
+                        </ul>
                     </div>
-                    
-                    
-                </div>
-                
-               
-                    
             </div>
             <div class="clearfix"></div>
-            <div class="fiches-metiers-button">
+            <div class="actualites-button">
                 <center><a href="<?php the_field('lien'); ?>"><?php the_field('intitule_du_bouton'); ?></a>
                 </center>
             </div>  
