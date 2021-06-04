@@ -366,70 +366,6 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     color: #00b1eb;
     text-decoration: none;
 }
-/* PAGE HUB PROGRAMME */
-/* BLOC GUTENBERG COLONNE + IMAGE ET TEXTE */
-/* figure.wp-block-image.is-style-default img{
-    width:100% !important;
-    height:auto !important;
-}
-figure.wp-block-image.is-style-default p{
-    width:100%;
-    height:auto;
-}
-.wp-block-column.background-color-blue p{
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 23px;
-    font-weight: 400;
-    margin-bottom: 17px;
-    color: #fff;
-}
-.wp-block-column.background-color-green p{
-    padding: 10px;
-    margin-top: 20px;
-    font-size: 23px;
-    font-weight: 400;
-    margin-bottom: 17px;
-    color: #fff;
-}
-.wp-block-column.background-color-blue{
-    background-color: #00b1eb !important;
-} 
-.wp-block-column.background-color-green{
-    background-color: #aed136 !important;
-} 
-.wp-block-column.background-color-blue h3{
-    padding:10px !important;
-    color:#fff;
-}
-.wp-block-column.background-color-green h3{
-    padding:10px !important;
-    color:#fff;
-}
-.wp-block-column p.background-color-blue {
-    padding: 20px;
-    background-color: #00b1eb !important;
-    position: relative;
-    margin-top: -16px;
-    min-height:70px;
-    font-size: 16px;
-    font-weight: 200;
-}
-.wp-block-column p.background-color-green {
-    padding: 20px;
-    background-color: #aed136 !important;
-    position: relative;
-    margin-top: -16px;
-    min-height:70px;
-    font-size: 16px;
-    font-weight: 200;
-
-} 
-.wp-block-column p.background-color-blue a, .wp-block-column p.background-color-green a{
-    color: #fff;
-    text-decoration: none;
-}*/
-
 /*BLOC ACF/GUTENBERG BLOC-HUB-BLUE*/
 h3.hub-blue-title{
     color:#00b1eb;
@@ -473,6 +409,7 @@ h3.hub-blue-title{
     background-color: #00b1eb;    
     border:1px solid #fff;
     color:#fff;
+    transition:0.3s;
 }
 /*BLOC ACF/GUTENBERG BLOC-HUB-GREEN*/
 h3.hub-green-title{
@@ -517,6 +454,7 @@ h3.hub-green-title{
     background-color: #aed136;    
     border:1px solid #fff;
     color:#fff;
+    transition:0.3s;
 }
 /*BLOCK GREEN FEATURED ACF/GUTENBERG*/
 .color-block .block-green-featured .block-green-featured-content-text p {
@@ -768,6 +706,7 @@ h3.hub-green-title{
     padding: 10px 20px;
     background-color: #fff;
     color:#002838;
+    transition:0.3s;
 }
 /* FIN WIDGET VENEZ NOUS RENCONTRER */
 /* WIDGET CITATION */
@@ -933,30 +872,37 @@ h3.hub-green-title{
 
 .has-green-background-color, .has-green-background-color:hover {
 	background-color: #aed136;
+    transition:0.3s;
 }
 .has-green-background-color.has-white-color:hover{
   color:#aed136;
   background-color:#fff;
+  transition:0.3s;
 }
 .has-dark-blue-background-color.has-white-color:hover{
     color:#002838;
     background-color:#fff;
+    transition:0.3s;
   }
 .has-light-blue-background-color.has-white-color:hover{
     color:#00b1eb;
     background-color:#fff;
+    transition:0.3s;
 }
 .has-white-background-color.has-green-color:hover{
   color: #fff  ;
   background-color:#aed136;
+  transition:0.3s;
 }
 .has-white-background-color.has-dark-blue-color:hover{
     color:#fff;
     background-color:#002838;
+    transition:0.3s;
   }
 .has-white-background-color.has-light-blue-color:hover{
     color:#fff;
     background-color:#00b1eb;
+    transition:0.3s;
 }
 
 
@@ -1069,6 +1015,7 @@ footer .vousetes a.documentation:hover {
     background-position: 0px -1665px;
     margin-right: 1px;
     color: #aed136;
+    transition:0.3s;
 }
 footer .vousetes a.candidature {
     background-position: -144px -1852px;
@@ -1078,6 +1025,7 @@ footer .vousetes a.candidature:hover {
     background-position: -144px -1665px;
     margin-right: 1px;
     color: #61c4ae;
+    transition:0.3s;
 }
 footer .vousetes a.agenda {
     background-position: -288px -1852px;
@@ -1087,6 +1035,7 @@ footer .vousetes a.agenda:hover {
     background-position: -288px -1665px;
     margin-right: 1px;
     color: #01ade8;
+    transition:0.3s;
 }
 footer .vousetes a.rdvperso {
     background-position: -578px -1849px;
@@ -1098,6 +1047,7 @@ footer .vousetes a.rdvperso:hover {
     background-position: -578px -1661px;
     margin-right: 1px;
     color: #f79653;
+    transition:0.3s;
 }
 .ecoles ul li {
     margin: 5px 0;
