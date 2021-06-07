@@ -176,6 +176,11 @@
 .cbp-hrmenu ul.menu > li {
     display: inline-block;
 }
+.cbp-hrmenu ul.menu > li.entry-en {
+    display: inline-block;
+    margin-right: 25px;
+}
+
 .cbp-hrmenu ul.menu > li > a {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
