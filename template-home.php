@@ -91,7 +91,7 @@ get_header();
 						Contacts
 					</a>-->    
 				</div>
-			</section><!-- end home-title -->
+	</section><!-- end home-title -->
 			<div class="clearfix"></div>
 
 <!-- section à la une -->
