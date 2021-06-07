@@ -50,13 +50,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- la bannière bleue navy du Header -->
 		<nav id="banner">
             <div class="content-banner">
-                <ul class="ul-banner">
+                <ul class="ul-banner">                
                 <?php
     $currentlang = get_bloginfo('language');
     if($currentlang=="en-GB") : ?>
+    <!-- la bannière EN -->
         <li><a href="/contact-us">Contact</a></li>
     
     <?php else : ?>   
+    <!-- la bannière FR -->
         <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
         <li><a href="/contact">Contact</a></li>        
         <?php endif; ?>
@@ -114,6 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <?php
     $currentlang = get_bloginfo('language');
     if($currentlang=="en-GB") : ?>
+    <!-- la recherche et le FR en anglais -->
         <li class="search">
             <form method="get" action="/">
                 <input id="recherche" type="text" placeholder="Search" name="s">
@@ -136,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </form>
         </li>
          <li class="flagDesign">
-            <a href="/en/" target="_blank" class="flagPos">en</a>
+            <a href="/en/accueil-home-page-en/" class="flagPos">EN</a>
         </li>   
     <?php endif; ?>
                    
