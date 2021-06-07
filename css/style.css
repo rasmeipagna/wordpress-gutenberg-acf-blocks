@@ -905,8 +905,12 @@ h3.hub-green-title{
     transition:0.3s;
 }
 
-
-
+/* SITEMAP */
+.planSite ul li a {
+    color: #00b1eb;
+    text-decoration: none;
+}
+/* FIN SITEMAP */
 /*FOOTER*/
 footer {
     background-color: transparent;
@@ -1015,7 +1019,6 @@ footer .vousetes a.documentation:hover {
     background-position: 0px -1665px;
     margin-right: 1px;
     color: #aed136;
-    transition:0.3s;
 }
 footer .vousetes a.candidature {
     background-position: -144px -1852px;
@@ -1025,7 +1028,6 @@ footer .vousetes a.candidature:hover {
     background-position: -144px -1665px;
     margin-right: 1px;
     color: #61c4ae;
-    transition:0.3s;
 }
 footer .vousetes a.agenda {
     background-position: -288px -1852px;
@@ -1035,7 +1037,6 @@ footer .vousetes a.agenda:hover {
     background-position: -288px -1665px;
     margin-right: 1px;
     color: #01ade8;
-    transition:0.3s;
 }
 footer .vousetes a.rdvperso {
     background-position: -578px -1849px;
@@ -1047,7 +1048,6 @@ footer .vousetes a.rdvperso:hover {
     background-position: -578px -1661px;
     margin-right: 1px;
     color: #f79653;
-    transition:0.3s;
 }
 .ecoles ul li {
     margin: 5px 0;
