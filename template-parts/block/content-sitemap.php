@@ -18,7 +18,7 @@ if ( !empty($block['anchor']) ) {
 $pages_exclues = get_field('pages_exclues');
 
 if ( !empty($pages_exclues) ) {
-  $exclude = implode($pages_exclues, ',');
+  $exclude = implode( ',', $pages_exclues);
 } else {
   $exclude = '';
 }
