@@ -25,8 +25,8 @@ if ( !empty($pages_exclues) ) {
 
 ?>
 
-  <div id="<?php echo esc_attr($id); ?>" class="sitemap <?php echo $align_class; ?> " >
-  <div class="col-sm-12 planSite">
+  <div id="<?php echo esc_attr($id); ?>" class="sitemap <?php echo $align_class; ?> <?php acf_block_class($block, 'sitemap'); ?> " >
+  <div class="planSite">
     <ul>
       <?php wp_list_pages(array(
         'exclude'  => $exclude,
