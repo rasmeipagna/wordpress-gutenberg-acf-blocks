@@ -175,6 +175,7 @@ get_header();
 	<!-- section presentation -->
 		<section id="presentation">
 			<div class="container">
+			<h2><span>L'école des ingénieur·e·s en biotechnologies</span></h2>
 				<div class="col-sm-6 presentation-bloc">
 					<p class="mobile-font">
 						Sup’Biotech, l’école des ingénieur·e·s en biotechnologies, prépare ses étudiant·e·s aux enjeux de demain.
@@ -303,7 +304,7 @@ get_header();
 	<section id="avenir">
 		<div class="container">
 			<h2>
-				Un secteur d’avenir qui <span>transforme le monde</span>
+				<span>Un secteur d’avenir qui transforme le monde</span>
 			</h2>
 			<h3 class="_bef">Les domaines</h3>
 
@@ -375,20 +376,20 @@ get_header();
 			
 			<div class="col-md-6">
 				<ul>
-					<li><a href="/docs/ingenieur-recherche.pdf" target="_blank">Ingénieur de recherche</a></li>
-					<li><a href="/Content/docs/charge-affaires-reglementaires.pdf" target="_blank">Chargé des affaires réglementaires</a></li>
-					<li><a href="/Content/docs/chef-projet.pdf" target="_blank">Chef de projet</a></li>
-					<li><a href="/Content/docs/ingenieur-procede.pdf" target="_blank">Ingénieur procédés</a></li>
+					<li><a href="/wp-content/uploads/ingenieur-recherche.pdf" target="_blank">Ingénieur de recherche</a></li>
+					<li><a href="/wp-content/uploads/charge-affaires-reglementaires.pdf" target="_blank">Chargé des affaires réglementaires</a></li>
+					<li><a href="/wp-content/uploads/chef-projet.pdf" target="_blank">Chef de projet</a></li>
+					<li><a href="/wp-content/uploads/ingenieur-procede.pdf" target="_blank">Ingénieur procédés</a></li>
 					
 				</ul>
 			</div>
 
 			<div class="col-md-6">
 				<ul>					
-					<li><a href="/Content/docs/ingenieur-etudes.pdf" target="_blank">Ingénieur d'études</a></li>
-					<li><a href="/Content/docs/consultante-communication.pdf" target="_blank">Consultants</a></li>
-					<li><a href="/Content/docs/coordinateur-marketing.pdf" target="_blank">Coordinateur Marketing</a></li>
-					<li><a href="/Content/docs/ingenieur-technico-commercial.pdf" target="_blank">Ingénieur Technico commercial</a></li>
+					<li><a href="/wp-content/uploads/ingenieur-etudes.pdf" target="_blank">Ingénieur d'études</a></li>
+					<li><a href="/wp-content/uploads/consultante-communication.pdf" target="_blank">Consultants</a></li>
+					<li><a href="/wp-content/uploads/coordinateur-marketing.pdf" target="_blank">Coordinateur Marketing</a></li>
+					<li><a href="/wp-content/uploads/ingenieur-technico-commercial.pdf" target="_blank">Ingénieur Technico commercial</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -417,7 +418,7 @@ get_header();
 <!-- section actus -->
 <section id="actus" class="actus">
     <div class="container">
-        <h2>Actualités de <span>l'école</span></h2>
+        <h2><span>Actualités de l'école</span></h2>
         <div class="_slider-actu">
 			<row>
 				<!--<div class="col-md-7 main-actu">
@@ -806,7 +807,7 @@ get_header();
 <section id="replay" class="actu">
     <div class="container-fluid replay-container">
 		<div class="container">
-		<h2>Revivez <span>les temps forts de l'école</span></h2>
+		<h2><span>Revivez les temps forts de l'école</span></h2>
 		</div>					
         
         <div class="slider-replay">           
