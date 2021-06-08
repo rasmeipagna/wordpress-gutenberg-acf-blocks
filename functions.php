@@ -8,8 +8,9 @@ function theme_enqueue_styles() {
  wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'));
  wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'));
  wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
- wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js', array(), null, null);
  wp_enqueue_script('child-theme-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
+ wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js', array(), null, null);
+ 
 //wp_enqueue_script('child-theme-bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.js');
 	
 }
@@ -228,6 +229,15 @@ function my_acf_init() {
 			'name'				=> 'block-green-featured',
 			'title'				=> __('block-green-featured'),
 			'description'		=> __('Mon block-green-featured block personnalisé'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'information',
+			'keywords'			=> array( 'information' ),
+		));
+		// register a bloc-important-bleu
+		acf_register_block(array(
+			'name'				=> 'bloc-important-bleu',
+			'title'				=> __('Bloc Important Bleu'),
+			'description'		=> __('Mon Bloc Important Bleu personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'information',
 			'keywords'			=> array( 'information' ),
