@@ -319,7 +319,11 @@
 }
 
 /************ ALAUNE SLIDER LODER  *****/
-#alaune { background-color: #EFEFEF;}
+#alaune { 
+    background-color: #EFEFEF;
+    padding-top: 20px;
+    margin-bottom: 43px;
+}
 .slider-une {
     visibility: hidden;
 }
@@ -795,12 +799,15 @@
 /*************PRESENTATION************/
 
 #presentation {
-    padding: 20px 0;
+    padding: 0px 0;
     background-color: #fff;
     /*color: #fff;*/
-    margin-top: 180px;
+    margin-top: 0px;
     position: relative;
     height: auto;
+}
+#presentation h2 {
+    margin: 0px 0 180px;
 }
 #presentation p.mobile-font {
     font-size: 18px;

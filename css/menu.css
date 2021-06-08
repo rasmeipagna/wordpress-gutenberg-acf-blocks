@@ -79,6 +79,7 @@
     font-weight: 400;
     margin-top: 0px;
     margin-bottom: 0px;
+    text-transform: none;
 }
 .right-menu .jpo .date span span.date {
     font-size: 25px;
@@ -112,6 +113,8 @@
 }
 .cbp-hrmenu > ul > li.flagDesign > a {
     margin: 0px 0;
+    font-weight: 700;
+    text-decoration: none;
 }
 .left-menu {
     padding-top: 30px;
@@ -307,6 +310,9 @@
 
 @media screen and (max-width: 1280px) {
 
+    #banner .content-banner {
+        margin-right: 0px;
+    }
     .cbp-hrmenu {
         font-size: 14px;
     }

@@ -89,6 +89,16 @@ figure img {
     margin-bottom: 7px;
     color: #00b1eb;
 }
+.page h5 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 7px;
+    color: #c3d011;
+}
+.page h6 {
+    font-size: 12px;
+    font-weight:bold;
+}
 .page p {
     font-size: 15px;
     font-weight: 400;
@@ -465,6 +475,13 @@ h3.hub-green-title{
     padding: 20px;
     color: #fff;
     text-align: center;
+}
+/*BLOC IMPORTANT BLEU ACF/GUTENBERG*/
+.bloc-important-bleu{
+    border: 2px solid #01ade8;
+}
+.bloc-important-bleu .bloc-important-bleu-content-text p {
+    width: calc(100% - 100px);
 }
 /*ACF/GUTENBERG TABS Campus */
 #myTabs .nav-pills > li:nth-child(odd) {
@@ -910,6 +927,21 @@ h3.hub-green-title{
     color: #00b1eb;
     text-decoration: none;
 }
+.planSite ul li:nth-child(1){
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 17px;
+    color: #00b1eb;
+}
+.planSite ul li:nth-child(1):before{
+    content:none;
+}
+.planSite ul li:nth-child(2){
+    
+}
+.planSite ul li:nth-child(3){
+    
+}
 /* FIN SITEMAP */
 /*FOOTER*/
 footer {
@@ -1048,6 +1080,9 @@ footer .vousetes a.rdvperso:hover {
     background-position: -578px -1661px;
     margin-right: 1px;
     color: #f79653;
+}
+.ecoles {
+    margin-top: 40px;
 }
 .ecoles ul li {
     margin: 5px 0;
