@@ -1,8 +1,8 @@
 <?php
 /**
- * Block Name: Tabs Campus
+ * Block Name: Tabs Booking
  *
- * This is the template that displays the tabs campus.
+ * This is the template that displays the tabs Booking.
  */
 
 // get image field (array)
