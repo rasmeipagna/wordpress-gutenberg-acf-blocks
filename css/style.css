@@ -651,24 +651,10 @@ h3.hub-green-title{
 }
 /* FIN TABS PARTNERS */
 /* TABS BOOKING tabs-booking */
-.video-container.rdv-booking {
+.tabs-booking iframe {
     height: 1900px;
 }
-.video-container iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.video-container {
-    position: relative;
-    padding-bottom: 51%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 35px;
-}
+
 @media screen and (max-width:992px) {
     .video-container {
         padding-bottom: 51.8%;

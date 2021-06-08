@@ -41,7 +41,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                 <div class="tab-pane" id="lyon">
                                    
                     <div class="col-sm-12">
-                        <p><?php the_field('wysiwyg2'); ?></p>
+                        <?php the_field('wysiwyg2'); ?>
                     </div>
                     <div class="clearfix"></div> 
                       
