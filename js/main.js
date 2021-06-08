@@ -2,7 +2,7 @@
     
     // Header Home
 
-    if ($(window).width() > 769) {
+   /* if ($(window).width() > 769) {
         $('.header-home .container').css({
             'display': 'inline-block',
             'left': ($(window).width() - $('.container').width()) / 2 + 'px',
@@ -10,11 +10,11 @@
             'top': '138px',
             'width': 'auto'
         })
-    }
+    }*/
 
     // Menu Actif
 
-    var domain = document.location.href.split('/')[2];
+   /* var domain = document.location.href.split('/')[2];
     var urlPage = document.location.href.split('http://' + domain)[1];
 
     if ($('body').hasClass('fr-layout')) {
@@ -38,11 +38,11 @@
                 that.parent().addClass('current');
             }
         });
-    }
+    }*/
 
     // Hauteur du menu
 
-    $('#cbp-hrmenu .cbp-hrsub').each(function () {
+   /* $('#cbp-hrmenu .cbp-hrsub').each(function () {
         highest = null;
         var h = $(this).height();
 
@@ -50,17 +50,17 @@
             highest = h;
 
         $('#cbp-hrmenu .cbp-hrsub .left-menu').css({ 'height': highest - 'px' });
-    });
+    });*/
 
     // Contrecarrer le return false du plugin utilisé pour le menu
 
-    $('nav li .contact, .logo, .langue.uk').on('click', function () {
+   /* $('nav li .contact, .logo, .langue.uk').on('click', function () {
         document.location.href = $(this).attr('href');
-    });
+    });*/
 
     // Recherche
 
-    if ($(window).width() >= 1024) {
+    /*if ($(window).width() >= 1024) {
         $('.bouton-recherche').click(function () {
             if ($('#recherche').val().length === 0) {
                 return false;
@@ -68,10 +68,10 @@
 
             return true;
         });
-    }
+    }*/
     /*************   CHANGEMENT IMAGE LOGO AU SCROLL   **************/
 
-    $(window).scroll(function () {
+   /* $(window).scroll(function () {
 
         posScroll = $(document).scrollTop();
 
@@ -83,13 +83,13 @@
             $('.top-logo').fadeIn(400);
             $('.scroll-logo').stop().fadeOut(400);
         }
-    });
+    });*/
 
    
 
     /*************   BOUTON/MENU MOBILE  **************/
 
-    $(".burger_boite").click(function (e) {
+   /* $(".burger_boite").click(function (e) {
         e.stopPropagation();
         $('#cbp-hrmenu').slideToggle();
         $(this).toggleClass('cross');
@@ -124,7 +124,7 @@
         });
 
         return false;
-    });
+    }); */
 
     
     /*********************     SLIDER UNE     *********************/
