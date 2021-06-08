@@ -264,7 +264,7 @@ function my_acf_init() {
 		acf_register_block(array(
 			'name'				=> 'tabs-booking',
 			'title'				=> __('RDV personnalisés'),
-			'description'		=> __('Mon tabs-booking personnalisé'),
+			'description'		=> __('Mon bloc de RDV personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'booking',
 			'keywords'			=> array( 'booking' ),

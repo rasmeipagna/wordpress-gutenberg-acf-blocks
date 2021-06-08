@@ -5,11 +5,6 @@
  * This is the template that displays the tabs Booking.
  */
 
-// get image field (array)
-
-// $image_full1 = get_field('image_full1');
-// $image_full2 = get_field('image_full2');
-
 // create id attribute for specific styling
 $id = 'tabs-booking-' . $block['id'];
 
@@ -33,37 +28,24 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
             </ul>
 
             <div class="tab-content clearfix">
-                <div class="container">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        
 
-                            <div class="tab-pane active" id="paris">
-                                            
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="video-container rdv-booking">
-                                            <?php the_field('wysiwyg1'); ?>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>             
-                            </div>
-
-                            <div class="tab-pane" id="lyon">
-                                            
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="video-container rdv-booking">
-                                            <?php the_field('wysiwyg2'); ?>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div> 
-                                                
-                            </div>
-                       
-
+                <div class="tab-pane active" id="paris">
+                                   
+                    <div class="col-sm-12">
+                        <?php the_field('wysiwyg1'); ?>
                     </div>
+                    <div class="clearfix"></div> 
+                    
+                </div>
+
+                <div class="tab-pane" id="lyon">
+                                   
+                    <div class="col-sm-12">
+                        <p><?php the_field('wysiwyg2'); ?></p>
+                    </div>
+                    <div class="clearfix"></div> 
+                      
+                
                 </div>
 
             </div>
