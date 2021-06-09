@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section class="container-blog page">
+<section class="container blog page">
 <div id="primary" class="content-area col-sm-8">
 <div class="col-md-12">
 	<!-- le fil d'ariane -->
