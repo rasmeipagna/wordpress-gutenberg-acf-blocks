@@ -13,6 +13,10 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+ <!--  SIRDATA -->
+ <script type="text/javascript" src="https://cache.consentframework.com/js/pa/23324/c/75Dqy/stub" referrerpolicy="unsafe-url" charset="utf-8"></script>
+ <script type="text/javascript" src="https://choices.consentframework.com/js/pa/23324/c/75Dqy/cmp" referrerpolicy="unsafe-url" charset="utf-8" async></script>
+ <!-- END SIRDATA -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
 {'gtm.start': new Date().getTime(),event:'gtm.js'}
