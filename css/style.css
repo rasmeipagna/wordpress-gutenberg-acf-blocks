@@ -334,6 +334,47 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     color: #002838;
     text-decoration: none;
 }
+/*PAGE ENSEIGNANT*/
+/*BLOC ACF/GUTENBERG */
+.bloc-enseignant.spe {
+    padding: 30px 0 30px 0;
+    color: #002838;
+    margin-bottom: 20px;
+}
+.bloc-enseignant.spe h4 {
+    margin:0;
+    color: #002838;
+    font-weight:bold;
+    font-size: 15px;
+}
+.bloc-enseignant.spe img {
+    width: 120px;
+    margin-left: -13px;
+}
+.bloc-enseignant.spe .closer-left{
+    margin-left: -80px;
+}
+.bloc-enseignant.spe p {
+    margin:0;
+    width:100%;
+}
+.bloc-enseignant.spe a {
+    color: #002838;
+    text-decoration: none;
+}
+@media screen and (max-width:580px){
+    .bloc-enseignant.spe img {
+        margin: 10px 85px;
+    }
+    .bloc-enseignant.spe .closer-left{
+        margin-left: 0px;
+    }
+    .bloc-enseignant.spe {    
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+}
+
 /*BLOC GUTENBERG à dupliquer*/
 .wp-block-media-text {
     direction: ltr;
@@ -909,6 +950,9 @@ h3.hub-green-title{
 }
 
 /* SITEMAP */
+.planSite ul li {
+    padding-left: 0;
+}
 .planSite ul li a {
     color: #00b1eb;
     text-decoration: none;
@@ -920,13 +964,16 @@ h3.hub-green-title{
     color: #00b1eb;
 }
 .planSite ul li:nth-child(1):before{
-    content:none;
+    display:none;
 }
-.planSite ul li:nth-child(2){
-    
-}
-.planSite ul li:nth-child(3){
-    
+@media screen and (min-width: 768px)  {
+    .planSite > ul {
+        column-count: 2;
+        column-gap: 2rem;   
+    }
+    .planSite ul li{
+        break-inside: avoid-column;
+    }
 }
 /* FIN SITEMAP */
 /*FOOTER*/
@@ -1020,7 +1067,12 @@ footer .info-pratique li:hover a::before {
     margin-right: 8px;
     margin-top: 14px;
 }
-
+footer .vousetes .inner-en {
+    max-width: 100% !important;
+    float: left !important;
+    margin-bottom: 20px;
+    margin-left:-15px;
+}
 footer .vousetes a {
     width: 136px;
     height: 175px;
@@ -1067,9 +1119,21 @@ footer .vousetes a.rdvperso:hover {
     margin-right: 1px;
     color: #f79653;
 }
+footer .vousetes .inner-en a.rdvperso {
+    padding-top: 106px;
+}
 .ecoles {
     margin-top: 40px;
 }
+.ecoles .speHover p {
+    color: #002838;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+.ecoles .speHover p a {
+    text-decoration: none;
+ }
 .ecoles ul li {
     margin: 5px 0;
 }
@@ -1077,6 +1141,7 @@ footer .vousetes a.rdvperso:hover {
     color: #002838;
     text-decoration: none;
 }
+
 
 @media screen and (max-width:640px) {
     footer .rencontre .bloc-left, footer .rencontre .bloc-right {
@@ -1106,14 +1171,14 @@ footer .vousetes a.rdvperso:hover {
 
 
 /*************************************************************
-Style home blog
+Style Blog
 **************************************************************/
 
-.container-blog {
-    width: 1240px;
+.container.blog {
+    max-width: 1240px;
     margin: 0 auto;
 }
-.container-blog.page {
+.container.blog.page {
     padding-top: 171px;
     padding-right: 0;
     padding-left: 0;
@@ -1125,3 +1190,18 @@ Style home blog
     margin: 20px auto 30px;   
     display: inline-block;
 }
+
+.posted-on a {
+    color: #aed136;
+}
+
+.posted-on a:hover {
+    color: #00b1eb;
+}
+
+@media screen and (max-width:640px) {
+    .container.blog.page {
+        padding-top: 70px;
+    }
+}
+
