@@ -19,11 +19,11 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
         <div id="myTabs">
 
             <ul class="nav nav-pills">
-                <li class="active">
-                    <a class="simple-button" href="#paris" data-toggle="tab"><?php the_field('tabs1'); ?></a>
+                <li class="call-paris active">
+                    <a class="simple-button tab-pane active" href="#paris" data-toggle="tab"><?php the_field('tabs1'); ?></a>
                 </li>
-                <li>
-                    <a class="simple-button" href="#lyon" data-toggle="tab"><?php the_field('tabs2'); ?></a>
+                <li class="call-lyon">
+                    <a class="simple-button tab-pane" href="#lyon" data-toggle="tab"><?php the_field('tabs2'); ?></a>
                 </li>
             </ul>
 
