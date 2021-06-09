@@ -10,6 +10,7 @@ function theme_enqueue_styles() {
  wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
  wp_enqueue_script('child-theme-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
  wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js', array(), null, null);
+ wp_enqueue_script('child-theme-tabs-booking', get_stylesheet_directory_uri() .'/js/tabs-booking.js', array(), null, null);
  
 //wp_enqueue_script('child-theme-bootstrap', get_stylesheet_directory_uri() .'/js/bootstrap.js');
 	
@@ -203,6 +204,15 @@ function my_acf_init() {
 			'category'			=> 'équipe',
 			'keywords'			=> 'équipe',
 		));
+		// register a bloc-enseignant
+		acf_register_block(array(
+			'name'				=> 'bloc-enseignant',
+			'title'				=> __('bloc-enseignant'),
+			'description'		=> __('Mon bloc-enseignant personnalisé.'),
+			'render_callback'	=> 'my_acf_block_render_callback',
+			'category'			=> 'enseignant',
+			'keywords'			=> 'enseignant',
+		));
 		
 		// register a bloc-hub-blue
 		acf_register_block(array(
@@ -350,19 +360,19 @@ function my_acf_block_render_callback( $block ) {
 
 if( function_exists('acf_add_options_page') ) {
 	
-	acf_add_options_page(array(
-		'page_title' 	=> 'Theme General Settings',
-		'menu_title'	=> 'Theme Settings',
-		'menu_slug' 	=> 'theme-general-settings',
-		'capability'	=> 'edit_posts',
-		'redirect'		=> false
-	));
+	// acf_add_options_page(array(
+	// 	'page_title' 	=> 'Theme General Settings',
+	// 	'menu_title'	=> 'Theme Settings',
+	// 	'menu_slug' 	=> 'theme-general-settings',
+	// 	'capability'	=> 'edit_posts',
+	// 	'redirect'		=> false
+	// ));
 	
-	acf_add_options_sub_page(array(
-		'page_title' 	=> 'Theme Header Settings',
-		'menu_title'	=> 'Header',
-		'parent_slug'	=> 'theme-general-settings',
-	));
+	// acf_add_options_sub_page(array(
+	// 	'page_title' 	=> 'Theme Header Settings',
+	// 	'menu_title'	=> 'Header',
+	// 	'parent_slug'	=> 'theme-general-settings',
+	// ));
 	
 	/*acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Footer Settings',
@@ -374,7 +384,7 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
-
+/* création de blocs administrables dans le footer */
 function supbiotech_footer_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Footer', 'supbiotech-blog' ),
@@ -384,6 +394,15 @@ function supbiotech_footer_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3>',
 		'after_title'   => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Social Media', 'supbiotech-blog' ),
+		'id'            => 'social-media',
+		'description'   => esc_html__( 'Réseaux Sociaux.', 'supbiotech-blog' ),
+		'before_widget' => '<div class="logo-reseaux">',
+		'after_widget'  => '</div>',
+		
 	) );
 
 }
@@ -410,12 +429,48 @@ function acf_block_class( $block, $class = null ) {
   }
 
 
+// Ajax pagination Homepage
+function add_js_scripts() {
+
+  $page_id = get_queried_object_id();
+
+  if ($page_id == '2356') { // ID de la page des articles
+    wp_enqueue_script( 'script', get_template_directory_uri().'/js/infinite-scroll.js', array(),'4.6.6', true );
+  
+    // pass Ajax Url to script.js
+    wp_localize_script('script', 'ajaxurl', array(admin_url( 'admin-ajax.php')) );
+  }
+
+}
+add_action('wp_enqueue_scripts', 'add_js_scripts');
+
+add_action( 'wp_ajax_ajax_last_posts', 'ajax_last_posts' );
+add_action( 'wp_ajax_nopriv_ajax_last_posts', 'ajax_last_posts' );
+
+function ajax_last_posts() {
+
+	$offset = $_POST['offset'];
+	$category_name = $_POST['category_name'];
+	$year = $_POST['year'];
+	$monthnum = $_POST['monthnum'];
+
+	$args = array(
+		'post_type' => 'post',
+		'posts_per_page' => 4,
+		'offset' => $offset,
+		'category_name' => $category_name,
+		'year' => $year,
+		'monthnum' => $monthnum,
+		'post_status' => 'publish'
+	);
+
+	$ajax_query = new WP_Query($args);
 
 
+	if ( $ajax_query->have_posts() ) : while ( $ajax_query->have_posts() ) : $ajax_query->the_post();
+		get_template_part( 'template-parts/content-index', get_post_format() );
+		endwhile;
+	endif;
 
-
-
-
-
-
- 
+	die(); // beurk :D (sinon ça affiche un 0)
+}
