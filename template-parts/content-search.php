@@ -15,7 +15,9 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php supbiotech_blog_posted_on(); ?>
+			<!--<?php supbiotech_blog_posted_on(); ?>-->
+			<!-- afficher la date de publication de l'article avec l'url de l'article -->
+			<span class="posted-on">Posté le <a href="<?php the_permalink(); ?>"><time><?php the_time('d F Y'); ?></time></a></span>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</div><!-- .entry-header -->
