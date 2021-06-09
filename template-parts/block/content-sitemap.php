@@ -11,9 +11,11 @@
 
 // Create id attribute allowing for custom "anchor" value.
 $id = 'sitemap-' . $block['id'];
-if ( !empty($block['anchor']) ) {
-  $id = $block['anchor'];
-}
+// if ( !empty($block['anchor']) ) {
+//   $id = $block['anchor'];
+// }
+// create align class ("alignwide") from block setting ("wide")
+$align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 $pages_exclues = get_field('pages_exclues');
 
@@ -25,13 +27,12 @@ if ( !empty($pages_exclues) ) {
 
 ?>
 
-  <div id="<?php echo esc_attr($id); ?>" class="sitemap <?php echo $align_class; ?> <?php acf_block_class($block, 'sitemap'); ?> " >
-  <div class="planSite">
+  <div id="<?php echo esc_attr($id); ?>" class="planSite <?php echo $align_class; ?>" >
     <ul>
       <?php wp_list_pages(array(
         'exclude'  => $exclude,
         'title_li' => null
       )); ?>
     </ul>
-    </div>
+
   </div>
