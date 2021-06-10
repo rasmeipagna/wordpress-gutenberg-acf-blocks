@@ -52,8 +52,8 @@ iframe.iframegroupeionis{
 	padding-top:0;
 }
 figure img {
-    /* width: inherit; */
-    /* height: inherit; */
+    width: inherit;
+    height: inherit;
 }
 .page h1 {
     font-size: 55px;
@@ -68,7 +68,6 @@ figure img {
     color: #002838;
     line-height: 30px;
 }
-
 .page h2 a{
     color: #00b1eb;
     text-decoration: underline ;
@@ -96,8 +95,10 @@ figure img {
     color: #c3d011;
 }
 .page h6 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight:bold;
+    font-family: 'Roboto', sans-serif;
+    color:#333333;
 }
 .page p {
     font-size: 15px;
@@ -521,6 +522,12 @@ h3.hub-green-title{
 .bloc-important-bleu{
     border: 2px solid #01ade8;
 }
+@media screen and (max-width:580px){
+    .bloc-important-bleu{
+        margin-top:20px;
+    }
+
+}
 .bloc-important-bleu .bloc-important-bleu-content-text p {
     width: calc(100% - 100px);
 }
@@ -789,15 +796,23 @@ h3.hub-green-title{
 .widget-citation .portrait {
     padding: 20px 0;
 }
-.widget-citation h4.citation{
+.widget-citation span.citation{
     text-transform:uppercase;
     font-size:18px;
     font-weight:bold;
     color:#002838;
 }
-.widget-citation p.promo{
+.widget-citation span.promo{
     font-size:18px;
-    font-weight:lighter;
+    font-weight:normal;
+}
+.widget-citation .position-citation-promo{
+    margin-left:106px;
+}
+@media screen and (max-width:580px){
+    .widget-citation .position-citation-promo{
+        margin-left:0;
+    }
 }
 .widget-citation .citation-content p.citation:before{
     content: ' ';
@@ -809,6 +824,7 @@ h3.hub-green-title{
     margin: 0 30px 100px 0;
     float: left;
 }
+
 .widget-citation .citation-content p.citation {
     font-size: 18px;
     margin-top: 70px;
@@ -824,13 +840,23 @@ h3.hub-green-title{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.widget-fiches-metiers .pictos-domaines{
+    margin-left:100px;
+}
 @media screen and (max-width:580px){
+    .widget-fiches-metiers{
+        height:auto;
+    }
     .widget-fiches-metiers .mobile{
-        position:absolute;
+        /* position:absolute;
         top:0;
-        left:0;
+        left:0; */
         background-color: #002838;
         padding:20px;
+        margin-top:20px;
+    }
+    .pictos-domaines{
+        text-align:center;
     }
 }
 
@@ -885,6 +911,11 @@ h3.hub-green-title{
     transition:0.3s;
 }
 /* FIN WIDGET FICHES-METIERS */
+/* WIDGET ACTUALITES */
+.widget-actualites{
+    
+}
+/* FIN WIDGET ACTUALITES */
 .wp-block-button__link:hover {
     /* color:white !important; */
     transition: 0.1s ease-in-out;
@@ -1197,6 +1228,9 @@ Style Blog
 
 .posted-on a:hover {
     color: #00b1eb;
+}
+div.widget.actualites ul li a, ul li a:visited {
+    text-decoration: none;
 }
 
 @media screen and (max-width:640px) {
