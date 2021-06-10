@@ -12,6 +12,7 @@ $id = 'bloc-important-bleu-' . $block['id'];
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
+<div class="clearfix"></div>
 <div id="<?php echo $id; ?>" class="col-sm-12 bloc-important-bleu <?php echo $align_class; ?> ">
        <h3><strong><?php the_field('titre'); ?></strong></h3>
        
