@@ -15,22 +15,22 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <aside class="col-md-4 widgets">
 
 
-	<div class="widget widget-bloc-color">
+	<!--<div class="widget widget-bloc-color">
 		<div class="col-sm-12">
 			<a href="/admissions-ecole-ingenieur/documentation" class="green-bloc">Documentation</a>
 		</div>
 		<div class="col-sm-12">
 			<a href="/admissions-ecole-ingenieur/candidature" class="mint-bloc">Candidature</a>
 		</div>
-<!-- 		<div class="col-sm-12">
+!-- 		<div class="col-sm-12">
 			<a href="" class="blue-bloc">Demande d'entretien</a>
 		</div>
- -->		<div class="col-sm-12">
+ --		<div class="col-sm-12">
 			<a href="/contact" class="orange-bloc">Contacts</a>
 		</div>
 		
 
-	</div>
+	</div>-->
 
 
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
