@@ -38,7 +38,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 
 	
-	<div class="widget actualites col-sm-12">
+	<!--<div class="widget actualites col-sm-12">
 		<p class="h2">Suivez-nous</p>
 		<ul class="social">
 			<li class="facebook">
@@ -60,7 +60,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
             <a target="_blank" href="https://www.snapchat.com/add/supbiotech"></a>
         </li>
 		</ul>
-	</div>
+	</div>-->
 	
 </aside><!-- #secondary -->
 
