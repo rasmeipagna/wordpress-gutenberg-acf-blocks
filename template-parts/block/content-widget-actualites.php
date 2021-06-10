@@ -12,14 +12,29 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
 <div id="<?php echo $id; ?>" class="widget-actualites <?php echo $align_class; ?>">
-    <!-- section actus -->
+
+<!-- section actus -->
 <section id="actus" class="actus">
     <div class="container">
-        <h2><span>L'actualités Sup'Biotech</span></h2>
+        <h2><span>Actualités de l'école</span></h2>
         <div class="_slider-actu">
 			<row>
-				
-			<?php if ( have_posts() ) : ?>
+				<!--<div class="col-md-7 main-actu">
+					<figure>
+						<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/05/double-diplome-hepl-haute-ecole-liege-supbiotech-international-belgique-biotechnologies-home.jpg" alt="" />
+					</figure>
+				</div>
+			
+				<div class="col-md-5 main-resume">
+						<h4><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</strong></h4>
+						<p class="detail">
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+						</p>
+						
+					</div>-->
+					<?php if ( have_posts() ) : ?>
 			<?php query_posts('posts_per_page=1'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 <!-- -----------------------------vient de /content/prime.php-------------------- -->
@@ -304,12 +319,69 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 			<?php //get_template_part( 'template-parts/content', 'none' ); ?>
 		<?php endif; ?>
 
-
+		<!--<div class="append-articles posPost"></div>
+		<div class="clearfix"></div>
+		<div class="col-sm-3"> </div>
+		<div class="posButtonLoad col-sm-6">
+			<a href="#" class="afficher-plus">Afficher plus d'articles</a>
+		</div>
+		<div class="col-sm-3"> </div>-->
 
 				<div class="clearboth"></div>
 			</row>	
 
-			
+			<!--<row>           
+				<div class="col-md-4 autre-actu">
+					<a href="#" class="actualite rel">
+						
+							<figure>
+								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/05/mathematiques-biotechnologies-concours-advance-supbiotech-recherche-etudes-pedagogie-ouerdia-arkoun-2021-home.jpg" alt="" />
+							</figure>                   
+						
+						<div class="_resume">
+							<h4>But I must explain to you how all this mistaken idea</h4>
+							<p class="detail">
+							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
+							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
+							</p>
+							!--<span class="linkplus"></span>--
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 autre-actu">
+					<a href="#" class="actualite rel">                
+							<figure>
+								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/04/portrait-sophie-mothre-sbip-femmes-ingenieures-supbiotech-home.jpg" alt="" />
+							</figure>
+						
+						<div class="_resume">
+							<h4>To take a trivial example, which of us ever undertakes</h4>
+							<p class="detail">
+							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
+							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.or one who avoids a pain that produces no resultant pleasure?
+							</p>
+							!--<span class="linkplus"></span>--
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 autre-actu">
+					<a href="#" class="actualite rel">                
+							<figure>
+								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/03/retour-conference-epopee-vaccins-anti-covid-19-supbiotech-innovation-2021-home.jpg" alt="" />
+							</figure>
+						
+						<div class="_resume">
+							<h4>At vero eos et accusamus et iusto odio dignissimos </h4>
+							<p class="detail">
+							Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime 
+							placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+							</p>
+							!--<span class="linkplus"></span>--
+						</div>
+					</a>
+				</div>
+				<div class="clearboth"></div>
+			</row> -->
 			
 			<row>
 				<div class="col-md-4">
@@ -327,6 +399,9 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
     
     </div>
 </section>
+<!-- end section actu -->
+
+
     
 </div>
 
