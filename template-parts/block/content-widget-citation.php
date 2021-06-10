@@ -19,12 +19,16 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
         <div class="col-xs-12 mobile-bkg">
             <div class="col-sm-3">
                     <div class="portrait"><img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" />
-                    <h4 class="citation"><?php the_field('nom'); ?> <?php the_field('prenom'); ?></h4>
-                    <p class="promo"><?php the_field('promo'); ?> <?php the_field('annee'); ?></p>
+                    
                     </div>
             </div>
             <div class="col-xs-12 col-sm-9 citation-content">
-            <p class="citation"><?php the_field('citation'); ?></p>       
+            <p class="citation"><?php the_field('citation'); ?>
+                <div class="position-citation-promo">
+                    <span class="citation"><?php the_field('nom'); ?> <?php the_field('prenom'); ?></span><br />
+                    <span class="promo"><?php the_field('promotion'); ?></span>
+                </div>
+            </p>  
             </div>  
         </div>
              
