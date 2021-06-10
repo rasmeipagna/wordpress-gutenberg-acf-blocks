@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section class="container-blog page">
+<section class="container blog page">
 	<div id="primary" class="content-area col-sm-8">
 	<?php
 					the_archive_title( '<h1 class="top">', '</h1>' );
