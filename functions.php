@@ -474,3 +474,16 @@ function ajax_last_posts() {
 
 	die(); // beurk :D (sinon ça affiche un 0)
 }
+add_theme_support( 'post-thumbnails' );
+
+/*
+ * Enable support for responsive embeds.
+ */
+// add_theme_support( 'responsive-embeds' );
+
+/*
+ * Register custom image sizes
+ */
+// Miniatures de l'accueil
+add_image_size( 'widget-actu', 360, 150, true );
+
