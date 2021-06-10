@@ -747,7 +747,7 @@
     header form {
         margin-top: -1px;
         margin-bottom: 13px;
-        width: 85%;
+        width: 70%;
         float: none;
 }
 .cbp-hrmenu > ul > li {
@@ -777,6 +777,14 @@
     height: 56px;
     width: 100%;
     padding-left: 50px;
+    border-radius: 8px;
 }
+}
+
+@media screen and (max-width: 480px){
+.flagPos {
+    border-left: 0px solid #dedede;
+}
+
 }
 
