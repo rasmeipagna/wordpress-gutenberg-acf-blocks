@@ -102,7 +102,8 @@
 		</script>
 
 		<p class="posted">
-			<strong>Posté le : <?php echo get_the_date(); ?></strong>
+			<!-- date article -->
+			<strong>Posté le <?php //the_time('d/m/Y'); ?> <?php echo get_the_date(); ?></strong>
 		</p>
 		<div class="lishare">
 			<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
