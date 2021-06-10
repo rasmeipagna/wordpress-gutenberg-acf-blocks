@@ -638,6 +638,11 @@
     z-index: 201;
 }
 
+.slide-une figure img {
+    width: 100%;
+    height: auto;
+}
+
 #alaune .text {
     padding-right: 80px;
     position: static;

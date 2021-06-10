@@ -312,6 +312,7 @@
 
     #banner .content-banner {
         margin-right: 0px;
+        width: 460px;
     }
     .cbp-hrmenu {
         font-size: 14px;
@@ -747,7 +748,7 @@
     header form {
         margin-top: -1px;
         margin-bottom: 13px;
-        width: 70%;
+        width: 69%;
         float: none;
 }
 .cbp-hrmenu > ul > li {
