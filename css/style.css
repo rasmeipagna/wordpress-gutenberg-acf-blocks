@@ -296,6 +296,65 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     color:#aed136;
     margin-left:100px;
 }
+/*PAGE CONTACT*/
+/*BLOC ACF/GUTENBERG TABS + REPEATER*/
+.contact h3 {
+    margin-top: 0px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.contact .portrait {
+    float: left;
+    margin-left: 19px;
+    margin-bottom: 5px;
+    margin-right: 13px;
+}
+.contact h4 {
+    color: #fff;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.contact h4:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+.contact p {
+    text-align: center;
+    color: #fff;
+    padding: 0 6px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+}
+p.colorSpeMail a {
+    color: #3e3e3e;
+    /* color: #002838; */
+    text-decoration: none;
+}
+p.colorSpeMail a:hover {
+    color: #3e3e3e;
+    text-decoration: underline;
+}
+a.newsroom {
+    width: 500px;
+    background: #9eba3d;
+    padding: 5px;
+    color: #aec742;
+    font-weight: bold;
+}
+a.newsroom:hover {
+    color: white;
+    background: white;
+    text-decoration: none !important;
+}
+/*FIN PAGE CONTACT*/
 /*PAGE EQUIPE*/
 /*BLOC ACF/GUTENBERG */
 .bloc-contact.spe {
@@ -1228,7 +1287,6 @@ footer .vousetes .inner-en a.rdvperso {
 }
 
 
-
 /*************************************************************
 Style Blog
 **************************************************************/
@@ -1269,12 +1327,29 @@ div.widget.actualites ul li a, ul li a:visited {
     margin-right: 8px;
     float: left;
     margin-top: 5px;
+}
 
+.page h2.entry-title {
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #002838;
+    line-height: 1em;
+}
+
+.page h2.entry-title a {
+    text-decoration: none;
+ }
+.hentry {
+    margin: 0 0 3em;
 }
 
 @media screen and (max-width:640px) {
     .container.blog.page {
         padding-top: 70px;
+    }
+    #notificationApp {
+        display: none; 
     }
 }
 
