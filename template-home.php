@@ -107,6 +107,8 @@ get_header();
 
 				<div class="slider-une"><!-- slider une -->
 					
+				<div class="slide-une"><?php echo do_shortcode('[eventdb id="1707"]'); ?></div> 
+
 					<div class="slide-une">
 						<a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage" target="_blank">
 							<figure class=" col-md-5">
@@ -137,7 +139,7 @@ get_header();
 						</div>
 					</div>
 
-					<div class="slide-une">
+					<!--<div class="slide-une">
 						<a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/sb-career-day/forum-stage-emplois" target="_blank">
 							<figure class=" col-md-5">
 								<img src="https://www.supbiotech.fr/Content/images/design/slide/slide-sb-carreer.jpg" alt="SB Career Day">
@@ -160,8 +162,8 @@ get_header();
 							<a class="linkplus" href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/sb-career-day/forum-stage-emplois">En savoir +</a>
 
 						</div>
-					</div>
-					<div class="slide-une"><?php echo do_shortcode('[eventdb id="1707"]'); ?></div>
+					</div>-->
+					
 
 					<!--<div class="slide-une displayJPOSlide"></div>
 					<div class="slide-une displayBiotechDaySlide"></div>
