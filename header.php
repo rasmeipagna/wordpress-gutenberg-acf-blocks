@@ -45,7 +45,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!--    HEADER MENU MOBILE   -->
     <div class="header-mobile">
         <a href="https://supbio.flywheelsites.com/">
-            <img src="https://www.supbiotech.fr//Content/images/design/logo-supbiotech.png" alt="Logo supbiotech" style="position: absolute;" width="80px" /> <!-- class="scroll-logo" -->
+            <img src="/wp-content/uploads/2021/06/logo-cti.png" alt="Logo supbiotech" style="position: absolute;" width="80px" /> <!-- class="scroll-logo" -->
         </a><div class="burger_boite"><a href="#" class="burger"></a></div>
     </div>
     <!-- HEADER MENU DESKTOP    -->
@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </form>
         </li>
          <li class="flagDesign">
-            <a href="/en/accueil-home-page-en/" class="flagPos">EN</a>
+            <a href="/en/" class="flagPos">EN</a>
         </li>   
     <?php endif; ?>
                    
