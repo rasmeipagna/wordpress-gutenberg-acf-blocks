@@ -56,72 +56,52 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                     </div>
 
                     <div class="clearfix"></div>
+                    <div class="tab-content clearfix">
 <?php
-
+$villes = ['paris','lyon'];
+foreach( $villes as $ville ) :
 // Check rows exists.
-if( have_rows('contact_paris') ):
-
+if( have_rows('contact_'. $ville) ):
     // Loop through rows.
-    while( have_rows('contact_paris') ) : the_row();
-
+    while( have_rows('contact_'. $ville) ) : the_row();
         // Load sub field value.
-        $departement = get_sub_field('departement');
-        $departement = get_sub_field('adresse');
-        $codepostal = get_sub_field('codepostal');
-        $ville = get_sub_field('ville');
-        $photo = get_sub_field('photo');
-        $nom_prenom = get_sub_field('nom_prenom');
-        $titre = get_sub_field('titre');
-        $telephone = get_sub_field('telephone');
-        $fax1 = get_sub_field('fax_1');
-        $fax2 = get_sub_field('fax_2');
-        $email = get_sub_field('email');
-        $bouton = get_sub_field('bouton');
+        $liste_couleurs = get_sub_field('liste_couleurs');
+		$titre = get_sub_field('titre');
+		$photo = get_sub_field('photo');
+		$prenom_nom = get_sub_field('prenom_nom');
+		$contenu = get_sub_field('contenu');
+		$intitule_du_bouton = get_sub_field('intitule_du_bouton');
+		$bouton = get_sub_field('bouton');
         // Do something...
+?>
+    
+            <div class="<?php echo $ville; ?>">
+                <div class="contact vert">
+                    <!-- <p class=""><?php echo $liste_couleurs; ?></p> -->
+                    <h3 class=""><?php echo $titre; ?></h3>
+                    <img class="portrait" src="<?php echo $photo; ?>" alt="<?php echo $prenom_nom; ?>" />
+                    <h4 class=""><?php echo $prenom_nom; ?></h4>
+                    <p class="colorSpeMail"><?php echo $contenu; ?></p>
+                    <!-- <p class=""><?php echo $intitule_du_bouton; ?></p> -->
+                    <a class="newsroom" href="<?php echo $bouton; ?>" target="_blank"><?php echo $intitule_du_bouton; ?></a>
+                </div>
 
+                
+
+                
+                
+            </div>
+<?php 
     // End loop.
     endwhile;
-
 // No value.
-else :
+else :  
     // Do something...
 endif;
+endforeach;
 ?>
-                    <div class="col-md-12">
-                    <div class="petit-blocs">
-                        <div class="contact vert img-out">
-                            <h3><?php echo $departement; ?></h3>
-                            <p><?php echo $adresse; ?><br>
-                            <?php echo $codepostal; ?> <?php echo $ville; ?><br><br>
 
-                                Tél. : <?php echo $telephone; ?><br>
-                                Fax : <?php echo $fax_1; ?><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $fax_2; ?>
-                            </p>
-                            <p class="colorSpeMail">
-                            <?php echo $email; ?>
-                            </p>
-                        </div>
-
-                        <div class="contact vert">
-                            <h3><?php echo $departement; ?></h3>
-                            <img src="<?php echo $photo; ?>" class="portrait">
-                            <h4>
-                            <?php echo $prenom; ?><br>
-                            <?php echo $nom; ?>
-                            </h4>
-                            <p class="colorSpeMail">
-                            <?php echo $titre; ?><br><br>
-
-                            <?php echo $telephone; ?><br>
-                            <?php echo $email; ?>
-                                <br>
-                                <br>
-                                <a href="<?php echo $bouton; ?>" class="newsroom" target="_blank"><?php echo $bouton; ?></a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>               
+        </div>               
                 </div>
 
                 <div class="tab-pane" id="lyon">
