@@ -298,6 +298,16 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
 }
 /*PAGE CONTACT*/
 /*BLOC ACF/GUTENBERG TABS + REPEATER*/
+.contact.contact-color-green{
+    background-color: #aed136;
+    color: #fff;
+    padding-top: 20px;
+}
+.contact.contact-color-blue{
+    background-color: #00b1eb;
+    color: #fff;
+    padding-top: 20px;
+}
 .contact h3 {
     margin-top: 0px;
     color: #fff;
@@ -350,7 +360,7 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     font-weight: bold;
 }
 .contact a.newsroom:hover {
-    color: white;
+    color: 3e3e3e;
     background: white;
     text-decoration: none !important;
 }
