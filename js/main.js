@@ -129,7 +129,7 @@
     
     /*********************     SLIDER UNE     *********************/
 
-    $('.slider-une').slick({
+    /*$('.slider-une').slick({
         dots: false,
         infinite: true,
         speed: 300,
@@ -158,7 +158,7 @@
                 }
             }
         ]
-    });
+    });*/
 
     /*********************     SLIDER ACTU     *********************/
 
@@ -241,6 +241,37 @@ $(document).ready(function () {
     $('#head-3').click(function () {
         $('#tab-1 , #tab-2').hide();
         $('#tab-3').show();
+    });
+
+
+
+    $('.slide-replay a').click(function(event) {
+        event.preventDefault();
+        var $currentSlide = $(this);
+        var videoId = $currentSlide.data('video');
+        $('.slide-replay iframe').remove(); 
+        $('.slide-replay img').show();
+        var $img = $currentSlide.find('img');
+        $img.hide();      
+        $('<iframe width="560" height="310" src="https://www.youtube.com/embed/' +videoId+ '?rel=0&amp;showinfo=0&amp;autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>').insertBefore($img);
+
+
+        /*var CurrentHtml = $('#slideshow-main li.active').html();
+	    $('#slideshow-main li.active .video-container').remove();
+	    $('div#slideshow-main li').removeClass('active');
+	    // Ajouter l'autoplay sur les vidéos lors de leur sélection
+	    var SlideClass = $(this).attr('data-name');
+	    $('#slideshow-main li').each(function () {
+	        if ($(this).hasClass(SlideClass)) {
+	            var iframeURL = $(this).children('iframe').attr('src');
+	            $(this).children('iframe').attr('src', iframeURL + '&autoplay=1');
+	        }
+	    });
+	    var url_video = $('.replay .' + SlideClass).find('.url_video').data('url');
+	    if ($('.replay .' + SlideClass).find('.url_video').next().get(0).tagName == "SPAN")
+	        $('<div class="video-container"><iframe width="652" height="367" src="https://www.youtube.com/embed/' + url_video + '?rel=0&amp;showinfo=0;autoplay=1" allowfullscreen></iframe></div>').insertAfter($('.replay .' + SlideClass).find('.url_video'));
+	    $('div#slideshow-main li.' + $(this).attr('data-name')).addClass('active');
+*/
     });
 
 });
