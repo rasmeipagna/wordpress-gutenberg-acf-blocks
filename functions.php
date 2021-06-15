@@ -8,7 +8,8 @@ function theme_enqueue_styles() {
  wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'));
  wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'));
  wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
- wp_enqueue_script('supbiotech-blog-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
+ wp_dequeue_script('supbiotech-blog-navigation');
+ wp_enqueue_script('child-theme-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
  wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js', array(), null, null);
  wp_enqueue_script('child-theme-tabs-booking', get_stylesheet_directory_uri() .'/js/tabs-booking.js', array(), null, null);
  
