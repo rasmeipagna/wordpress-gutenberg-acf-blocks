@@ -113,10 +113,10 @@
     text-align: center;
     background: none #00b1eb;
     width: 271px;
-    height: 238px;
+    height: 258px;
     position: absolute;
     right: 0;
-    top: 152px;
+    top: 142px;
     font-size: 26px;
     font-weight: 300;
     padding-top: 90px;
@@ -151,7 +151,7 @@
     text-align: left;
     position: absolute;
     right: 5px;
-    top: 400px;;
+    top: 408px;;
 }
 
 /* TMP */
@@ -299,6 +299,8 @@
     color: #fff;
     padding: 0 10px;
     border: 1px solid #fff;
+    display: inline-block;
+    height: 32px;
 }
 .event .ladate .url-default {
     margin: 0 100px;
@@ -773,23 +775,23 @@
 .slider-replay .slick-prev,
 .slider-une .slick-prev {
     left: 0;
-    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -21px -532px;
+    background: url("../images/design/sprite.png") no-repeat scroll -21px -532px;
 }
 
 .slider-replay .slick-next,
 .slider-une .slick-next {
     right: 0;
-    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -118px -532px;
+    background: url("../images/design/sprite.png") no-repeat scroll -118px -532px;
 }
 
 .slider-replay .slick-prev:hover,
 .slider-une .slick-prev:hover {
-    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -233px -532px;
+    background: url("../images/design/sprite.png") no-repeat scroll -233px -532px;
 }
 
 .slider-replay .slick-next:hover,
 .slider-une .slick-next:hover {
-    background: url("https://www.supbiotech.fr/Content/images/design/sprite.png") no-repeat scroll -330px -532px;
+    background: url("../images/design/sprite.png") no-repeat scroll -330px -532px;
 }
 
 [dir='rtl'] .slick-prev {
@@ -814,6 +816,11 @@
 #presentation h2 {
     margin: 0px 0 180px;
 }
+#presentation .presentation-bloc {
+    margin-top: -50px;
+    margin-bottom: 70px;
+}
+
 #presentation p.mobile-font {
     font-size: 18px;
     width: 80%;
@@ -1087,7 +1094,7 @@ h3.polygoneH3{
 }
 .slide-replay iframe {
     width: 100%;
-    height: 260px;
+    /*height: 260px;*/
 }
 .slick-track {
     height: 360px;
@@ -1178,15 +1185,29 @@ h3.polygoneH3{
     .home-title {
         height: 720px;
     }
+    /*  a la une */
     #alaune {
         margin-top: 200px;
     }
+    #alaune .text {
+        padding-right: 37px;
+        padding-left: 43px;
+    }
+    .slide-une figure img {
+        min-width: 340px;
+    }
 
+    /* presentation */ 
     #presentation {
         margin-top: 0px;
         height: auto;
         margin-bottom: 0;
     }
+    #presentation .presentation-bloc {
+        margin-top: -130px;
+        margin-bottom: 0px;
+    }
+    
     .first-row {
         position: relative;
         top: 0;
@@ -1236,14 +1257,15 @@ h3.polygoneH3{
     }
 
     .slick-slide.slide-actu {
-        width: 300px !important;
+        /*width: 300px !important;
         box-sizing: border-box;
-        margin-left: 20px;
+        margin-left: 20px;*/
     }
 
     .main-actu figure img {
         width: 100%;
         height: 200px;
+        min-width: 300px;
     }
     .main-resume {
         margin-left: 15px;
@@ -1253,6 +1275,19 @@ h3.polygoneH3{
     }
     .main-resume h4 {
         font-size: 25px;
+    }
+    .resume {
+        bottom: 0px;
+        padding: 10px 20px;
+        width: 100%;
+        left: 0px;
+    }
+    .actualite:hover .resume {
+        bottom: 0px;
+        left: 0px;
+        padding: 10px 20px;
+        width: 100%;
+        
     }
 }
 

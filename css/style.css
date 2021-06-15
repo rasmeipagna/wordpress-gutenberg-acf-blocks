@@ -319,6 +319,7 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 0;
+    float:left;
 }
 .contact h4:after {
     clear: both;
@@ -333,23 +334,22 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     font-size: 13px;
     line-height: 14px;
 }
-p.colorSpeMail a {
+.contact p.colorSpeMail a {
     color: #3e3e3e;
-    /* color: #002838; */
     text-decoration: none;
 }
-p.colorSpeMail a:hover {
+.contact p.colorSpeMail a:hover {
     color: #3e3e3e;
     text-decoration: underline;
 }
-a.newsroom {
+.contact a.newsroom {
     width: 500px;
     background: #9eba3d;
     padding: 5px;
     color: #aec742;
     font-weight: bold;
 }
-a.newsroom:hover {
+.contact a.newsroom:hover {
     color: white;
     background: white;
     text-decoration: none !important;
