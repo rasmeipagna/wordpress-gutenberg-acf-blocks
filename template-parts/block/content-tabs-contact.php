@@ -70,26 +70,28 @@ if( have_rows('contact_'. $ville) ):
 		$photo = get_sub_field('photo');
 		$prenom_nom = get_sub_field('prenom_nom');
 		$contenu = get_sub_field('contenu');
-		$intitule_du_bouton = get_sub_field('intitule_du_bouton');
-		$bouton = get_sub_field('bouton');
+		$lien = get_sub_field('lien');
+        $liste_newsroom = get_sub_field('newsroom');
         // Do something...
-?>
+?> 
     
             <div class="<?php echo $ville; ?>">
                 <div class="contact vert">
                     <!-- <p class=""><?php echo $liste_couleurs; ?></p> -->
                     <h3 class=""><?php echo $titre; ?></h3>
-                    <img class="portrait" src="<?php echo $photo; ?>" alt="<?php echo $prenom_nom; ?>" />
-                    <h4 class=""><?php echo $prenom_nom; ?></h4>
-                    <p class="colorSpeMail"><?php echo $contenu; ?></p>
-                    <!-- <p class=""><?php echo $intitule_du_bouton; ?></p> -->
-                    <a class="newsroom" href="<?php echo $bouton; ?>" target="_blank"><?php echo $intitule_du_bouton; ?></a>
-                </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <img class="portrait" src="<?php echo $photo; ?>" alt="<?php echo $prenom_nom; ?>" />
+                            </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <h4 class=""><?php echo $prenom_nom; ?></h4>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div> 
 
-                
-
-                
-                
+                    <p class="colorSpeMail"><?php echo $contenu; ?></p>                    
+                    <p class="newsroom"><a class="newsroom" href="<?php echo $lien; ?>" target="_blank"><?php echo $liste_newsroom; ?></a></p>
+                </div>                        
             </div>
 <?php 
     // End loop.
