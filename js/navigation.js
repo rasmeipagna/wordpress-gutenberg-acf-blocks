@@ -66,6 +66,7 @@ $(document).ready(function () {
             {
                 breakpoint: 992,
                 settings: {
+                    centerMode: false,
                     arrows: true,
                     slidesToShow: 1,
                     slidesToScroll: 1,
