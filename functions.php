@@ -8,7 +8,7 @@ function theme_enqueue_styles() {
  wp_enqueue_style('child-theme', get_stylesheet_directory_uri() .'/css/style.css', array('parent-style'));
  wp_enqueue_style('menu-theme', get_stylesheet_directory_uri() .'/css/menu.css', array('parent-style'));
  wp_enqueue_style('home-theme', get_stylesheet_directory_uri() .'/css/home.css', array('parent-style'));
- wp_enqueue_script('child-theme-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
+ wp_enqueue_script('supbiotech-blog-navigation', get_stylesheet_directory_uri() .'/js/navigation.js', array(), null, null);
  wp_enqueue_script('child-theme-main', get_stylesheet_directory_uri() .'/js/main.js', array(), null, null);
  wp_enqueue_script('child-theme-tabs-booking', get_stylesheet_directory_uri() .'/js/tabs-booking.js', array(), null, null);
  
@@ -129,19 +129,6 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 register_nav_menus( array(
     'menu-footer' => esc_html__( 'Footer', 'supbiotech-blog' ),
 ) );
-
-
-/*LOAD CSS TO STYLE THE GUTENBERG BLOCK EDITOR LIKE THE FRONT END */
-// add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' );
-// function enqueue_parent_styles() {
-//    wp_enqueue_style( 'parent-style', get_template_directory_uri().'css/style.css' );
-// }
-
-// function site_block_editor_styles() {
-//     wp_enqueue_style( 'site-block-editor-styles', get_theme_file_uri( '/style-editor.css' ), false, '1.0', 'all' );
-// }
-// add_action( 'enqueue_block_editor_assets', 'site_block_editor_styles' );
-
 
 
 /* Colors theme support */
@@ -367,12 +354,20 @@ if( function_exists('acf_add_options_page') ) {
 	 	'capability'	=> 'edit_posts',
 	 	'redirect'		=> false
 	 ));
+
+	 acf_add_options_sub_page(array(
+		'page_title' 	=> 'slider à la une',
+		'menu_title'	=> 'A la Une',
+		'parent_slug'	=> 'theme-general-settings',
+	));
 	
 	 acf_add_options_sub_page(array(
 	 	'page_title' 	=> 'slider replay',
 	 	'menu_title'	=> 'Replay',
 	 	'parent_slug'	=> 'theme-general-settings',
 	 ));
+
+	
 	
 	/*acf_add_options_sub_page(array(
 		'page_title' 	=> 'Theme Footer Settings',
@@ -474,6 +469,7 @@ function ajax_last_posts() {
 
 	die(); // beurk :D (sinon ça affiche un 0)
 }
+
 add_theme_support( 'post-thumbnails' );
 
 /*
@@ -486,4 +482,7 @@ add_theme_support( 'post-thumbnails' );
  */
 // Miniatures de l'accueil
 add_image_size( 'widget-actu', 360, 150, true );
+
+
+
 

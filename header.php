@@ -44,8 +44,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'supbiotech-blog' ); ?></a>
 	<!--    HEADER MENU MOBILE   -->
     <div class="header-mobile">
-        <a href="https://supbio.flywheelsites.com/">
-            <img src="/wp-content/uploads/2021/06/logo-cti.png" alt="Logo supbiotech" style="position: absolute;" width="80px" /> <!-- class="scroll-logo" -->
+        <a href="/">
+            <img src="/wp-content/uploads/2021/02/cropped-logo-supbiotech.png" alt="Logo supbiotech" style="position: absolute;" width="80px" /> <!-- class="scroll-logo" -->
         </a><div class="burger_boite"><a href="#" class="burger"></a></div>
     </div>
     <!-- HEADER MENU DESKTOP    -->
@@ -91,9 +91,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <ul class="main">
             <li class="ligo">
-<a class="logo" href="https://supbio.flywheelsites.com/">
+<a class="logo" href="/">
     <img src="https://www.supbiotech.fr/Content/images/design/logo-supbiotech.png" alt="Logo supbiotech" class="top-logo" />
-    <img src="https://www.supbiotech.fr/Content/images/design/logo-supbiotech.png" alt="Logo supbiotech" class="scroll-logo" />
+    <img src="/wp-content/uploads/2021/02/cropped-logo-supbiotech.png" alt="Logo supbiotech" class="scroll-logo" />
 </a>
 </li></ul>
 
