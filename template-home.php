@@ -41,26 +41,9 @@ get_header();
 					<div class="jphome">
 						<p class="titleBulle">Venez nous rencontrer</p>
 
-						<!--<p class="displayEventHomeParis">
-						<span class="city fsize"> Campus : Paris</span><br />
-						<span class="title-type fsize">Biotech Day</span><br />
-						<span class="date-type fsize">le 22/05/2021</span>
-						<a  class="linkplus" href=""></a>
-						</p>-->			
-
-						
-						<!--<div class="displayBiotechDayHome"> <?php //echo do_shortcode('[eventdb id="2267"]'); ?></div>
-						 <div class="displayEventHomeParis"></div>
-						<div class="displayTypeJPOLyon"></div>
-
-						<p class="displayJPOHome"></p>
-							<p class="displayBiotechDayHome"></p>-->
-
 						<div class="displayTypeJPOParis"><?php echo do_shortcode('[eventdb id="1206"]'); ?></div>
 							<div class="displayTypeJPOLyon"><?php echo do_shortcode('[eventdb id="2269"]'); ?></div>
 
-						<!--<p class="displayTypeBiotechParis"></p>
-							<p class="displayTypeBiotechLyon"></p>-->
 					</div>
 					<div class="CTI-logo">
 					<span class="petit">
@@ -106,10 +89,96 @@ get_header();
 				<h2 class="_bef"><span>À la une</span></h2>
 
 				<div class="slider-une"><!-- slider une -->
-					
-				<div class="slide-une"><?php echo do_shortcode('[eventdb id="1707"]'); ?></div> 
 
-					<div class="slide-une">
+					<div class="slide-une"><?php echo do_shortcode('[eventdb id="2960"]'); ?></div>
+					
+					<div class="slide-une"><?php echo do_shortcode('[eventdb id="1707"]'); ?></div>
+
+					<?php 
+					if (have_rows('slide_a_la_une', 'option') ):
+
+					while (have_rows('slide_a_la_une', 'option') ) : the_row();
+
+						$url = get_sub_field('url'); 
+						$image = get_sub_field('image');
+						$title = get_sub_field('titre_evenement');
+						$sous_titre = get_sub_field('sous_titre_evenement');
+						$warning = get_sub_field('warning');
+						$resume = get_sub_field('resume_evenement');
+						$bouton = get_sub_field('bouton');
+						?>
+				<div class="slide-une">
+					<a href="<?php echo $url;?>" target="_blank">
+							<figure class=" col-md-5">
+								<img src="<?php echo $image;?>" alt="">
+							</figure>
+						</a>
+						<div class="col-md-7 text">
+		
+							<a class="class-off" href="<?php echo $url;?>">
+								<p class="entete">
+								<?php echo $title;?>
+								</p>
+								<p class="sous-entete">
+								<?php echo $sous_titre;?>
+								</p>
+
+								<?php if ($warning != '') : ?>
+								<p class="entete-warning">
+									<?php echo $warning ?>
+								</p>
+								<?php endif; ?>
+							</a>
+
+							<p>
+								<a class="class-off" href="<?php echo $url;?>">
+								<?php echo $resume;?>
+								</a>
+							</p>
+							<a class="linkplus" href="<?php echo $url;?>"><?php echo $bouton;?></a>
+
+						</div>
+					
+					</div> 
+
+<?php 					
+endwhile;
+
+endif;
+?>	
+
+					<!--<div class="slide-une">
+					<a href="" target="_blank">
+							<figure class=" col-md-5">
+								<img src="" alt="">
+							</figure>
+						</a>
+						<div class="col-md-7 text">
+		
+							<a class="class-off" href="">
+								<p class="entete">
+									
+								</p>
+								<p class="sous-entete">
+								
+								</p>
+								<p class="entete-warning">
+									
+								</p>
+							</a>
+
+							<p>
+								<a class="class-off" href="">
+									
+								</a>
+							</p>
+							<a class="linkplus" href=""></a>
+
+						</div>
+					
+					</div> -->
+
+					<!--<div class="slide-une">
 						<a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage" target="_blank">
 							<figure class=" col-md-5">
 								<img src="https://www.supbiotech.fr/Content/images/design/slide/slider-apprentissage.jpg" alt="Voie de l'apprentissage">
@@ -139,7 +208,7 @@ get_header();
 						</div>
 					</div>
 
-					<!--<div class="slide-une">
+					<div class="slide-une">
 						<a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/sb-career-day/forum-stage-emplois" target="_blank">
 							<figure class=" col-md-5">
 								<img src="https://www.supbiotech.fr/Content/images/design/slide/slide-sb-carreer.jpg" alt="SB Career Day">
@@ -314,12 +383,8 @@ get_header();
 				<a href="">
 					<div class="domaine sante">
 						<div></div>
-						<h4>Santé et bien-être :</h4>
-						<p>
-							Santé et bien-être :
-							développement de biomédicaments,
-							de thérapies innovantes, géniques
-							ou cellulaires, organes artificiels…
+						<h4>Santé et bien-être </h4>
+						<p>Développement de biomédicaments, de thérapies innovantes, géniques ou cellulaires, d’organes artificiels, …
 						</p>
 					</div>
 				</a>
@@ -331,9 +396,9 @@ get_header();
 						<div></div>
 						<h4>
 							Environnement, énergie
-							et transition écologique :
+							et transition écologique 
 						</h4>
-						<p>production d’énergie, recyclage des matériaux conçus à partir d’agro-ressources pour les substituer aux produits d’origine pétrolière.</p>
+						<p>Production d'énergie, recyclage des matériaux ou conception à partir d’agro-ressources pour les substituer aux produits d’origine pétrolière, …</p>
 					</div>
 				</a>
 			</div>
@@ -343,11 +408,9 @@ get_header();
 						<div></div>
 						<h4>
 							Agroalimentaire,
-							agriculture et développement durable :
+							agriculture et développement durable 
 						</h4>
-						<p>
-							alicaments, amélioration des
-							rendements de culture, …
+						<p>Alicaments, amélioration des rendements de culture, …
 						</p>
 					</div>
 				</a>
@@ -356,10 +419,8 @@ get_header();
 				<a href="">
 					<div class="domaine cosme">
 						<div></div>
-						<h4>Cosmétique :</h4>
-						<p>
-							lutte contre le vieillissement, peaux
-							artificielles, produits plus naturels, …
+						<h4>Cosmétique </h4>
+						<p>Lutte contre le vieillissement, peaux artificielles, produits plus naturels, …
 						</p>
 					</div>
 				</a>
@@ -732,60 +793,7 @@ get_header();
 		<div class="col-sm-3"> </div>-->
 
 				<div class="clearboth"></div>
-			</row>	
-
-			<!--<row>           
-				<div class="col-md-4 autre-actu">
-					<a href="#" class="actualite rel">
-						
-							<figure>
-								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/05/mathematiques-biotechnologies-concours-advance-supbiotech-recherche-etudes-pedagogie-ouerdia-arkoun-2021-home.jpg" alt="" />
-							</figure>                   
-						
-						<div class="_resume">
-							<h4>But I must explain to you how all this mistaken idea</h4>
-							<p class="detail">
-							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
-							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.
-							</p>
-							!--<span class="linkplus"></span>--
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 autre-actu">
-					<a href="#" class="actualite rel">                
-							<figure>
-								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/04/portrait-sophie-mothre-sbip-femmes-ingenieures-supbiotech-home.jpg" alt="" />
-							</figure>
-						
-						<div class="_resume">
-							<h4>To take a trivial example, which of us ever undertakes</h4>
-							<p class="detail">
-							Nor again is there anyone who loves or pursues or desires to obtain pain of itself, 
-							because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.or one who avoids a pain that produces no resultant pleasure?
-							</p>
-							!--<span class="linkplus"></span>--
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 autre-actu">
-					<a href="#" class="actualite rel">                
-							<figure>
-								<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/03/retour-conference-epopee-vaccins-anti-covid-19-supbiotech-innovation-2021-home.jpg" alt="" />
-							</figure>
-						
-						<div class="_resume">
-							<h4>At vero eos et accusamus et iusto odio dignissimos </h4>
-							<p class="detail">
-							Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime 
-							placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-							</p>
-							!--<span class="linkplus"></span>--
-						</div>
-					</a>
-				</div>
-				<div class="clearboth"></div>
-			</row> -->
+			</row>				
 			
 			<row>
 				<div class="col-md-4">
@@ -805,7 +813,123 @@ get_header();
 </section>
 <!-- end section actu -->
 
-<!-- section replay -->
+
+
+<!-- code pour appeler le bloc ACF replay -->
+
+
+<section id="replay" class="actu">
+    <div class="container-fluid replay-container">
+		<div class="container">
+		<h2><span>Revivez les temps forts de l'école</span></h2>
+		</div>
+
+		<div class="slider-replay">  
+				<?php
+				function getYoutubeIdFromUrl($url) {
+					$parts = parse_url($url);
+					if(isset($parts['query'])){
+						parse_str($parts['query'], $qs);
+						if(isset($qs['v'])){
+							return $qs['v'];
+						}else if(isset($qs['vi'])){
+							return $qs['vi'];
+						}
+					}
+					if(isset($parts['path'])){
+						$path = explode('/', trim($parts['path'], '/'));
+						return $path[count($path)-1];
+					}
+					return false;
+				}
+				if (have_rows('slide', 'option') ):
+
+					while (have_rows('slide', 'option') ) : the_row();
+                	
+					 	$url = get_sub_field('url'); 
+						$title = get_sub_field('titre');
+						$description = get_sub_field('description');
+						//parse_str(parse_url($url, PHP_URL_QUERY), $params);
+						$videoID = getYoutubeIdFromUrl($url);
+						?>
+						<div class="slide-replay">
+							<a href="#" class="actualite rel" data-video="<?php echo $videoID; ?>">
+
+							<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $videoID; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+							<img src="https://img.youtube.com/vi/<?php echo $videoID; ?>/maxresdefault.jpg" width="560" height="315" />
+								<div class="resume">
+									<h4><?php echo $title; ?></h4>
+									<p class="_detail">
+									<?php echo $description; ?>
+									</p>
+									
+								</div>
+							</a>    
+						</div>
+
+					<?php 					
+					endwhile;
+					
+				endif;
+				?>			
+
+		</div> 
+
+
+		<?php
+
+			/*	if (have_rows('slide-video') ):
+					
+					?>
+
+				<div class="slider-replay">
+					<?php while (have_rows('slide-video') ) : the_row();
+                	
+					 $url = get_sub_field('url'); 
+						$title = get_sub_field('titre');
+						$description = get_sub_field('description');
+						parse_str(parse_url($url, PHP_URL_QUERY), $params);
+						$videoID = $params['v'];
+						?>
+						<div class="slide-replay">
+							<a href="" class="actualite rel">
+							
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $videoID; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							
+								<div class="resume">
+									<h4><?php echo $title; ?></h4>
+									<p class="_detail">
+									<?php echo $description; ?>
+									</p>
+									
+								</div>
+							</a>    
+						</div>
+
+					<?php 					
+					endwhile; */?>
+					<!--</div>-->
+					<?php
+				/*else : 
+					echo "es-tu là ? ";*/
+					
+				/*endif; */
+				?>
+
+
+
+
+		<div class="container">
+		<a href="https://www.youtube.com/user/supbiotech" target="_blank" class="simple-button replay">Toutes les vidéos</a>
+	</div>
+
+<!--</div>-->
+</section>
+
+
+
+
+<!-- section replay --
 <section id="replay" class="actu">
     <div class="container-fluid replay-container">
 		<div class="container">
@@ -823,7 +947,7 @@ get_header();
                         <p class="_detail">
 						Découvrez l'Envers du Campus de Sup'Biotech sur Campus channel 
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
@@ -839,7 +963,7 @@ get_header();
 						Lors de leur troisième année, les étudiants partent pendant un semestre d’études dans l’une de nos universités partenaires. 
 						Lucas Borel (Promo 2022) revient sur son expérience à Centria University of Applied Sciences en Finlande
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
@@ -855,7 +979,7 @@ get_header();
 						Le 12 avril 2019, les étudiants de la promo 2018 de Sup'Biotech ont reçu leur diplôme au Palais des Congrés de Paris. 
 						Ils étaient parrainés par Jean-Pierre Gaspard, Directeur général de l’AFM-Téléthon.
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
@@ -871,16 +995,16 @@ get_header();
 						Découvrez le SB Career Day 2019, le forum stages - emplois de Sup'Biotech. 
 						Ce forum est une réelle opportunité de rencontres et d'échanges entre les étudiants, les diplômés et les entreprises.
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
 			<div class="slide-replay">
                 <a href="" class="actualite rel">
                 
-                    <!--<figure>
+                    !--<figure>
                         <img src="https://www.supbiotech.fr/Content/images/design/visuel-slide-une.jpg" alt="etudiantes en laboratoire">
-                    </figure>-->
+                    </figure>--
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/k2DmJhIf4HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                    
                     <div class="resume">
@@ -888,7 +1012,7 @@ get_header();
                         <p class="_detail">
 						L’Innovation Challenge Day est un événement annuel qui se déroule en juillet pour les 3e et 4e année de l’école. Durant cette journée, les étudiants de 4e année évaluent les Sup'Biotech Innovation Projects (SBIP) portés par les différentes équipes étudiantes de 3e année avant d’inverser les rôles ...
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
@@ -903,7 +1027,7 @@ get_header();
 						Marius Bat (promo 2023) vient d’intégrer la 1re année du cycle ingénieur par la voie de l'apprentissage. Il a été admis au cursus via le Advance parallèle. 
 						Il nous raconte ses premières impressions ...
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
@@ -918,7 +1042,7 @@ get_header();
 						Avec les trois quarts de la surface du Globe couverts par les océans, la masse d'eau de mer représente un gisement considérable. En effet, 97% du total de la ressource en eau est salée. Avec une demande en eau douce supérieure aux ressources disponibles, 
 						les usines de dessalement se sont développées... 
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
@@ -932,7 +1056,7 @@ get_header();
                         <p class="_detail">
 						Sandrine Coelho Barbosa (promo 2024) est arrivée en 2e année, en admission parallèle via le concours Advance parallèle et elle nous raconte ses premières impressions en ce début d'année. 
                         </p>
-                        <!--<span class="linkplus"></span>-->
+                        !--<span class="linkplus"></span>--
                     </div>
                 </a>    
             </div>
@@ -943,8 +1067,8 @@ get_header();
 		<a href="https://www.youtube.com/user/supbiotech" class="simple-button replay">Toutes les vidéos</a>
 		</div>
         
-    <!--</div>-->
-</section>
+    !--</div>--
+</section> -->
 
 
 		</div><!--end home -->
