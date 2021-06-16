@@ -298,6 +298,9 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
 }
 /*PAGE CONTACT*/
 /*BLOC ACF/GUTENBERG TABS + REPEATER*/
+.tabs-contact p{
+    margin-bottom:0;
+}
 .contact.contact-color-green{
     background-color: #aed136;
     color: #fff;
@@ -314,9 +317,10 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 0;
     text-align: center;
 }
+
 .contact .portrait {
     float: left;
     margin-left: 19px;
@@ -337,6 +341,7 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     content: " ";
 }
 .contact p {
+    margin:0;
     text-align: center;
     color: #fff;
     padding: 0 6px;
@@ -344,11 +349,37 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     font-size: 13px;
     line-height: 14px;
 }
-.contact p.colorSpeMail a {
+.contact a.newsroom {
     color: #3e3e3e;
     text-decoration: none;
 }
-.contact p.colorSpeMail a:hover {
+.contact.contact-color-green a.newsroom {
+    color: #3e3e3e;
+    width: 500px;
+    background: #9eba3d;
+    padding: 5px;
+    font-weight: bold;
+}
+.contact.contact-color-green a.newsroom:hover {
+    background: white;
+    text-decoration: none !important;
+}
+.contact.contact-color-blue a.newsroom {
+    color: #3e3e3e;
+    width: 500px;
+    background: #029ccc;
+    padding: 5px;
+    font-weight: bold;
+}
+.contact.contact-color-blue a.newsroom:hover {
+    background: white;
+    text-decoration: none !important;
+}
+.contact p.colorSpeMail{
+    color: #3e3e3e;
+    text-decoration: none;
+}
+.contact p.colorSpeMail:hover {
     color: #3e3e3e;
     text-decoration: underline;
 }

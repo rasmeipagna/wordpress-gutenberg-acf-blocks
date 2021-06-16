@@ -17,6 +17,19 @@ function theme_enqueue_styles() {
 	
 }
 
+
+/*<?php
+    $currentlang = get_bloginfo('language');
+    if($currentlang=="en-GB") : ?>
+    !-- la bannière EN --
+        <li><a href="/contact-us">Contact</a></li>
+    
+    <?php else : ?>   
+    !-- la bannière FR --
+        <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
+        <li><a href="/contact">Contact</a></li>        
+        <?php endif; ?> */
+
 class My_Walker_Nav_Menu extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = array()) {
         $indent = str_repeat("\t", $depth);
@@ -31,6 +44,37 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
         if ($depth == 0) {
     
         $output .= "\n</ul>\n</div>\n</div>";
+
+		$currentlang = get_bloginfo('language');
+    if($currentlang=="en-GB") :	
+
+		$output .= '<div class="col-sm-5 right-menu">
+        <div class="col-md-12 rel">
+        <div class="contact-clic hpDesktop">
+            <a class="documentation" href="/engineering-school-admission/download-documentation">
+                Documentation
+            </a>
+            <a class="candidature" href="/engineering-school-admission/online-application">
+                Application
+            </a>   
+            <!--<a class="entretien" href="/agenda">
+                    Agenda
+            </a>-->
+            <a class="rdvperso rdvperso-en" href="/contacts-us">
+                Contacts
+            </a>
+        </div>       
+		';		
+		$output .='                   
+
+        </div>           
+	
+            <a class="close" href=""></a>
+        
+        </div>';
+
+		else :
+
         $output .= '<div class="col-sm-5 right-menu">
         <div class="col-md-12 rel">
         <div class="contact-clic hpDesktop">
@@ -53,17 +97,15 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$output .= '<div class="clearboth"></div>'; 
 		$output .= do_shortcode('[eventdb id="1705"]'); 
 		$output .='
-
-                <!--<p class="displayParisHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 22/05/2021</span><br>Biotech Day à Paris<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/biotech-day"></a></span></p>-->
-                <!--<p class="displayLyonHeader" style="display: block;"><span class="date rel"><span class="informations"><span class="date">Le 29/05/2021</span><br>Journée Portes Ouvertes à Lyon<br><span class="registration">Inscription obligatoire</span></span><a class="linkplus" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/journees-portes-ouvertes-jpo"></a></span></p>-->
-                
         </div>
 
         </div>           
-        
+	
             <a class="close" href=""></a>
         
         </div>';
+
+	endif;
         $output .= "\n</div>";
                 }
         $output .= "</ul>";

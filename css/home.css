@@ -1259,7 +1259,10 @@ h3.polygoneH3{
     .slick-slide.slide-replay {
         margin-left: 0px;
     }
-
+    .slide-replay iframe {
+        width: 100%;
+        height: 180px;
+    }
     .main-actu figure img {
         width: 100%;
         height: 200px;
@@ -1275,6 +1278,7 @@ h3.polygoneH3{
         font-size: 25px;
     }
     .resume {
+        height: 180px !important;
         bottom: 0px;
         padding: 10px 20px;
         width: 100%;
@@ -1288,6 +1292,527 @@ h3.polygoneH3{
         
     }
 }
+
+
+
+/*****************************************************************************************************************************************************
+*                                   STYLE HOMEPAGE EN 
+*****************************************************************************************************************************************************/
+
+.right-menu .contact-clic a.rdvperso-en {
+    background-position: -578px -1854px;
+    padding-top: 100px;
+}
+.right-menu .contact-clic a.rdvperso-en:hover { 
+    background-position: -578px -1666px;
+    padding-top: 100px;
+}
+#home-en h2 {
+    font-size: 80px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: #002838;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.crop-circle-en {
+    background: url('../images/design/half-circle-home.png') no-repeat center top;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 229px);
+    height: 223px;
+    width: 458px;
+    text-align: center;
+}
+.crop-circle-en h1 {
+    font-weight: 300;
+    font-size: 35px;
+    margin-bottom: 28px;
+    margin-top: 10px;
+}
+.crop-circle-en span.petit-en {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 11px;
+    display: block;
+    font-weight: 400;
+    margin-left: 84px;
+    margin-top: 0px;
+    width: 303px;
+    text-align: left;
+}
+.crop-circle-en span.petit-en img {
+    float: left;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+@media (max-width: 479px) {
+    .container .bloc-info .linkplus-en {
+        bottom: -70px !important;
+    }
+
+    .container .bloc-dark-blue .bloc-text-paris .linkplus-en {
+        right: 10px !important;
+        bottom: 15px !important;
+    }
+
+    #home-en h2 {
+        font-size: 50px;
+    }
+
+    .crop-circle-en {
+        width: 100%;
+        /*position: static;*/
+    }
+
+    .marg-top-mobile {
+        margin-top: 400px;
+    }
+}
+
+#home-en h2 span {
+    font-weight: 700;
+}
+
+.bloc-info h3 {
+    font-size: 60px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: #002838;
+    margin-top: 15px;
+}
+
+    .bloc-info h3 span {
+        font-weight: 700;
+    }
+
+#home-en h4 span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #002838;
+    text-transform: uppercase;
+}
+
+#home-en h4 {
+    font-size: 15px;
+    color: #002838;
+}
+
+
+/*****************/
+
+.home-title-en {
+background: url(/wp-content/uploads/visuel-home-en-4.jpg) no-repeat center 30px;
+height: 840px;
+position: relative;
+margin-bottom: 60px;
+margin-top: 114px;
+padding-top: 27px;
+}
+
+
+/*************CONTACT HEXAGONE ANGLAIS********/
+
+.contact-clic-en {
+    text-align: center;
+}
+
+.home-title-en .contact-clic-en {
+    position: absolute;
+    bottom: -58px;
+    left: calc(50% - 260px);
+}
+
+.right-menu-en .contact-clic-en {
+    text-align: left;
+}
+
+.contact-clic-en a {
+    background-image: url("../images/design/sprite.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.right-menu .contact-clic-en a {
+    width: 136px;
+    height: 160px;
+    padding-top: 100px;
+    font-size: 10.8px;
+    text-align: center;
+}
+
+.home-title-en .contact-clic-en a {
+    width: 181px;
+    height: 211px;
+    padding-top: 130px;
+    font-size: 14.3px;
+    margin-right: -4px;
+}
+
+footer .contact-clic-en a {
+    width: 163px;
+    height: 191px;
+    padding-top: 120px;
+    font-size: 14.3px;
+    margin-right: -3px;
+    margin: 10px;
+}
+
+.home-title-en .contact-clic-en a.documentation {
+    background-position: 0px -752px;
+}
+
+.home-title-en .contact-clic-en a.candidature {
+    background-position: -197px -752px;
+}
+
+.home-title-en .contact-clic-en a.entretien {
+    background-position: -393px -752px;
+    padding-top: 117px;
+    line-height: 17px;
+    margin-right: -3px;
+}
+
+.home-title-en .contact-clic-en a.contacts {
+    background-position: -589px -752px;
+}
+
+.home-title-en .contact-clic-en a.documentation:hover {
+    background-position: 0px -976px;
+    color: #aed136;
+}
+
+.home-title-en .contact-clic-en a.candidature:hover {
+    background-position: -197px -976px;
+    color: #61c4ae;
+}
+
+.home-title-en .contact-clic-en a.entretien:hover {
+    background-position: -393px -976px;
+    color: #18afe5;
+}
+
+.home-title-en .contact-clic-en a.contacts:hover {
+    background-position: -589px -976px;
+    color: #f79653;
+}
+
+.right-menu .contact-clic-en a.documentation {
+background-position: 0px -1853px;
+color: #fff;
+}
+
+.right-menu .contact-clic-en a.candidature {
+background-position: -143px -1853px;
+color: #fff;
+}
+
+.right-menu .contact-clic-en a.entretien {
+    background-position: -302px -1671px;
+    padding-top: 81px;
+    line-height: 17px;
+    color: #00b1eb;
+}
+
+.right-menu .contact-clic-en a.contacts {
+background-position: -431px -1853px;
+color: #fff;
+}
+
+.right-menu .contact-clic-en a.documentation:hover {
+background-position: 0px -1665px;
+color: #aed136;
+}
+
+.right-menu .contact-clic-en a.candidature:hover {
+background-position: -144px -1665px;
+color: #61c4ae;
+}
+
+.right-menu .contact-clic-en a.entretien:hover {
+    background-position: -302px -1862px;
+    color: #fff;
+}
+
+.right-menu .contact-clic-en a.contacts:hover {
+background-position: -431px -1665px;
+color: #f79856;
+}
+
+/************** section alaune ************/
+section#alaune-en {
+    margin-top: 80px;
+}
+
+section#alaune-en .container .bloc-info {
+    margin-right: 20px;
+    margin-top: 90px;
+}
+
+section#alaune-en .container .bloc-info p {
+    font-size: 18px;
+}
+
+section#alaune-en .container .bloc-info.welcome {
+    margin-top: 25px !important;
+    text-align: left;
+    font-size: 18px;
+}
+
+    /*********************************************/
+
+
+    /**************LINKPLUS ANGLAIS*****************/
+
+    .linkplus-en {
+        display: inline-block;
+        width: 60px;
+        height: 70px;
+        background-image: url("../images/design/sprite.png");
+        background-repeat: no-repeat;
+    }
+
+    .container .bloc-info .linkplus-en {
+        position: absolute;
+        right: 35px;
+        bottom: -52px;
+        background-position: -752px -155px;
+        float: right;
+    }
+
+        .container .bloc-info .linkplus-en:hover {
+            background-position: -821px -155px;
+        }
+
+
+    /**EDITORIAL PART**/
+
+    .bloc-portrait {
+        height: 579px;
+        margin-bottom: 250px;
+    }
+
+    .bg-dark-blue {
+        background-color: #002838;
+        height: 262px;
+        width: 100%;
+        border: 1px #002838 solid;
+    }
+
+    div.bloc-portrait div.bg-dark-blue p {
+        font-weight: bold;
+        font-size: 22px;
+        text-align: center;
+        color: #fff
+    }
+
+        div.bloc-portrait div.bg-dark-blue p span {
+            color: #afdb00;
+        }
+
+    img.portrait-hexa {
+        margin-top: -150px;
+        margin-bottom: 20px;
+        z-index: 1;
+        margin-left: calc(50% - 110px);
+        width: 220px;
+    }
+
+    .domaine-en {
+        border: solid 1px #aed136;
+        border-top: none;
+        text-align: left;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 306px;
+        padding-bottom: 30px;
+    }
+
+        .domaine-en p {
+            padding: 40px 20px;
+            line-height: 23px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+    .bloc-paris {
+        background: url("/wp-content/uploads/paris-bg.jpg")no-repeat center;
+        height: 494px;
+        width: 100%;
+    }
+
+    .hexa-blue {
+        position: relative;
+    }
+
+        .hexa-blue img {
+            margin-top: -150px;
+        }
+
+    .city-name {
+        font-size: 70px;
+        color: #fff;
+        z-index: 2;
+        margin-top: -234px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .bloc-dark-blue {
+        background-color: #002838;
+        min-height: 262px;
+        width: 100%;
+    }
+
+        .bloc-dark-blue p {
+            color: #fff;
+            font-size: 18px;
+        }
+
+    .bloc-text-paris p {
+        text-align: left;
+        padding: 40px;
+    }
+
+    section#reasons {
+        padding-bottom: 50px;
+    }
+
+    #reasons .container .col-sm-2 {
+        width: 19.666667%;
+    }
+
+    .reason {
+        border: solid 1px #aed136;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 300px;
+        margin-bottom: 30px;
+    }
+
+        .reason.partners div {
+            background-position: 12px 0px;
+        }
+
+        .reason.internships div {
+            background-position: -247px 0px;
+        }
+
+        .reason.projects div {
+            background-position: -504px 0px;
+        }
+
+        .reason.discovery div {
+            background-position: -756px 0px;
+        }
+
+        .reason.language div {
+            background-position: -1008px 0px;
+        }
+
+        .reason.faculty div {
+            background-position: 12px -309px;
+        }
+
+        .reason.paris div {
+            background-position: -247px -309px;
+        }
+
+        .reason.career div {
+            background-position: -504px -309px;
+        }
+
+        .reason.associations div {
+            background-position: -756px -309px;
+        }
+
+        .reason.instruction div {
+            background-position: -1008px -309px;
+        }
+
+        .reason div {
+            height: 144px;
+            background-image: url(../images/design/sprite-icon-en.png);
+            background-repeat: no-repeat;
+            margin-top: 30px;
+            width: 125px;
+            margin-left: calc(50% - 65px);
+        }
+
+    .bloc-info img {
+        width: 100%;
+    }
+
+    footer.enVersion div.col-md-12.infos div.col-md-5 {
+        padding: 0;
+    }
+
+    table .tableTitle {
+        width: 18%;
+        border: 1px solid #00b1eb !important;
+    }
+
+    table .tableNd {
+        width: 9%;
+        height: 55px
+    }
+
+    table .tableRd {
+        width: 73%;
+        background-color: #e7e8e7
+    }
+
+    table td .textAlignCenter {
+        text-align: center;
+    }
+
+    table td.speWidthFirst {
+        width: 33%;
+    }
+
+    table td.speWidthSecond {
+        width: 33%;
+    }
+
+    section div.blocWelcomeSpe {
+        margin: 50px 0 40px 0;
+    }
+
+    section iframe.speVideo {
+        width: 100%;
+        min-height: 650px;
+    }
+
+    .mobile-display {
+        display: none;
+    }
+
+
+    /***********************PARIS*************************************/
+
+    .container .bloc-dark-blue {
+        position: relative;
+    }
+
+        .container .bloc-dark-blue .bloc-text-paris .linkplus-en {
+            position: absolute;
+            right: 35px;
+            bottom: 15px;
+            background-position: -752px -155px;
+            float: right;
+        }
+
+            .container .bloc-dark-blue .bloc-text-paris .linkplus-en:hover {
+                background-position: -821px -155px;
+            }
+
 
 
 

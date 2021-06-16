@@ -148,37 +148,6 @@ endif;
 ?>	
 
 					<!--<div class="slide-une">
-					<a href="" target="_blank">
-							<figure class=" col-md-5">
-								<img src="" alt="">
-							</figure>
-						</a>
-						<div class="col-md-7 text">
-		
-							<a class="class-off" href="">
-								<p class="entete">
-									
-								</p>
-								<p class="sous-entete">
-								
-								</p>
-								<p class="entete-warning">
-									
-								</p>
-							</a>
-
-							<p>
-								<a class="class-off" href="">
-									
-								</a>
-							</p>
-							<a class="linkplus" href=""></a>
-
-						</div>
-					
-					</div> -->
-
-					<!--<div class="slide-une">
 						<a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage" target="_blank">
 							<figure class=" col-md-5">
 								<img src="https://www.supbiotech.fr/Content/images/design/slide/slider-apprentissage.jpg" alt="Voie de l'apprentissage">
@@ -483,23 +452,8 @@ endif;
     <div class="container">
         <h2><span>Actualités de l'école</span></h2>
         <div class="_slider-actu">
-			<row>
-				<!--<div class="col-md-7 main-actu">
-					<figure>
-						<img src="https://www.supbiotech.fr/blogs/wp-content/uploads/sites/24/2021/05/double-diplome-hepl-haute-ecole-liege-supbiotech-international-belgique-biotechnologies-home.jpg" alt="" />
-					</figure>
-				</div>
-			
-				<div class="col-md-5 main-resume">
-						<h4><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</strong></h4>
-						<p class="detail">
-						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-						</p>
-						
-					</div>-->
-					<?php if ( have_posts() ) : ?>
+			<row>				
+			<?php if ( have_posts() ) : ?>
 			<?php query_posts('posts_per_page=1'); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 <!-- -----------------------------vient de /content/prime.php-------------------- -->
@@ -874,49 +828,6 @@ endif;
 				?>			
 
 		</div> 
-
-
-		<?php
-
-			/*	if (have_rows('slide-video') ):
-					
-					?>
-
-				<div class="slider-replay">
-					<?php while (have_rows('slide-video') ) : the_row();
-                	
-					 $url = get_sub_field('url'); 
-						$title = get_sub_field('titre');
-						$description = get_sub_field('description');
-						parse_str(parse_url($url, PHP_URL_QUERY), $params);
-						$videoID = $params['v'];
-						?>
-						<div class="slide-replay">
-							<a href="" class="actualite rel">
-							
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $videoID; ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-							
-								<div class="resume">
-									<h4><?php echo $title; ?></h4>
-									<p class="_detail">
-									<?php echo $description; ?>
-									</p>
-									
-								</div>
-							</a>    
-						</div>
-
-					<?php 					
-					endwhile; */?>
-					<!--</div>-->
-					<?php
-				/*else : 
-					echo "es-tu là ? ";*/
-					
-				/*endif; */
-				?>
-
-
 
 
 		<div class="container">

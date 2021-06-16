@@ -15,20 +15,28 @@ $id = 'bloc-enseignant-' . $block['id'];
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
-<div id="<?php echo $id; ?>" class="bloc-enseignant <?php echo $align_class; ?>">
-   <div class="col-xs-12 col-sm-12 bloc-enseignant spe">
-       <div class="col-sm-3">
-       <div class="bloc-enseignant-img"><img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" /></div>
-       </div>
-       <div class="col-xs-12 col-sm-9 closer-left">
-       <h4><?php the_field('prenom_nom'); ?></h4><br />
-       <p><?php the_field('poste'); ?></p><br />
-       
-       
-       </div>
-    	
-    
-        
+    <div id="<?php echo $id; ?>" class="bloc-enseignant <?php echo $align_class; ?>">
+        <div class="col-xs-12 col-sm-12 bloc-enseignant spe">
+            <div class="col-sm-3">
+                <div class="bloc-enseignant-img">
+                    <img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 closer-left">
+                <h4>
+                    <?php the_field('prenom_nom'); ?>
+                </h4>
+                <br />
+                <p>
+                    <?php the_field('poste'); ?>
+                </p>
+                <br />
+
+
+            </div>
+
+
+
+        </div>
+
     </div>
-    
-</div>
