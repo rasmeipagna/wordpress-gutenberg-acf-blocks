@@ -273,15 +273,6 @@ figure.wp-block-table.is-style-table-thead-blue table tfoot td{
     background-repeat: no-repeat;
 } 
 .page blockquote p {
-    /* css new maquette */
-    /* margin-top: 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 20px;
-    font-size: 16px;
-    color: #002838;
-    margin-left: 100px; */
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -808,10 +799,13 @@ h3.hub-green-title{
         padding-bottom: 51.8%;
     }
 } 
-/* .tabs-booking iframe{
-    min-height:2900px;
+    
+@media screen and (max-width:580px) {
+    .tabs-booking .col-sm-12 {
+        padding-right:0;
+        padding-left:0;
+    }
 }
-*/
 /* FIN TABS BOOKING */
 /* WIDGETS */
 .layout-container {
@@ -1109,14 +1103,37 @@ h3.hub-green-title{
 }
 
 /* SITEMAP */
-.planSite ul li {
+/* PREMIER NIVEAU */
+.container.page .planSite > ul > li {
     padding-left: 0;
 }
-.planSite ul li a {
+.container.page .planSite > ul > li:before {
+    display:none;
+}
+.container.page .planSite > ul > li:after {
+    display:none;
+}
+.container.page .planSite > ul > li > a {
+    text-decoration: none;
     color: #00b1eb;
+    font-size: 20px;
+}
+/* DEUXIEME NIVEAU */
+.container.page .planSite > ul > li > ul > li a{
+    text-decoration:none;
+    font-size: 16px;
+}
+/* TROISIEME NIVEAU */
+.container.page .planSite > ul > li > ul > li > ul > li a{   
     text-decoration: none;
 }
-.planSite ul li:nth-child(1){
+.container.page .planSite > ul > li > ul > li > ul > li:after {
+    display: none;
+}
+.container.page .planSite > ul > li > ul > li > ul > li a {
+
+}
+/* .planSite ul li:nth-child(1){
     font-size: 23px;
     font-weight: 400;
     margin-bottom: 17px;
@@ -1124,7 +1141,7 @@ h3.hub-green-title{
 }
 .planSite ul li:nth-child(1):before{
     display:none;
-}
+} */
 @media screen and (min-width: 768px)  {
     .planSite > ul {
         column-count: 2;

@@ -1050,7 +1050,7 @@ h3.polygoneH3{
     color: #fff;
     line-height: 1.1em;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 30px !important;
     font-weight: 700;
 }
 .main-resume h4 a {
@@ -1314,6 +1314,7 @@ h3.polygoneH3{
     color: #002838;
     margin-top: 15px;
     text-transform: uppercase;
+    line-height: 1.1em;
 }
 
 .crop-circle-en {
@@ -1801,7 +1802,7 @@ section#alaune-en .container .bloc-info.welcome {
         position: relative;
     }
 
-        .container .bloc-dark-blue .bloc-text-paris .linkplus-en {
+    .container .bloc-dark-blue .bloc-text-paris .linkplus-en {
             position: absolute;
             right: 35px;
             bottom: 15px;
@@ -1809,9 +1810,87 @@ section#alaune-en .container .bloc-info.welcome {
             float: right;
         }
 
-            .container .bloc-dark-blue .bloc-text-paris .linkplus-en:hover {
+     .container .bloc-dark-blue .bloc-text-paris .linkplus-en:hover {
                 background-position: -821px -155px;
             }
+
+   /************* Actus EN ****************************/
+   
+   *************Sldier Actu************/
+
+.actualite-en {
+    width: calc( 100% - 10px);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.actualite-en:nth-child(odd) {
+    margin-right: 20px;
+}
+
+.resume-en {
+    background-color: rgba(0, 40, 56, 1);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 36px 113px 36px 28px;
+    width: calc( 100% - 20px);
+    color: #fff;
+    font-size: 20px;
+    line-height: 21px;
+}
+
+.resume-en .detail {
+    display: none;
+}
+
+.resume-en .linkplus {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    background-position: -752px -155px;
+    float: right;
+    right: 20px;
+    bottom: 20px;
+}
+
+.actualite-en:hover .resume-en {
+    background-color: #002838;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: inline-block;
+    padding: 70px 113px 46px 38px;
+    width: 100%;
+    background-color: rgba(0, 40, 56, 0.6);
+    height: 100%;
+}
+
+.actualite-en:hover .resume-en .detail {
+    display: block;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+@media (max-width: 992px) {
+    .actualite-en:hover .resume-en .detail {
+        display: none;
+    }
+
+}
+
+.actualite-en:hover .linkplus {
+    background-position: -821px -155px;
+    right: 30px;
+    bottom: 20px;
+}
+
+/*#actu .simple-button {
+    float: right;
+    margin-top: 20px;
+}*/
+
 
 
 
