@@ -313,11 +313,9 @@ window.onscroll = function () {
         ]
     });
 
-    /*********************     SLIDER REPLAY   *********************/
+    /*********************     SLIDER REPLAY   *********************/   
 
-   
-
-    // Slider Actualités
+    // Slider Replay
     $('.slider-replay').slick({
         //variableWidth: true,
         centerMode: true,
@@ -344,6 +342,42 @@ window.onscroll = function () {
            
         ]
     });
+
+    
+    /*********************     SLIDER ACTU     *********************/
+
+   
+
+    // Slider Actualités
+    $('.slider-actu').slick({
+        variableWidth: true,
+        centerMode: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+            {
+                breakpoint: 1025,
+                settings: {
+                    arrows: true,
+                    variableWidth: true,
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: true,
+                    variableWidth: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+           
+        ]
+    });
+
+
    
 });
 
