@@ -1349,30 +1349,6 @@ h3.polygoneH3{
     margin-right: 5px;
 }
 
-@media (max-width: 479px) {
-    .container .bloc-info .linkplus-en {
-        bottom: -70px !important;
-    }
-
-    .container .bloc-dark-blue .bloc-text-paris .linkplus-en {
-        right: 10px !important;
-        bottom: 15px !important;
-    }
-
-    #home-en h2 {
-        font-size: 50px;
-    }
-
-    .crop-circle-en {
-        width: 100%;
-        /*position: static;*/
-    }
-
-    .marg-top-mobile {
-        margin-top: 400px;
-    }
-}
-
 #home-en h2 span {
     font-weight: 700;
 }
@@ -1399,19 +1375,23 @@ h3.polygoneH3{
 #home-en h4 {
     font-size: 15px;
     color: #002838;
+    font-weight: 400;
 }
-
 
 /*****************/
 
 .home-title-en {
-background: url(/wp-content/uploads/visuel-home-en-4.jpg) no-repeat center 30px;
-height: 840px;
-position: relative;
-margin-bottom: 60px;
-margin-top: 114px;
-padding-top: 27px;
-}
+    background: url(/wp-content/uploads/visuel-home-en-4.jpg) no-repeat center 30px;
+    height: 840px;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 114px;
+    padding-top: 27px;
+ }
+
+#reasons .container .col-md-2 {
+    width: 19.666667%;
+ }    
 
 
 /*************CONTACT HEXAGONE ANGLAIS********/
@@ -1558,6 +1538,8 @@ section#alaune-en .container .bloc-info {
 
 section#alaune-en .container .bloc-info p {
     font-size: 18px;
+    font-weight: 300;
+    line-height:23px;
 }
 
 section#alaune-en .container .bloc-info.welcome {
@@ -1671,14 +1653,16 @@ section#alaune-en .container .bloc-info.welcome {
         width: 100%;
     }
 
-        .bloc-dark-blue p {
-            color: #fff;
-            font-size: 18px;
-        }
+    .bloc-dark-blue p {
+        color: #fff;
+        font-size: 18px;
+    }
 
     .bloc-text-paris p {
         text-align: left;
         padding: 40px;
+        font-weight: 300;
+        line-height: 23px;
     }
 
     section#reasons {
@@ -1788,7 +1772,7 @@ section#alaune-en .container .bloc-info.welcome {
 
     section iframe.speVideo {
         width: 100%;
-        min-height: 650px;
+        min-height: 672px;
     }
 
     .mobile-display {
@@ -1816,7 +1800,7 @@ section#alaune-en .container .bloc-info.welcome {
 
    /************* Actus EN ****************************/
    
-   *************Sldier Actu************/
+   /*************Sldier Actu************/
 
 .actualite-en {
     width: calc( 100% - 10px);
@@ -1873,18 +1857,203 @@ section#alaune-en .container .bloc-info.welcome {
     line-height: 15px;
 }
 
-@media (max-width: 992px) {
-    .actualite-en:hover .resume-en .detail {
-        display: none;
-    }
-
-}
-
 .actualite-en:hover .linkplus {
     background-position: -821px -155px;
     right: 30px;
     bottom: 20px;
 }
+
+@media (max-width: 992px) {
+    .actualite-en:hover .resume-en .detail {
+        display: none;
+    }
+
+    section iframe.speVideo {
+        width: 100%;
+        min-height: 400px;
+    }
+
+}
+
+@media (max-width: 780px) {
+    #home-en #alaune div.container div.bloc-info h3 {
+        font-size: 40px;
+    }
+
+    #home-en #alaune div.container h2 {
+        font-size: 60px;
+    }
+
+    #home-en section div.crop-circle-en {
+        top: 90px;
+    }
+
+    .crop-circle-en h1 {
+        font-size: 30px;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    .bef:before {
+        content: none;
+    }
+
+    #avenir .col-sm-3 {
+        width: 100%;
+    }
+
+    footer .apropos {
+        padding-right: 20px;
+    }
+
+        footer .apropos img {
+            position: static;
+        }
+
+    .container.page {
+        padding-top: 20px;
+    }
+
+    footer .bloc-cti-iar {
+        bottom: -250px;
+    }
+
+    .home-title-en {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 479px) {
+    .container .bloc-info .linkplus-en {
+        bottom: -70px !important;
+    }
+
+    .container .bloc-dark-blue .bloc-text-paris .linkplus-en {
+        right: 10px !important;
+        bottom: 15px !important;
+    }
+
+    #home-en h2 {
+        font-size: 50px;
+    }
+
+    .crop-circle-en {
+        width: 100%;
+        /*position: static;*/
+    }
+
+    .marg-top-mobile {
+        margin-top: 400px;
+    }
+    .bloc-info h3 {
+        font-size: 40px;
+    }
+
+    section iframe.speVideo {
+        width: 100%;
+        min-height: 182px;
+    }
+    
+}
+
+@media (max-width: 420px) {
+
+    #home-en #alaune div.container div.bloc-info h3 {
+        font-size: 40px;
+    }
+
+    #home-en #alaune div.container h2 {
+        font-size: 60px;
+    }
+
+    #home-en section div.crop-circle-en {
+        top: 0px;
+    }
+
+    .home-title-en {
+        height: 840px;
+        position: relative;
+        margin-bottom: 60px;
+        margin-top: 0;
+    }
+
+    .crop-circle-en {      
+        top: 0;
+        left: calc(50% - 180px);
+    }
+
+    .crop-circle-en span.petit-en {
+        font-size: 10px;
+        text-transform: uppercase;
+        line-height: 11px;
+        display: block;
+        font-weight: 400;
+        margin-left: 24px;
+        margin-top: 0px;
+        width: 303px;
+        text-align: left;
+    }
+
+    .crop-circle-en h1 {
+        font-size: 30px;
+    }
+
+    #home h2 {
+        font-size: 30px;
+    }
+
+    .bef:before {
+        content: none;
+    }
+
+    #avenir .col-sm-3 {
+        width: 100%;
+    }
+
+    footer .apropos {
+        padding-right: 20px;
+    }
+
+    footer .apropos img {
+         position: static;
+    }
+
+    .container.page {
+        padding-top: 20px;
+    }
+
+    footer .bloc-cti-iar {
+        bottom: -250px;
+    }
+
+    .home-title-en {
+        margin-top: 53px;
+    }
+
+    .home-title-en .contact-clic-en {
+        left: calc(50% - 182px);
+    }
+
+    section#alaune-en {
+        margin-top: 0px;
+    }
+
+    #reasons .container .col-md-2 {
+        width: 100%;
+     } 
+     section#reasons {
+        padding-bottom: 0px;
+        margin-bottom: 23px;
+    }
+
+    .bloc-paris {
+        margin-top: 80px;
+    }
+ 
+}
+
 
 /*#actu .simple-button {
     float: right;

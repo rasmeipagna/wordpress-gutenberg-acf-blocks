@@ -234,7 +234,9 @@
     font-weight: 600 !important;
 }
 
-
+#banner .content-banner-en {
+    width: 355px;
+}
 
 @media screen and (max-width: 780px) {
     #bloc-contact-mobile .entretien {
@@ -313,6 +315,10 @@
     #banner .content-banner {
         margin-right: 0px;
         width: 460px;
+    }
+    #banner .content-banner-en {
+        margin-right: 0px;
+        width: 320px;
     }
     .cbp-hrmenu {
         font-size: 14px;

@@ -1,9 +1,11 @@
 ﻿@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900';
 
 .clearboth { clear:both;}
+
 .scroll-logo {
-    top: 22px;
-    width: 56%;
+    top: 30px;
+    width: 75%;
+    left: 35px;
 }
 
 a:focus {
@@ -862,11 +864,12 @@ h3.hub-green-title{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.widget-citation .container-widget{
-    max-width: 890px;
+.widget-citation .container-widget {
+    max-width: 1280px;
     margin-left: 280px;
 }
-@media screen and (max-width:992px) {
+
+@media screen and (max-width:1280px) {
     .widget-citation .container-widget {
         width:100%;
         margin-left: 0px;
@@ -912,10 +915,10 @@ h3.hub-green-title{
     content: ' ';
     display: inline-block;
     width: 77px;
-    height: 63px;
+    height: 66px;
     background-image: url(../images/design/apostrophe.png);
     background-repeat: no-repeat;
-    margin: 0 30px 100px 0;
+    margin: 0 30px 0px 0;
     float: left;
 }
 
@@ -934,43 +937,22 @@ h3.hub-green-title{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.widget-fiches-metiers .pictos-domaines{
-    margin-left:100px;
+.widget-fiches-metiers .bloc-fiches-metiers .liste-metiers{
+    width:445px;
 }
-@media screen and (max-width:580px){
-    .widget-fiches-metiers{
-        height:auto;
-    }
-    .widget-fiches-metiers .mobile{
-        /* position:absolute;
-        top:0;
-        left:0; */
-        background-color: #002838;
-        padding:20px;
-        margin-top:20px;
-    }
-    .pictos-domaines{
-        text-align:center;
-    }
+.widget-fiches-metiers .bloc-fiches-metiers .pictos-domaines{
+    margin : 0 auto;
+    width:445px;
 }
 
+
 .widget-fiches-metiers h4{
-    font-size:35px;
-    color:#AED136;
-    font-weight:bold;
-    text-align:center;
-    margin:20px 0 20px 0;
-}
-.widget-fiches-metiers .liste-metiers{
-    margin-left:300px;
-}
-@media screen and (max-width:580px){
-    .widget-fiches-metiers .liste-metiers{
-        margin:0
-    }
-    .widget-fiches-metiers .liste-metiers ul{
-        padding:0;
-    }
+    font-size: 35px;
+    color: #AED136;
+    font-weight: bold;
+    width: 300px;
+    padding: 5px;
+    margin: 20px auto;
 }
 .widget-fiches-metiers ul li a{
     text-decoration:none;
@@ -1004,8 +986,57 @@ h3.hub-green-title{
     color:#002838;
     transition:0.3s;
 }
+@media screen and (max-width:580px){
+    .widget-fiches-metiers{
+        height:auto;
+    }
+    .widget-fiches-metiers .mobile{
+        background-color: #002838;
+        padding:20px;
+        margin-top:20px;
+    }
+    .pictos-domaines{
+        text-align:center;
+    }
+    .widget-fiches-metiers .liste-metiers{
+        margin:0
+    }
+    .widget-fiches-metiers .liste-metiers ul{
+        padding:0;
+    }
+    .widget-fiches-metiers .bloc-fiches-metiers .liste-metiers{
+        margin-left:50px;
+    }
+    .widget-fiches-metiers .bloc-fiches-metiers .pictos-domaines {
+        margin: 0 auto;
+        width:inherit;
+    }
+}
+
+@media screen and (min-width:580px) and (max-width:1280px){
+    .widget-fiches-metiers .bloc-fiches-metiers .liste-metiers{
+        margin-left:-100px;
+    }
+
+}
+
 /* FIN WIDGET FICHES-METIERS */
 /* WIDGET ACTUALITES */
+.widget-actualites figure.col-sm-6.img-blog, .widget-actualites article.col-sm-4 {
+   padding-left:0 !important;
+   margin-top:0;
+}
+.widget-actualites .container{
+    width:fit-content;
+}
+@media screen and (max-width:580px){
+    .widget-actualites .container figure img{
+        width:100%;
+        height:auto;
+        margin-top:20px;
+    }
+
+}
 .widget-actualites {
     background-color: #00b1eb;
     margin-top: 20px;
@@ -1106,6 +1137,8 @@ h3.hub-green-title{
 /* PREMIER NIVEAU */
 .container.page .planSite > ul > li {
     padding-left: 0;
+    font-size:23px;
+    color: #00B1EB;
 }
 .container.page .planSite > ul > li:before {
     display:none;
@@ -1116,23 +1149,35 @@ h3.hub-green-title{
 .container.page .planSite > ul > li > a {
     text-decoration: none;
     color: #00b1eb;
-    font-size: 20px;
 }
 /* DEUXIEME NIVEAU */
 .container.page .planSite > ul > li > ul > li a{
     text-decoration:none;
     font-size: 16px;
+    color:#00B1EB;
+}
+.container.page .planSite > ul > li > ul > li a:hover{
+    text-decoration:none;
+    font-size: 16px;
+    color:#AED136;
 }
 /* TROISIEME NIVEAU */
 .container.page .planSite > ul > li > ul > li > ul > li a{   
-    text-decoration: none;
+    text-decoration:none;
+    font-size: 16px;
+    color:#00B1EB;
+}
+.container.page .planSite > ul > li > ul > li > ul > li a:hover{   
+    text-decoration:none;
+    font-size: 16px;
+    color:#AED136;
 }
 .container.page .planSite > ul > li > ul > li > ul > li:after {
     display: none;
 }
-.container.page .planSite > ul > li > ul > li > ul > li a {
+/*.container.page .planSite > ul > li > ul > li > ul > li a {
 
-}
+}*/
 /* .planSite ul li:nth-child(1){
     font-size: 23px;
     font-weight: 400;
