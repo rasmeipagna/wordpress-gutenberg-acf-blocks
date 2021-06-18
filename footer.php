@@ -135,16 +135,16 @@ wp_nav_menu( array(
 			    
                 <div class="col-md-6 vousetes">
                     <div class="inner-en">                   
-                        <a class="documentation" href="/engineering-school-admission/download-documentation">
+                        <a class="documentation" href="/en/admissions/download-documentation/">
                             Documentation
                         </a>
-                        <a class="candidature" href="/engineering-school-admission/online-application">
+                        <a class="candidature" href="/en/admissions/download-documentation/">
                             Application
                         </a>
                         <!--<a class="agenda" href="/agenda">
                             Agenda
                         </a>-->
-                        <a class="rdvperso" href="/contact-us">
+                        <a class="rdvperso" href="/en/contact-us">
                             Contacts
                         </a>
                     </div><!-- inner -->

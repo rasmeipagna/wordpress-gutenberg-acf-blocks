@@ -19,7 +19,13 @@ get_header(); ?>
 			<div class="page-header">
 				<h1 class="page-title"><?php
 					/* translators: %s: search query. */
-					printf( esc_html__( 'Résultats de la recherche: %s', 'supbiotech-blog' ), '<span>' . get_search_query() . '</span>' );
+					
+    				$currentlang = get_bloginfo('language');
+    				if($currentlang=="en-GB") : 
+						printf( esc_html__( 'Search results for: %s', 'supbiotech-blog' ), '<span>' . get_search_query() . '</span>' );
+					else :
+						printf( esc_html__( 'Résultats de la recherche: %s', 'supbiotech-blog' ), '<span>' . get_search_query() . '</span>' );
+					endif;		
 				?></h1>
 			</div>
 
@@ -46,7 +52,13 @@ get_header(); ?>
 	<div class="append-articles"></div>
 		<div class="clearfix"></div>
 		<div class="posButtonLoad">
+		<?php
+    	$currentlang = get_bloginfo('language');
+    	if($currentlang=="en-GB") : ?>
+			<a href="#" class="afficher-plus">Show more articles</a>
+		<?php else : ?>	
 			<a href="#" class="afficher-plus">Afficher plus d'articles</a>
+		<?php endif; ?>		
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -24,7 +24,7 @@ get_header(); ?>
 			<span>
 				<a href="/">Home</a>  
 				<span>
-					<a href="/blogs">News</a>  
+					<a href="/blogs-en/">News</a>  
 					<span class="breadcrumb_last" aria-current="page">Blog</span>
 				</span>
 			</span>

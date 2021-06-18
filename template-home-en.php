@@ -50,13 +50,13 @@ get_header();
 
         </div>
         <div class="contact-clic-en hpDesktop">
-			<a class="documentation" href="">
+			<a class="documentation" href="/en/admissions/download-documentation/">
 				Documentation
 			</a>
-			<a class="candidature" href="">
+			<a class="candidature" href="/en/admissions/download-documentation/">
 				Application
 			</a>
-			<a class="contacts" href="">
+			<a class="contacts" href="/en/contact-us">
 				Contacts
 			</a>
 		</div>
@@ -74,13 +74,13 @@ get_header();
             </div>
             <div class="col-sm-12">
                 <div class="bloc-info welcome">
-                    <p>Sup’Biotech’s pedagogy is a multidisciplinary balance between <a href="">scientific and engineering qualifications</a> (theoretical lessons, laboratory practical experiments and <a href="@Html.Lien("Curriculum", "TeachingProjects")">projects</a>), management skills, industrial know-how as well as knowledge of both domestic and international biotechnology markets. Professors come from diverse training and educational backgrounds, such as universities, research centers and the industry.</p>
+                    <p>Sup’Biotech’s pedagogy is a multidisciplinary balance between <a href="/en/programs/degree-seeking/">scientific and engineering qualifications</a> (theoretical lessons, laboratory practical experiments and <a href="../recherche-innovation/sbip-innovation-project/">projects</a>), management skills, industrial know-how as well as knowledge of both domestic and international biotechnology markets. Professors come from diverse training and educational backgrounds, such as universities, research centers and the industry.</p>
 
                     <p>
                         Sup’Biotech’s students are prepared for a wide range of responsibilities in various biotechnological and international companies working in the fields of Health, <strong>Cosmetics</strong>, the Environment, <strong>Pharmaceuticals</strong>, Bioinformatics and Food Process.
                     </p>
 
-                    <a class="linkplus-en" href=""></a>
+                    <a class="linkplus-en" href="/en/engineering-school-biotechnology/presentation/"></a>
 
                 </div>
             </div>
@@ -91,7 +91,7 @@ get_header();
                         <img src="/wp-content/uploads/international-class.jpg" alt="International Class" />
                         <h3>INTERNATIONAL <span>CLASS</span></h3>
                         <p>Exchange programs and studies at the eleading private higher school of Biotechnology in Paris</p>
-                        <a class="linkplus-en" href=""></a>
+                        <a class="linkplus-en" href="/en/programs/exchange-programs/undergraduate/"></a>
                     </div>
 
                 </div>
@@ -100,7 +100,7 @@ get_header();
                         <img src="/wp-content/uploads/summer-school.jpg" alt="Summer School">
                         <h3>SUMMER <span><br />SCHOOL</span></h3>
                         <p>3 weeks program from Cosmetics to Food Process to develop your knowledge and competences in Biotechnology</p>
-                        <a class="linkplus-en" href=""></a>
+                        <a class="linkplus-en" href="/en/programs/short-term-programs/"></a>
                     </div>
 
                 </div>
@@ -182,7 +182,7 @@ get_header();
                         Today, Paris is one of the world's leading business and cultural centers. Its influence on politics, education, entertainment, media, fashion, science, and the arts all contribute to its status as one of the world's most important global cities. Area has a population of over 12 million, making it one of Europe’s largest metropolitan areas.
 
                     </p>
-                    <a class="linkplus-en" href="" target="_blank"></a>
+                    <a class="linkplus-en" href="/en/engineering-school-biotechnology/presentation/"></a>
                 </div>
             </div>
 
@@ -194,101 +194,101 @@ get_header();
 
     <section id="reasons">
         <div class="container">
-            <div class="col-sm-12" style="margin:150px 0 100px 0;">
+            <div class="col-md-12" style="margin:80px 0 50px 0;">
                 <h2 class="text-center"><span>10 reasons <br />to apply to Sup'Biotech</span></h2>
             </div>
 
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason partners">
                     <div></div>
                     <h4>
-                        <span>INSTITUTIONAL PARTNERS :</span><br />
+                        <span>INSTITUTIONAL PARTNERS:</span><br />
                         more than 47 worldwide.
                     </h4>
                 </div>
             </div>
 
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason internships">
                     <div></div>
                     <h4>
-                        <span>INTERNSHIPS :</span><br />
+                        <span>INTERNSHIPS:</span><br />
                         a minimum of 12 months in real-world settings.
                     </h4>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason projects">
                     <div></div>
                     <h4>
-                        <span>INNOVATION PROJECTS :</span><br />
+                        <span>INNOVATION PROJECTS:</span><br />
                         in-depth, authentic, hands-on experience.
                     </h4>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason discovery">
                     <div></div>
                     <h4>
-                        <span>DISCOVERY :</span><br />
+                        <span>DISCOVERY:</span><br />
                         studying abroad allows you to explore a new culture and a new way of life !
                     </h4>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason language">
                     <div></div>
                     <h4>
-                        <span>LANGUAGE :</span><br />
+                        <span>LANGUAGE:</span><br />
                         our graduate program is taught in English.
                     </h4>
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason faculty">
                     <div></div>
                     <h4>
-                        <span>FACULTY AND STAFF :</span><br />
+                        <span>FACULTY AND STAFF:</span><br />
                         our teachers and administrators are eager to help students and are always available.
                     </h4>
                 </div>
             </div>
 
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason paris">
                     <div></div>
                     <h4>
-                        <span>PARIS :</span><br />
+                        <span>PARIS:</span><br />
                         discover the city and all that
                         it has to offer.
                     </h4>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason career">
                     <div></div>
                     <h4>
-                        <span>CAREER :</span><br />
+                        <span>CAREER:</span><br />
                         our graduates have access
                         to a wide range of professions.
                     </h4>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason associations">
                     <div></div>
                     <h4>
-                        <span>STUDENT ASSOCIATIONS :</span><br />
+                        <span>STUDENT ASSOCIATIONS:</span><br />
                         get involved in a variety of clubs and organizations.
                     </h4>
                 </div>
             </div>
-            <div class="col-sm-2">
+            <div class="col-md-2">
                 <div class="reason instruction">
                     <div></div>
                     <h4>
-                        <span>INSTRUCTION :</span><br />
+                        <span>INSTRUCTION:</span><br />
                         Sup’Biotech’s high-quality courses are innovative
                         and practical.
                     </h4>
@@ -702,7 +702,7 @@ get_header();
 		</script>
 
 		<p class="posted">
-			<strong>Posté le : <?php echo get_the_date(); ?></strong>
+			<strong>Posted on <?php echo get_the_date(); ?></strong>        
 		</p>
 		<div class="lishare">
 			<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
@@ -740,7 +740,7 @@ get_header();
 					&nbsp;
 				</div>
 				<div class="col-md-4">
-					<a href="https://www.supbiotech.fr/en/blogs/" class="simple-button">Read all news</a>
+					<a href="/en/blogs-en/" class="simple-button"><center>Read all news</center></a>
 				</div>
 				<div class="col-md-4">
 					&nbsp;

@@ -15,9 +15,26 @@ get_header(); ?>
 					the_archive_title( '<h1 class="top">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-	<div class="col-md-12">
-	
-	<ul class="ariane">
+	<div class="col-md-12">	
+
+	<?php
+		$currentlang = get_bloginfo('language');
+		if($currentlang=="en-GB") : ?>
+		<ul class="ariane">
+		<span>
+			<span>
+				<a href="/">Home</a>  
+				<span>
+					<a href="/blogs">Blog</a>  
+					<?php the_archive_title( '<span class="breadcrumb_last" aria-current="page">', '</span>' );?>
+				</span>
+			</span>
+		</span>
+	</ul>
+
+		<?php else : ?>
+
+			<ul class="ariane">
 		<span>
 			<span>
 				<a href="/">Accueil</a>  
@@ -28,6 +45,9 @@ get_header(); ?>
 			</span>
 		</span>
 	</ul>
+		<?php endif; ?>
+
+
 </div>
 	<main id="main" class="site-main">
 <?php if ( have_posts() ) : ?>
@@ -61,7 +81,15 @@ $yourcat = get_category ($cat);
 		<div class="clearfix"></div>
 		<div class="col-sm-3"> </div>
 		<div class="posButtonLoad col-sm-6">
+
+		<?php
+		$currentlang = get_bloginfo('language');
+		if($currentlang=="en-GB") : ?>
+		<a href="#" class="afficher-plus" data-category="<?php echo $yourcat->slug; ?>" data-date="<?php echo !is_category() ? the_date('n|Y') : ''; ?>">Show more articles</a>
+		<?php else : ?>
 			<a href="#" class="afficher-plus" data-category="<?php echo $yourcat->slug; ?>" data-date="<?php echo !is_category() ? the_date('n|Y') : ''; ?>">Afficher plus d'articles</a>
+		<?php endif; ?>
+		
 		</div>
 		<div class="col-sm-3"> </div>
 

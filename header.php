@@ -43,8 +43,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'supbiotech-blog' ); ?></a>
 	<!--    HEADER MENU MOBILE   -->
     <div class="header-mobile">
-        <a href="/">
-            <img src="/wp-content/uploads/2021/02/cropped-logo-supbiotech.png" alt="Logo supbiotech" style="position: absolute;" width="80px" /> <!-- class="scroll-logo" -->
+    <?php
+    $currentlang = get_bloginfo('language');
+    if($currentlang=="en-GB") : ?>
+        <a href="/en/">
+    <?php else : ?>
+        <a href="/"> 
+    <?php endif; ?>        
+            <img src="/wp-content/uploads/supbiotech-logo-mobile.png" alt="Logo supbiotech" style="position: absolute;" /> <!-- class="scroll-logo" -->
         </a><div class="burger_boite"><a href="#" class="burger"></a></div>
     </div>
     <!-- HEADER MENU DESKTOP    -->
@@ -52,18 +58,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- la bannière bleue navy du Header -->
 		<nav id="banner">
-            <div class="content-banner">
-                <ul class="ul-banner">                
+                         
                 <?php
     $currentlang = get_bloginfo('language');
     if($currentlang=="en-GB") : ?>
     <!-- la bannière EN -->
-        <li><a href="/contact-us">Contact</a></li>
+        <div class="content-banner content-banner-en">
+            <ul class="ul-banner">   
+                <li><a href="/en/contact-us">Contact</a></li>
     
     <?php else : ?>   
     <!-- la bannière FR -->
-        <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
-        <li><a href="/contact">Contact</a></li>        
+        <div class="content-banner">
+            <ul class="ul-banner">
+                <li><a href="/admissions-ecole-ingenieur/venir-nous-rencontrer">Nous rencontrer</a></li>
+                <li><a href="/contact">Contact</a></li>        
         <?php endif; ?>
 
                     
@@ -71,12 +80,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </ul>
                 
                     <ul class="logo-reseaux">
-                        <li><a class="facebook" href="https://www.facebook.com/supbiotech"></a></li>
+                        <li><a class="facebook" href="https://www.facebook.com/supbiotech" target="_blank"></a></li>
                         <li>
-                            <a class="twitter" href="https://twitter.com/supbiotech"></a>
+                            <a class="twitter" href="https://twitter.com/supbiotech" target="_blank"></a>
                         </li>
-                        <li><a class="youtube" href="https://www.youtube.com/user/supbiotech"></a></li>
-                        <li><a class="insta" href="https://www.instagram.com/supbiotech/"></a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/user/supbiotech" target="_blank"></a></li>
+                        <li><a class="insta" href="https://www.instagram.com/supbiotech/" target="_blank"></a></li>
                     </ul>
                 </div>
         
@@ -90,11 +99,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <ul class="main">
             <li class="ligo">
-<a class="logo" href="/">
-    <img src="https://www.supbiotech.fr/Content/images/design/logo-supbiotech.png" alt="Logo supbiotech" class="top-logo" />
-    <img src="/wp-content/uploads/2021/02/cropped-logo-supbiotech.png" alt="Logo supbiotech" class="scroll-logo" />
-</a>
-</li></ul>
+            <?php
+            $currentlang = get_bloginfo('language');
+            if($currentlang=="en-GB") : ?>
+                <a class="logo" href="/en/">
+            <?php else : ?>
+                <a class="logo" href="/"> 
+            <?php endif; ?>  
+            
+                <img src="/wp-content/uploads/supbiotech-logo.jpg" alt="Logo supbiotech" class="top-logo" />
+                <img src="/wp-content/uploads/supbiotech-logo.jpg" alt="Logo supbiotech" class="scroll-logo" />
+            </a>
+            </li></ul>
 
 			<?php
 
@@ -121,7 +137,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     if($currentlang=="en-GB") : ?>
     <!-- la recherche et le FR en anglais -->
         <li class="search">
-            <form method="get" action="/">
+            <form method="get" action="/en/">
                 <input id="recherche" type="text" placeholder="Search" name="s">
                 <input class="bouton-recherche" type="submit" value="Ok">
             </form>
@@ -147,484 +163,40 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <?php endif; ?>
                    
                 </ul>
-            <!--</div> -->   
 
-			<!--<ul class="main">
-                <li class="ligo">
-                    <a class="logo" href="https://www.supbiotech.fr">
-                        <img src="https://www.supbiotech.fr/Content/images/design/logo-supbiotech.png" alt="Logo supbiotech" class="top-logo" />
-                        <img src="https://www.supbiotech.fr/Content/images/design/logo-supbiotech.png" alt="Logo supbiotech" class="scroll-logo" />
+                <?php
+    $currentlang = get_bloginfo('language');
+    if($currentlang=="en-GB") : ?> 
+
+            <div id="bloc-contact-mobile">
+                <a href="/en/admissions/download-documentation/">
+                    <div class="bloc-contact-inside documentation">
+                        <span><img src="https://www.supbiotech.fr/Content/images/design/picto-documentation-mobile.png" />Documentation</span>
+
+                    </div>
+                </a>
+                <!--<a href="/agenda">
+                    <div class="bloc-contact-inside entretien">
+                        <span><img src="https://www.supbiotech.fr/Content/images/design/picto-entretien-mobile.png" />Agenda</span>
+                        
+                    </div>
+                </a>-->
+                    <a href="/en/admissions/download-documentation/">
+                        <div class="bloc-contact-inside candidature">
+                            <span><img src="https://www.supbiotech.fr/Content/images/design/picto-candidature-mobile.png" />Application</span>
+
+                        </div>
                     </a>
-                </li>
-                
+                    <a href="/en/contact-us">
+                        <div class="bloc-contact-inside rdvperso">
+                            <span><img src="https://www.supbiotech.fr/Content/images/design/picto-rdvperso-mobile.png" />contacts</span>
 
-                <li class="first-entry">
-                    <a href="#" class="trigger first-entry">école</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-
-                                    <ul>
-                                        <li><a href="/ecole-ingenieurs-biotechnologies/presentation">L'école des biotechnologies</a></li>
-                                        <li><a href="/ecole-ingenieurs-biotechnologies/campus-ecole/">Nos 2 campus</a></li>
-                                        <li class="li-niveau-2"> Sup'Biotech</li>
-                                        <li class="li-niveau-3"><a href="/ecole-ingenieurs-biotechnologies/pedagogie-numerique/">Pédagogie numérique</a></li>
-                                        <li class="li-niveau-3"><a href="/ecole-ingenieurs-biotechnologies/projets-etudiants/">Pédagogie par projets</a></li>
-                                        <li><a href="https://www.supbiotech.fr/ecole-ingenieurs-biotechnologies/equipe">Équipe</a></li>
-                                        <li><a href="https://www.supbiotech.fr/blogs/">Actualités</a></li>
-                                        <li><a href="https://www.supbiotech.fr/ecole-ingenieurs-biotechnologies/ionis-group">IONIS Education Group</a></li>
-                                       
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 right-menu">
-                            	<div class="col-md-12 rel">
-									<div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
+                        </div>
+                    </a>
+            </div>
     
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-									
-                            		
-                            	</div>
-                                <a class="close" href=""></a>
-                            </div>
-                            
-
-                        </div>!-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-                <li>
-                    <a href="#" class="trigger">Vie étudiante</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-                                    <div class="left" style="width:100%">
-                                        <ul>
-                                            <li><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/associations">La vie associative</a></li>
-                                            <li><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/sport">Faire du sport</a></li>
-                                            
-                                            <li><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/se-loger">Se loger</a></li>
-
-                                        </ul>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 right-menu">
-                            	<div class="col-md-12 rel">
-                            		<div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
-    
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-									
-                            	</div>
-                                <a class="close" href=""></a>
-                            </div>
-                            
-                        </div>-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-                <li>
-                    <a href="#" class="trigger">Programmes</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-									<div class="left" style="width:100%">
-                                        <ul>
-                                            <li class="li-niveau-2">Bachelor</li>
-                                            <li><a href="https://www.supbiotech.fr/formation-bachelor">Travailler dans les biotechnologies en 3 ans</a></li>
-
-                                            <li class="li-niveau-2">Pédagogie Sup'Biotech</li>
-                                            <li><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/presentation">Devenir ingénieur en biotechnologies en 5 ans</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/cycle-preparatoire ">Cycle préparatoire</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/cycle-preparatoire">Cycle préparatoire en anglais</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/cycle-ingenieur
-">Cycle ingénieur</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/cursus/apprentissage">Cycle ingénieur par l'apprentissage</a></li>
-                                            <li class="li-niveau-2">VAE</li>
-                                            <li><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/validation-acquis-experience">Procédure de validation des acquis par l'expérience</a></li>                                         
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 right-menu">
-                            	<div class="col-md-12 rel">
-                            		<div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
-    
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-                            	</div>
-                                <a class="close" href=""></a>
-                            </div>
-                            
-                        </div>!-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-                <li>
-                    <a href="#" class="trigger">Admission</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-									<div class="left" style="width:100%">
-                                        <ul>
-
-                                            <li><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/quelles-specialites-choisir">Quelles spécialités choisir au Bac ?</a></li>
-                                            <li><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/post-bac">Terminales – Concours Advance</a></li>
-                                            <li><a href="https://www.supbiotech.fr/formation-bachelor/admissions">Terminales et bac+1 - Bachelor</a></li>
-                                            <li class="li-niveau-2">Bac à Bac + 5 – Advance Parallèle</li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/paralleles">Admission en cycle initial</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/apprentissage">Admission en apprentissage</a></li>
-                                            <li><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/reorientation-pass-sante">Après une PASS</a></li>
-                                            <li><a href="https://www.supbiotech.fr/admissions-ecole-ingenieur/tarifs-financement">Tarifs & financement</a></li>
-
-                                         
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                           <div class="col-sm-5 right-menu">
-                            	<div class="col-md-12 rel">
-                            		<div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
-    
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-                            	</div>
-                                <a class="close" href=""></a>
-                            </div>
-                            
-                        </div>!-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-                <li>
-                    <a href="#" class="trigger">International</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-                                   <div class="left" style="width:100%">
-                                        <ul>
-                                            <li><a href="https://www.supbiotech.fr/international-ecole-biologie/etudes-international">Ouverture à l’international</a></li>
-                                            <li><a href="https://www.supbiotech.fr/international-ecole-biologie/etudier-etranger">L’anglais au cœur de la formation</a></li>
-                                            <li><a href="https://www.supbiotech.fr/international-ecole-biologie/partenaires">Universités partenaires</a></li>
-                                            <li><a href="https://www.supbiotech.fr/international-ecole-biologie/temoignages-etudiants">Un semestre que l’on n'oubliera jamais</a></li>
-
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-sm-5 right-menu">
-                            	<div class="col-md-12 rel">
-                            		<div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
-    
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-                            	</div>
-                                <a class="close" href=""></a>
-                            </div>
-                            
-                        </div>!-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-
-                <li>
-                    <a href="#" class="trigger">Recherche<br />& Innovation</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-                                    <div class="left" style="width:100%">
-                                        <ul>
-                                            <li class="li-niveau-2">Laboratoires de recherche</li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/recherche-biotechnologie/laboratoire-celltechs-ingenierie-cellulaire">Laboratoires cellules souches</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/recherche-biotechnologie/laboratoire-birl-bioinformatique">Laboratoires bio-informatique</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/recherche-biotechnologie/laboratoire-lrpia-recherche-partenariale">Laboratoire agroalimentaire</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/recherche-biotechnologie/sciences-humaines-sociales">Laboratoire Sciences sociales</a></li>
-                                            <li><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/laboratoires-travaux-pratiques">Laboratoires pédagogiques</a></li>
-                                            <li><a href="https://www.supbiotech.fr/formation-ingenieur-biologie/sbip-innovation-project">SBIP</a></li>
-                                          
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                           <div class="col-sm-5 right-menu">
-                                <div class="col-md-12 rel">
-                                    <div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
-    
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-                                </div>
-                                <a class="close" href=""></a>
-                            </div>
-                           
-                        </div>!-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-
-                <li>
-                    <a href="#" class="trigger">Entreprise</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-                                    <div class="left" style="width:100%">
-                                        <ul>
-                                            <li><a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/formation-insertion-professionnelle">L’entreprise au cœur de la formation</a></li>
-                                            <li><a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/recruter-ingenieur-biotechnologies">Stages en entreprise</a></li>
-                                            <li><a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/partenaires-academiques">Nos partenaires</a></li>
-                                            <li class="li-niveau-2">Espace Entreprise</li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/recruter-stagiaire">Recruter un étudiant</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/taxe-apprentissage">La taxe d’apprentissage</a></li>
-                                           
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-5 right-menu">
-                            	<div class="col-md-12 rel">
-                            		<div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
-    
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-                            	</div>
-                                <a class="close" href=""></a>
-                            </div>
-                            
-                        </div>!-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-				
-				<li>
-                    <a href="#" class="trigger">Après<br />Sup'biotech</a>
-                    <div class="cbp-hrsub">
-                        <div class="cbp-hrsub-inner">
-                            <div class="col-sm-7 left-menu">
-                                <div class="left-menu-contenair right">
-                                    <div class="left" style="width:100%">
-                                        <ul>
-                                            <li><a href="https://www.supbiotech.fr/debouches-metier-biologie/metiers">Métiers et débouchés</a></li>
-                                            <li class="li-niveau-2">Domaines d’application</li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/debouches-metier-biologie/secteurs/carriere-agroalimentaire">Agroalimentaire</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/debouches-metier-biologie/secteurs/carriere-cosmetique">Cosmétiques</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/debouches-metier-biologie/secteurs/carriere-environnement">Environnement</a></li>
-                                            <li class="li-niveau-3"><a href="https://www.supbiotech.fr/debouches-metier-biologie/secteurs/carriere-sante">Santé</a></li>
-                                            <li><a href="https://www.supbiotech.fr/entreprise-ecole-ingenieurs/observatoire-metiers-biotechnologies">Observatoire des métiers des biotechnologies</a></li>
-                                            <li><a href="https://www.supbiotech.fr/debouches-metier-biologie/entrepreneuriat-creation-entreprise">Création d’entreprise</a></li>
-                                            <li><a href="https://www.supbiotech.fr/debouches-metier-biologie/reseau-alumni">Alumni </a></li>
-                                           
-
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                           <div class="col-sm-5 right-menu">
-                            	<div class="col-md-12 rel">
-                            		<div class="contact-clic hpDesktop">
-    <a class="documentation" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/documentation">
-        Documentation
-    </a>
-    <a class="candidature" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/candidature">
-        Candidature
-    </a>   
-    <a class="entretien" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/agenda">
-            Agenda
-     </a>
-    <a class="rdvperso" href="https://www.supbiotech.fr/admissions-ecole-ingenieur/nous-rencontrer/rdv-personnalises">
-        RDV <br /> personnalisé
-    </a>
-
-    
-
-
-</div>
-									<div class="jpo">
-
-        <p><span>Venez nous rencontrer</span></p>
-
-        <p class="displayParisHeader"></p>
-        <p class="displayLyonHeader"></p>
-
-    </div>
-                            	</div>
-                                <a class="close" href=""></a>
-                            </div>
-                            
-                        </div>!-- /cbp-hrsub-inner --
-                    </div>!-- /cbp-hrsub --
-                </li>
-
-
-
-
-                <li class="search">
-                    <form method="get" action="/">
-                        <input id="recherche" type="text" placeholder="Rechercher" name="search">
-                        <input class="bouton-recherche" type="submit" value="Ok">
-                    </form>
-                </li>
-                <li class="flagDesign">
-                    <a href="https://www.supbiotech.fr/en/" target="_blank" class="flagPos">en</a>
-                </li>
-            </ul>
-            -->
+    <?php else : ?>
+            
 			<div id="bloc-contact-mobile">
                 <a href="/admissions-ecole-ingenieur/documentation/">
                     <div class="bloc-contact-inside documentation">
@@ -638,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         
                     </div>
                 </a>
-                    <a href="admission-ecole-ingenieur/candidature">
+                    <a href="/admission-ecole-ingenieur/candidature">
                         <div class="bloc-contact-inside candidature">
                             <span><img src="https://www.supbiotech.fr/Content/images/design/picto-candidature-mobile.png" />Candidature</span>
 
@@ -650,9 +222,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </div>
                     </a>
+            </div>
 
-
-</div>
+    <?php endif; ?>  
+    
+    
 		</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->
