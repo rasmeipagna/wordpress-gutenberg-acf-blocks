@@ -11,7 +11,14 @@
 
 
 	<div class="entry-header">
+	<?php
+    $currentlang = get_bloginfo('language');
+    if($currentlang=="en-GB") : ?>
+	<h1>The latest news</h1>
+	<?php else : ?>
 		<h1>Les derniers articles</h1>
+	<?php endif; ?>
+
 		<!--<?php
 		if ( is_singular() ) :
 			the_title( '<h3>', '</h3>' );

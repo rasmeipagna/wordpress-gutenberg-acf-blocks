@@ -1,7 +1,7 @@
 <article class="col-xs-12 col-sm-4" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="">
 		<div class="content-article">
-			<figure class="col-sm-6">
+			<figure class="col-sm-6 img-blog">
 				<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
 					<?php 
 
