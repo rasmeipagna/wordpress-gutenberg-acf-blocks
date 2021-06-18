@@ -13,10 +13,11 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
 ?>
 <div id="<?php echo $id; ?>" class="widget-fiches-metiers <?php echo $align_class; ?>">
     <div class="col-xs-12 col-sm-12 mobile">
-        <div class="col-xs-12">
+        <div class="col-xs-12 bloc-fiches-metiers">
         <h4 class="titre-fiches-metiers"><?php the_field('titre'); ?></h4>
-
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-sm-3"></div>
+            <div class="col-xs-12 col-sm-4">
+                <div class="row">
                     <div class="liste-metiers">
                         <ul class="metier">
                         <?php
@@ -36,8 +37,9 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                         <?php endif; ?>
                         </ul>
                     </div>
+                </div>
             </div>
-            <div class="col-xs-12 col-sm-6">
+            <div class="col-xs-12 col-sm-4">
                 <div class="pictos-domaines">
                     <div class="row">
                         <div class="col-xs-12 col-sm-6">
@@ -58,14 +60,10 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                             <img class="center domaines" src="<?php the_field('image_agriculture'); ?>" />
                             </a>
                         </div>
-                    </div>
-                    
-                    
-                </div>
-                
-               
-                    
+                    </div>                                    
+                </div>        
             </div>
+            <div class="col-sm-3"></div>
             <div class="clearfix"></div>
             <div class="fiches-metiers-button">
                 <center><a href="<?php the_field('lien'); ?>"><?php the_field('intitule_du_bouton'); ?></a>
