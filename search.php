@@ -52,13 +52,15 @@ get_header(); ?>
 	<div class="append-articles"></div>
 		<div class="clearfix"></div>
 		<div class="posButtonLoad">
+
 		<?php
     	$currentlang = get_bloginfo('language');
     	if($currentlang=="en-GB") : ?>
 			<a href="#" class="afficher-plus">Show more articles</a>
 		<?php else : ?>	
 			<a href="#" class="afficher-plus">Afficher plus d'articles</a>
-		<?php endif; ?>		
+		<?php endif; ?>	
+			
 		</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

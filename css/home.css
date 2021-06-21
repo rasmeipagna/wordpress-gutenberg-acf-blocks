@@ -1156,6 +1156,20 @@ h3.polygoneH3{
 /***********************************************************
                     RESPONSIVE 
 ***********************************************************/
+@media screen and (max-width: 1280px) {
+
+    .resume {
+        height: 200px !important;
+    }
+    .actualite:hover .resume {
+        height: 200px !important;
+    }
+    .slide-replay iframe {
+        width: 100%;
+        height: 194px;
+    }
+}
+
 
 @media screen and (max-width: 420px) {
     .crop-circle {      
@@ -1278,9 +1292,7 @@ h3.polygoneH3{
         font-size: 25px;
     }
     .resume {
-        height: 180px !important;
         bottom: 0px;
-        padding: 10px 20px;
         width: 100%;
         left: 0px;
     }
