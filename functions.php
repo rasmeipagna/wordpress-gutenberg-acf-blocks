@@ -34,7 +34,15 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
     function start_lvl(&$output, $depth = 0, $args = array()) {
         $indent = str_repeat("\t", $depth);
         if ($depth == 0) {
-        $output .= "\n$indent<ul class=\"cbp-hrsub\">\n<div class=\"cbp-hrsub-inner\">\n<div class=\"col-sm-7 left-menu\">\n<div class=\"left-menu-contenair right\"><ul>";
+
+			$currentlang = get_bloginfo('language');
+			if($currentlang=="en-GB") :
+
+			$output .= "\n$indent<ul class=\"cbp-hrsub\">\n<div class=\"cbp-hrsub-inner\">\n<div class=\"col-sm-7 left-menu left-menu-en\">\n<div class=\"left-menu-contenair right\"><ul>";
+			else :
+			$output .= "\n$indent<ul class=\"cbp-hrsub\">\n<div class=\"cbp-hrsub-inner\">\n<div class=\"col-sm-7 left-menu\">\n<div class=\"left-menu-contenair right\"><ul>";
+			endif;
+
         }else { 
             $output .= "\n$indent<ul>";
         }
@@ -48,7 +56,7 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$currentlang = get_bloginfo('language');
     if($currentlang=="en-GB") :	
 
-		$output .= '<div class="col-sm-5 right-menu">
+		$output .= '<div class="col-sm-5 right-menu right-menu-en">
         <div class="col-md-12 rel">
         <div class="contact-clic hpDesktop">
             <a class="documentation" href="/engineering-school-admission/download-documentation">
@@ -225,6 +233,8 @@ function my_acf_init() {
 		// 	'keywords'			=> array( 'testimonial', 'quote' ),
 		// ));
 
+		//Après avoir enregistré ton bloc ici, tu vas créer un fichier.php dans template-parts/block, commençant par "content-" suite ligne 388
+
         // register a bloc-equipe
 		acf_register_block(array(
 			'name'				=> 'bloc-equipe',
@@ -328,10 +338,10 @@ function my_acf_init() {
 			'icon'              => 'menu',
 			'keywords'          => array( 'menu', 'sitemap' ),
 		  ));
-		// register a widget-nous-rencontrer
+		// register a widget-venez-nous-rencontrer
 		acf_register_block(array(
 			'name'				=> 'widget-nous-rencontrer',
-			'title'				=> __('Venez nous rencontrer'),
+			'title'				=> __('bloc-nous-rencontrer'),
 			'description'		=> __('Mon widget venez nous rencontrer personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'widget',
@@ -353,7 +363,7 @@ function my_acf_init() {
 		// register a widget-fiches-metiers
 		acf_register_block(array(
 			'name'				=> 'widget-fiches-metiers',
-			'title'				=> __('Fiches Métiers'),
+			'title'				=> __('bloc-fiches-metiers'),
 			'description'		=> __('Mon widget fiches-métiers personnalisé'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'widget',
@@ -386,6 +396,24 @@ function my_acf_block_render_callback( $block ) {
 		include( get_theme_file_path("/template-parts/block/content-{$slug}.php") );
 	}
 }
+
+
+// DISPLAY BLOC REUSABLE DASHBOARD
+function reusable_menu_display( $type, $args ) {
+	if ( 'wp_block' !== $type ) { return; }
+	$args->show_in_menu = true;
+	$args->_builtin = false;
+	// Pour changer l'intitulé du menu, c'est ci-dessous
+	// Remplacez 'Blocs réutilisables' par esc_html__( 'Reusable blocks', 'textdomain' ) 
+	// en remplaçant "textdomain" par le Text Domain de votre thème si votre thème est internationalisé
+	// et que vous souhaitez traduire cet élément de menu pour un site multilingue
+	$args->labels->name = 'Blocs réutilisables';
+	$args->labels->menu_name = 'Blocs réutilisables';
+	$args->menu_icon = 'dashicons-screenoptions';
+	$args->menu_position = 58;
+}
+add_action( 'registered_post_type', 'reusable_menu_display', 10, 2 );
+
 
 
 if( function_exists('acf_add_options_page') ) {
