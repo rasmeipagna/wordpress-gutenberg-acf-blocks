@@ -104,8 +104,8 @@
 		<p class="posted">
 			<!-- date article -->
 			<?php
-    $currentlang = get_bloginfo('language');
-    if($currentlang=="en-GB") : ?>
+    	$currentlang = get_bloginfo('language');
+    	if($currentlang=="en-GB") : ?>
 		<strong>Posted on <?php //the_time('d/m/Y'); ?> <?php echo get_the_date(); ?></strong>
 	<?php else : ?>
 		<strong>Posté le <?php //the_time('d/m/Y'); ?> <?php echo get_the_date(); ?></strong>

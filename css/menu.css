@@ -119,8 +119,15 @@
 .left-menu {
     padding-top: 30px;
 }
+.left-menu-en {
+    height: 380px;
+    padding-bottom: 40px;
+}
 .right-menu {
     height: 542px;
+}
+.right-menu-en {
+    height: 380px;
 }
 .col-sm-5.right-menu {
     margin-left: 0px;

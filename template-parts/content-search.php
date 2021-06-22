@@ -17,7 +17,13 @@
 		<div class="entry-meta">
 			<!--<?php supbiotech_blog_posted_on(); ?>-->
 			<!-- afficher la date de publication de l'article avec l'url de l'article -->
+			<?php
+    		$currentlang = get_bloginfo('language');
+    		if($currentlang=="en-GB") : ?>
+				<span class="posted-on">Posted on <a href="<?php the_permalink(); ?>"><time><?php the_time('d F Y'); ?></time></a></span>
+			<?php else : ?>
 			<span class="posted-on">Posté le <a href="<?php the_permalink(); ?>"><time><?php the_time('d F Y'); ?></time></a></span>
+			<?php endif; ?>	
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</div><!-- .entry-header -->

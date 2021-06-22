@@ -143,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </form>
         </li>
         <li class="flagDesign">
-            <a href="../" target="_blank" class="flagPos">FR</a>
+            <a href="../" class="flagPos">FR</a>
         </li>      
     
     <?php else : ?>   
