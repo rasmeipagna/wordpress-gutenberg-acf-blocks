@@ -15,6 +15,7 @@ $id = 'bloc-equipe-' . $block['id'];
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
+<div class="clearfix"></div>
     <div id="<?php echo $id; ?>" class="bloc-equipe <?php echo $align_class; ?>">
         <div class="col-xs-12 col-sm-12 bloc-contact spe">
             <div class="col-sm-3">
@@ -49,3 +50,4 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
         </div>
 
     </div>
+    <div class="clearfix"></div>

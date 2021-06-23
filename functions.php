@@ -59,16 +59,16 @@ class My_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$output .= '<div class="col-sm-5 right-menu right-menu-en">
         <div class="col-md-12 rel">
         <div class="contact-clic hpDesktop">
-            <a class="documentation" href="/engineering-school-admission/download-documentation">
+            <a class="documentation" href="/en/engineering-school-admission/download-documentation">
                 Documentation
             </a>
-            <a class="candidature" href="/engineering-school-admission/online-application">
+            <a class="candidature" href="/en/admissions/online-application/">
                 Application
             </a>   
             <!--<a class="entretien" href="/agenda">
                     Agenda
             </a>-->
-            <a class="rdvperso rdvperso-en" href="/contacts-us">
+            <a class="rdvperso rdvperso-en" href="/en/contacts-us">
                 Contacts
             </a>
         </div>       
