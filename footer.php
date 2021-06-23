@@ -138,7 +138,7 @@ wp_nav_menu( array(
                         <a class="documentation" href="/en/admissions/download-documentation/">
                             Documentation
                         </a>
-                        <a class="candidature" href="/en/admissions/download-documentation/">
+                        <a class="candidature" href="/en/admissions/online-application/">
                             Application
                         </a>
                         <!--<a class="agenda" href="/agenda">

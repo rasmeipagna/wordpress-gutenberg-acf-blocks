@@ -17,14 +17,14 @@
  <script type="text/javascript" src="https://cache.consentframework.com/js/pa/23324/c/75Dqy/stub" referrerpolicy="unsafe-url" charset="utf-8"></script>
  <script type="text/javascript" src="https://choices.consentframework.com/js/pa/23324/c/75Dqy/cmp" referrerpolicy="unsafe-url" charset="utf-8" async></script>
  <!-- END SIRDATA -->
-<!-- Google Tag Manager -->
+<!-- Google Tag Manager --
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
 {'gtm.start': new Date().getTime(),event:'gtm.js'}
 );var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WCL5PWM');</script>
-<!-- End Google Tag Manager -->
+!-- End Google Tag Manager -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="/Content/images/design/favicon.ico">
@@ -34,10 +34,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <div class="layout-container">
 <body <?php body_class(); ?>>
-<!-- Google Tag Manager (noscript) -->
+<!-- Google Tag Manager (noscript) --
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WCL5PWM"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+!-- End Google Tag Manager (noscript) -->
     <div id="page" class="site">
 
        <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'supbiotech-blog' ); ?></a>
@@ -181,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         
                     </div>
                 </a>-->
-                    <a href="/en/admissions/download-documentation/">
+                    <a href="/en/admissions/online-application/">
                         <div class="bloc-contact-inside candidature">
                             <span><img src="https://www.supbiotech.fr/Content/images/design/picto-candidature-mobile.png" />Application</span>
 

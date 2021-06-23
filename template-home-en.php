@@ -53,7 +53,7 @@ get_header();
 			<a class="documentation" href="/en/admissions/download-documentation/">
 				Documentation
 			</a>
-			<a class="candidature" href="/en/admissions/download-documentation/">
+			<a class="candidature" href="/en/admissions/online-application/">
 				Application
 			</a>
 			<a class="contacts" href="/en/contact-us">
@@ -74,7 +74,7 @@ get_header();
             </div>
             <div class="col-sm-12">
                 <div class="bloc-info welcome">
-                    <p>Sup’Biotech’s pedagogy is a multidisciplinary balance between <a href="/en/programs/degree-seeking/">scientific and engineering qualifications</a> (theoretical lessons, laboratory practical experiments and <a href="../recherche-innovation/sbip-innovation-project/">projects</a>), management skills, industrial know-how as well as knowledge of both domestic and international biotechnology markets. Professors come from diverse training and educational backgrounds, such as universities, research centers and the industry.</p>
+                    <p>Sup’Biotech’s pedagogy is a multidisciplinary balance between <a href="/en/programs/degree-seeking/">scientific and engineering qualifications</a> (theoretical lessons, laboratory practical experiments and <a href="/en/supbiotech-innovation-projects-sbip/">projects</a>), management skills, industrial know-how as well as knowledge of both domestic and international biotechnology markets. Professors come from diverse training and educational backgrounds, such as universities, research centers and the industry.</p>
 
                     <p>
                         Sup’Biotech’s students are prepared for a wide range of responsibilities in various biotechnological and international companies working in the fields of Health, <strong>Cosmetics</strong>, the Environment, <strong>Pharmaceuticals</strong>, Bioinformatics and Food Process.
@@ -182,7 +182,7 @@ get_header();
                         Today, Paris is one of the world's leading business and cultural centers. Its influence on politics, education, entertainment, media, fashion, science, and the arts all contribute to its status as one of the world's most important global cities. Area has a population of over 12 million, making it one of Europe’s largest metropolitan areas.
 
                     </p>
-                    <a class="linkplus-en" href="/en/engineering-school-biotechnology/presentation/"></a>
+                    <a class="linkplus-en" href="/en/engineering-school-biotechnology/living-in-paris/"></a>
                 </div>
             </div>
 
