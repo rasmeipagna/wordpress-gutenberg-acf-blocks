@@ -1,7 +1,7 @@
 <?php
 /*
 * Description: Theme enfant de Sup'Biotech
-* Author: Annie Binet
+* Author: Pagna Toung
 * Template Name: Template Home Blog Sup'Biotech
 *
 */

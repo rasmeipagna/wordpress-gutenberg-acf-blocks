@@ -1,7 +1,7 @@
 <?php
 /*
 * Description: Theme enfant de Sup'Biotech
-* Author: Annie Binet
+* Author: Pagna Toung
 * Template Name: Template Homepage Sup'Biotech
 *
 * @link https://codex.wordpress.org/Template_Hierarchy
